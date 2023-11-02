@@ -32,6 +32,17 @@
     "actorsId": [7, 8, 9] ,
     "directorId": 3,
     "imageUrl": "https://play-lh.googleusercontent.com/ToGy2Cue0epHBdeRkq3dntz8on4ogI1UlKLGqMvgCptTwmpMWVkIxojwVUuvIjrMIFz2UiNjW73xcuofHQ"
+},
+{
+    "id": 4,
+    "title": "The Wolf of Wall Street",
+    "description":"Jordan Belfort (DiCaprio) is Long Island penny stockbroker who serves almost two years in prison for refusing to co-operate in a huge 1990s securities fraud case that involved widespread corruption on Wall Street and in the corporate banking world, including mob infiltration.",
+    "rate": 8.2,
+    "releaseDate": 2013,
+    "genresIds": [2, 4, 5],
+    "actorsId": [10, 11, 12] ,
+    "directorId": 3,
+    "imageUrl": "https://m.media-amazon.com/images/M/MV5BMjIxMjgxNTk0MF5BMl5BanBnXkFtZTgwNjIyOTg2MDE@._V1_FMjpg_UX1000_.jpg"
 }
 ], 
 "genres": [
@@ -46,6 +57,18 @@
     {
     "id": 3,
     "title": "Romance"
+    },
+    {
+    "id": 4,
+    "title": "Biography"
+    },
+    {
+    "id": 5,
+    "title": "Comedy"
+    },
+    {
+    "id": 6,
+    "title": "Crime"
     }
 ],
 "actors": [
@@ -172,6 +195,48 @@
         },
         "about": "Gary Alan Sinise was born in Blue Island, Illinois, to Mylles S. (Alsip) and Robert L. Sinise, A.C.E., a film editor. He is of Italian (from his paternal grandfather), English, Scottish, Irish, French, German, and Swedish ancestry. His family moved to Highland Park, where he attended high school. He was something of a rebel, playing in bands but paying little attention to school.",
         "imageUrl": "https://cdn.britannica.com/59/217459-050-ED0FC3C2/American-actor-Gary-Sinise-2006.jpg"
+    },
+    {
+        
+        "id": 10,
+        "name": "Leonardo DiCaprio",
+        "born": {
+            "year": 1974,
+            "month": "November",
+            "day": 11,
+            "country": "Hollywood, Los Angeles, California, USA"
+
+        },
+        "about": "Few actors in the world have had a career quite as diverse as Leonardo DiCaprio's. DiCaprio has gone from relatively humble beginnings, as a supporting cast member of the sitcom Growing Pains (1985) and low budget horror movies, such as Critters 3 (1991), to a major teenage heartthrob in the 1990s, as the hunky lead actor in movies such as Romeo + Juliet (1996) and Titanic (1997), to then become a leading man in Hollywood blockbusters, made by internationally renowned directors such as Martin Scorsese and Christopher Nolan.",
+        "imageUrl": "https://cdn.britannica.com/65/227665-050-D74A477E/American-actor-Leonardo-DiCaprio-2016.jpg"
+    },
+    {
+        
+        "id": 11,
+        "name": "Jonah Hill",
+        "born": {
+            "year": 1983,
+            "month": "December",
+            "day": 20,
+            "country": "Los Angeles, California, USA"
+
+        },
+        "about": "Jonah Hill was born and raised in Los Angeles, the son of Sharon Feldstein (née Chalkin), a fashion designer and costume stylist, and Richard Feldstein, a tour accountant for Guns N' Roses. He is the brother of music manager Jordan Feldstein and actress Beanie Feldstein. He graduated from Crossroads School in Santa Monica and went on to The New School in New York to study drama. He began writing and performing in plays while at college in New York, and managed to get himself introduced to Dustin Hoffman, through whom he got an audition for his first film role in I Heart Huckabees (2004). A succession of increasingly high-profile film and TV parts followed until he eventually landed one of the starring roles in the teen hit, Superbad (2007). Continuing to write and act, more roles followed as well as popular appearances on US TV talk shows.",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Jonah_Hill-4939_%28cropped%29_%28cropped%29.jpg/1200px-Jonah_Hill-4939_%28cropped%29_%28cropped%29.jpg"
+    },
+    {
+        
+        "id": 12,
+        "name": "Margot Robbie",
+        "born": {
+            "year": 1990,
+            "month": "July",
+            "day": 2,
+            "country": "Dalby, Queensland, Australia"
+
+        },
+        "about": "Margot Elise Robbie was born on July 2, 1990 in Dalby, Queensland, Australia to Scottish parents. Her mother, Sarie Kessler, is a physiotherapist, and her father, is Doug Robbie. She comes from a family of four children, having two brothers and one sister. She graduated from Somerset College in Mudgeeraba, Queensland, Australia, a suburb in the Gold Coast hinterland of South East Queensland, where she and her siblings were raised by their mother and spent much of her time at the farm belonging to her grandparents. In her late teens, she moved to Melbourne, Victoria, Australia to pursue an acting career.",
+        "imageUrl": "https://www.shefinds.com/files/2023/08/Margot-Robbie-at-The-Asteroid-City-Film-Premiere.jpeg"
     }
 ],
 "directors": [
@@ -212,6 +277,19 @@
         },
     "about": "A whiz-kid with special effects, Robert is from the Spielberg camp of film-making (Steven Spielberg produced many of his films). Usually working with writing partner Bob Gale, Robert's earlier films show he has a talent for zany comedy (Romancing the Stone (1984), 1941 (1979)) and special effect vehicles (Who Framed Roger Rabbit (1988) and Back to the Future (1985)). His later films have become more serious, with the hugely successful Tom Hanks vehicle Forrest Gump (1994) and the Jodie Foster film Contact (1997), both critically acclaimed movies. Again, these films incorporate stunning effects. Robert has proved he can work a serious story around great effects.",
     "imageUrl": "https://www.themoviedb.org/t/p/w500/lPYDQ5LYNJ12rJZENtyASmVZ1Ql.jpg"
+
+},
+{
+    "id": 4,
+    "name": "Martin Scorsese",
+    "born": {
+        "year": 1942,
+        "month": "November",
+        "day": 17,
+        "country": "Queens, New York City, New York, USA"
+        },
+    "about": "Martin Charles Scorsese was born on November 17, 1942 in Queens, New York City, to Catherine Scorsese (née Cappa) and Charles Scorsese, who both worked in Manhattan's garment district, and whose families both came from Palermo, Sicily. He was raised in the neighborhood of Little Italy, which later provided the inspiration for several of his films. Scorsese earned a B.S. degree in film communications in 1964, followed by an M.A. in the same field in 1966 at New York University's School of Film. During this time, he made numerous prize-winning short films including The Big Shave (1967), and directed his first feature film, Who's That Knocking at My Door (1967).",
+    "imageUrl": "https://m.media-amazon.com/images/M/MV5BMTcyNDA4Nzk3N15BMl5BanBnXkFtZTcwNDYzMjMxMw@@._V1_FMjpg_UX1000_.jpg"
 
 }
 ]
