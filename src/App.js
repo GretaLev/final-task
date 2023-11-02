@@ -8,6 +8,7 @@ import MoviesByGenre from "./Pages/MoviesByGenrePage/MoviesByGenre";
 import ActorsPage from "./Pages/ActorsPage/ActorsPage";
 import ActorsItemPage from "./Pages/ActorsItemPage/ActorsItemPage";
 import DirectorsPage from "./Pages/DirectorsPage/DirectorsPage";
+import DirectorsItemPage from "./Pages/DirectorsItemPage/DirectorsItemPage";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/actors" element={<ActorsPage />} />
         <Route path="/actor/:id" element={<ActorsItemPage />} />
         <Route path="/directors" element={<DirectorsPage />} />
+        <Route path="/director/:id" element={<DirectorsItemPage />} />
       </Routes>
     </div>
   );
