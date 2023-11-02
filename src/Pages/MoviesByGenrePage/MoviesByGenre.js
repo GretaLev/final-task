@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
-import { API_URL } from "../../../config";
+import { API_URL } from "../../config";
 import { Link, useParams } from "react-router-dom";
-import Container from "../../../Components/Container/Container";
+import Container from "../../Components/Container/Container";
 import "./MoviesByGenre.scss";
 
 const MoviesByGenre = () => {

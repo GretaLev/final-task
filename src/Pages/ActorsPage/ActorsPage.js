@@ -1,10 +1,9 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
-import { Link } from "react-router-dom";
-import Container from "../../../Components/Container/Container";
-import { API_URL } from "../../../config";
+import Container from "../../Components/Container/Container";
+import { API_URL } from "../../config";
 import "./ActorsPage.scss";
-import ActorItem from "../../../Components/ActorItem/ActorItem";
+import ActorItem from "../../Components/ActorItem/ActorItem";
 
 const ActorsPage = () => {
   const [actors, setActors] = useState([]);

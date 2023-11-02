@@ -1,13 +1,13 @@
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
 import PageHeader from "./Components/PageHeader/PageHeader";
-import Container from "./Components/Container/Container";
-import MoviesPage from "./Pages/MoviesProject/MoviesPage/MoviesPage";
-import GenresPage from "./Pages/MoviesProject/GenresPage/GenresPage";
-import ActorsPage from "./Pages/MoviesProject/ActorsPage/ActorsPage";
-import DirectorsPage from "./Pages/MoviesProject/DirectorsPage/DirectorsPage";
-import MoviesItemPage from "./Pages/MoviesProject/MoviesItemPage/MoviesItemPage";
-import MoviesByGenre from "./Pages/MoviesProject/MoviesByGenrePage/MoviesByGenre";
+import MoviesPage from "./Pages/MoviesPage/MoviesPage";
+import MoviesItemPage from "./Pages/MoviesItemPage/MoviesItemPage";
+import GenresPage from "./Pages/GenresPage/GenresPage";
+import MoviesByGenre from "./Pages/MoviesByGenrePage/MoviesByGenre";
+import ActorsPage from "./Pages/ActorsPage/ActorsPage";
+import ActorsItemPage from "./Pages/ActorsItemPage/ActorsItemPage";
+import DirectorsPage from "./Pages/DirectorsPage/DirectorsPage";
 
 function App() {
   return (
@@ -19,6 +19,7 @@ function App() {
         <Route path="/genres" element={<GenresPage />} />
         <Route path="/movies-by-genre/:id" element={<MoviesByGenre />} />
         <Route path="/actors" element={<ActorsPage />} />
+        <Route path="/actor/:id" element={<ActorsItemPage />} />
         <Route path="/directors" element={<DirectorsPage />} />
       </Routes>
     </div>

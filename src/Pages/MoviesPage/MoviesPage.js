@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
-import Container from "../../../Components/Container/Container";
-import { API_URL } from "../../../config";
+import Container from "../../Components/Container/Container";
+import { API_URL } from "../../config";
 import axios from "axios";
 import "./MoviesPage.scss";
-import MoviesItem from "../../../Components/MovieItem/MovieItem";
+import MoviesItem from "../../Components/MovieItem/MovieItem";
 
 const MoviesPage = () => {
   const [movies, setMovies] = useState([]);
