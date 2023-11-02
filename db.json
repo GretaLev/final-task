@@ -1,0 +1,218 @@
+{
+"Movies": [
+{
+    "id": 1,
+    "title": "The Shawshank Redemption",
+    "description":"Over the course of several years, two convicts form a friendship, seeking consolation and, eventually, redemption through basic compassion.",
+    "rate": 9.3,
+    "releaseDate": 1994,
+    "genresIds": [1],
+    "actorsId": [1, 2, 3] ,
+    "directorId": 1,
+    "imageUrl": "https://m.media-amazon.com/images/M/MV5BNDE3ODcxYzMtY2YzZC00NmNlLWJiNDMtZDViZWM2MzIxZDYwXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_.jpg"
+},
+{
+    "id": 2,
+    "title": "The Godfather",
+    "description":"Don Vito Corleone, head of a mafia family, decides to hand over his empire to his youngest son Michael. However, his decision unintentionally puts the lives of his loved ones in grave danger.",
+    "rate": 9.2,
+    "release date": 1972,
+    "genresIds": [1, 2],
+    "actorsId": [4, 5, 6] ,
+    "directorId": 2,
+    "imageUrl": "https://images.entertainment.ie/media/3bhkrj58Vtu7enYsRolD1fZdja1.jpg?w=340&h=514&q=low"
+},
+{
+    "id": 3,
+    "title": "Forrest Gump",
+    "description":"The history of the United States from the 1950s to the '70s unfolds from the perspective of an Alabama man with an IQ of 75, who yearns to be reunited with his childhood sweetheart.",
+    "rate": 8.8,
+    "release date": 1994,
+    "genresIds": [1, 3],
+    "actorsId": [7, 8, 9] ,
+    "directorId": 3,
+    "imageUrl": "https://play-lh.googleusercontent.com/ToGy2Cue0epHBdeRkq3dntz8on4ogI1UlKLGqMvgCptTwmpMWVkIxojwVUuvIjrMIFz2UiNjW73xcuofHQ"
+}
+], 
+"Genres": [
+    {
+    "id": 1,
+    "title": "Drama"
+    },
+    {
+    "id": 2,
+    "title": "Crime"
+    },
+    {
+    "id": 3,
+    "title": "Romance"
+    }
+],
+"Actors": [
+    {
+       
+        "id": 1,
+        "name": "Tim Robbins",
+        "born": {
+            "year": 1958,
+            "month": "October",
+            "day": 16,
+            "country": "West Covina, California, USA"
+        },
+        "about": "Born in West Covina, California, but raised in New York City, Tim Robbins is the son of former The Highwaymen singer Gil Robbins and actress Mary Robbins (née Bledsoe). Robbins studied drama at UCLA, where he graduated with honors in 1981. That same year, he formed the Actors' Gang theater group, an experimental ensemble that expressed radical political observations through the European avant-garde form of theater.",
+        "imageUrl": "https://www.themoviedb.org/t/p/w500/A4fHNLX73EQs78f2G6ObfKZnvp4.jpg"
+    },
+    {
+        
+        "id": 2,
+        "name": "Morgan Freeman",
+        "born": {
+            "year": 1937,
+            "month": "June",
+            "day": 1,
+            "country": "Memphis, Tennessee, USA"
+        },
+        "about": "With an authoritative voice and calm demeanor, this ever popular American actor has grown into one of the most respected figures in modern US cinema. Morgan was born on June 1, 1937 in Memphis, Tennessee, to Mayme Edna (Revere), a teacher, and Morgan Porterfield Freeman, a barber.",
+        "imageUrl": "https://m.media-amazon.com/images/M/MV5BMTc0MDMyMzI2OF5BMl5BanBnXkFtZTcwMzM2OTk1MQ@@._V1_FMjpg_UX1000_.jpg"
+    },
+    {
+        
+        "id": 3,
+        "name": "Bob Gunton",
+        "born": {
+            "year": 1945,
+            "month": "November",
+            "day": 15,
+            "country": "Santa Monica, California, USA"
+
+        },
+        "about": "Bob Gunton is an American actor, primarily known for portraying strict and authoritarian characters in popular films. His better known roles include Chief George Earle in „Demolition Man“ (1993), Prison Warden Samuel Norton in „The Shawshank Redemption“ (1994), medical school dean Dr. Walcott in „Patch Adams“ (1998), and politician Cyrus Vance in „Argo“ (2012).In 1945, Gunton was born Santa Monica, California.",
+        "imageUrl": "https://m.media-amazon.com/images/M/MV5BMTQ2NTU1NzU5Nl5BMl5BanBnXkFtZTcwODU3NjI2NA@@._V1_.jpg"
+    },
+    {
+        
+        "id": 4,
+        "name": "Marlon Brando",
+        "born": {
+            "year": 1924,
+            "month": "April",
+            "day": 3,
+            "country": "Omaha, Nebraska, USA"
+
+        },
+        "about": "Marlon Brando is widely considered the greatest movie actor of all time, rivaled only by the more theatrically oriented Laurence Olivier in terms of esteem. Unlike Olivier, who preferred the stage to the screen, Brando concentrated his talents on movies after bidding the Broadway stage adieu in 1949, a decision for which he was severely criticized when his star began to dim in the 1960s and he was excoriated for squandering his talents.",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Marlon_Brando_publicity_for_One-Eyed_Jacks.png/800px-Marlon_Brando_publicity_for_One-Eyed_Jacks.png"
+    },
+    {
+        
+        "id": 5,
+        "name": "Al Pacino",
+        "born": {
+            "year": 1940,
+            "month": "April",
+            "day": 25,
+            "country": "Manhattan, New York City, New York, USA"
+
+        },
+        "about": "Alfredo James „Al“ 'Pacino established himself as a film actor during one of cinema's most vibrant decades, the 1970s, and has become an enduring and iconic figure in the world of American movies.He was born April 25, 1940 in Manhattan, New York City, to Italian-American parents, Rose (nee Gerardi) and Sal Pacino. ",
+        "imageUrl": "https://media.newyorker.com/photos/5e70fef11785a2000935d0eb/master/pass/ra722.jpg"
+    },
+    {
+        
+        "id": 6,
+        "name": "James Caan",
+        "born": {
+            "year": 1940,
+            "month": "March",
+            "day": 26,
+            "country": "The Bronx, New York, USA"
+
+        },
+        "about": "A masculine and enigmatic actor whose life and movie career have had more ups and downs than the average rollercoaster and whose selection of roles has arguably derailed him from achieving true superstar status, James Caan is New York-born and bred.He was born in the Bronx, to Sophie (Falkenstein) and Arthur Caan, Jewish immigrants from Germany.",
+        "imageUrl": "https://people.com/thmb/zu7YJCZKMnKPzbzJtn0j8R8F4VA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(747x269:749x271)/james-caan-4-9c2f40a15a8c41f7a61a9fe301141591.jpg"
+    },
+    {
+        
+        "id": 7,
+        "name": "Tom Hanks",
+        "born": {
+            "year": 1956,
+            "month": "July",
+            "day": 9,
+            "country": "Concord, California, USA"
+
+        },
+        "about": "Thomas Jeffrey Hanks was born in Concord, California, to Janet Marylyn (Frager), a hospital worker, and Amos Mefford Hanks, an itinerant cook. His mother's family, originally surnamed „Fraga“, was entirely Portuguese, while his father was of mostly English ancestry. Tom grew up in what he has called a „fractured“ family. He moved around a great deal after his parents' divorce, living with a succession of step-families. No problems, no alcoholism - just a confused childhood.",
+        "imageUrl": "https://static.independent.co.uk/s3fs-public/thumbnails/image/2013/09/12/17/118662439.jpg"
+    },
+    {
+        
+        "id": 8,
+        "name": "Robin Wright",
+        "born": {
+            "year": 1966,
+            "month": "April",
+            "day": 8,
+            "country": "Dallas, Texas, USA"
+
+        },
+        "about": "Robin Gayle Wright was born in Dallas, Texas, to Gayle (Gaston), a national director at Mary Kay, and Freddie Wright, a pharmaceutical executive. She grew up in San Diego, California. She started her professional career as a model in 1980 at age 14, and worked both in Paris and Japan. After finishing high school she decided to become an actress. She got a role on the soap opera Santa Barbara (1984), for which she was nominated three times for a Daytime Emmy.",
+        "imageUrl": "https://cdnph.upi.com/ph/st/th/6831664112285/2022/upi/7d0a83c0d2d9b2e5c5207209dd48189c/v1.2/Robin-Wright-files-for-divorce-from-third-husband-Clment-Giraudet.jpg?lg=5&=1"
+    },
+    {
+        
+        "id": 9,
+        "name": "Gary Sinise",
+        "born": {
+            "year": 1955,
+            "month": "March",
+            "day": 17,
+            "country": "Blue Island, Illinois, USA"
+
+        },
+        "about": "Gary Alan Sinise was born in Blue Island, Illinois, to Mylles S. (Alsip) and Robert L. Sinise, A.C.E., a film editor. He is of Italian (from his paternal grandfather), English, Scottish, Irish, French, German, and Swedish ancestry. His family moved to Highland Park, where he attended high school. He was something of a rebel, playing in bands but paying little attention to school.",
+        "imageUrl": "https://cdn.britannica.com/59/217459-050-ED0FC3C2/American-actor-Gary-Sinise-2006.jpg"
+    }
+],
+"Directors": [
+{
+    "id": 1,
+    "name": "Frank Darabont",
+    "born": {
+        "year": 1959,
+        "month": "January",
+        "day": 28,
+        "country": "Montbéliard, Doubs, France"
+        },
+    "about": "Three-time Oscar nominee Frank Darabont was born in a refugee camp in 1959 in Montbeliard, France, the son of Hungarian parents who had fled Budapest during the failed 1956 Hungarian revolution. Brought to America as an infant, he settled with his family in Los Angeles and attended Hollywood High School. His first job in movies was as a production assistant on the 1981 low-budget film, Hell Night (1981), starring Linda Blair. ",
+    "imageUrl": "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-18372-frankdarabont-1800-1387323957.jpg"
+
+},
+{
+    "id": 2,
+    "name": "Francis Ford Coppola",
+    "born": {
+        "year": 1939,
+        "month": "April",
+        "day": 7,
+        "country": "Detroit, Michigan, USA"
+        },
+    "about": "Francis Ford Coppola was born in 1939 in Detroit, Michigan, but grew up in a New York suburb in a creative, supportive Italian-American family. His father, Carmine Coppola, was a composer and musician. His mother, Italia Coppola (née Pennino), had been an actress. Francis Ford Coppola graduated with a degree in drama from Hofstra University, and did graduate work at UCLA in filmmaking.",
+    "imageUrl": "https://ntvb.tmsimg.com/assets/assets/359_v9_ba.jpg"
+
+},
+{
+    "id": 3,
+    "name": "Robert Zemeckis",
+    "born": {
+        "year": 1952,
+        "month": "May",
+        "day": 14,
+        "country": "Chicago, Illinois, USA"
+        },
+    "about": "A whiz-kid with special effects, Robert is from the Spielberg camp of film-making (Steven Spielberg produced many of his films). Usually working with writing partner Bob Gale, Robert's earlier films show he has a talent for zany comedy (Romancing the Stone (1984), 1941 (1979)) and special effect vehicles (Who Framed Roger Rabbit (1988) and Back to the Future (1985)). His later films have become more serious, with the hugely successful Tom Hanks vehicle Forrest Gump (1994) and the Jodie Foster film Contact (1997), both critically acclaimed movies. Again, these films incorporate stunning effects. Robert has proved he can work a serious story around great effects.",
+    "imageUrl": "https://www.themoviedb.org/t/p/w500/lPYDQ5LYNJ12rJZENtyASmVZ1Ql.jpg"
+
+}
+]
+}

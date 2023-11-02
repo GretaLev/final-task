@@ -1,0 +1,16 @@
+.actors-list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.actors-list ul {
+  list-style: none;
+}
+.actors-list img {
+  width: 340px;
+  height: 514px;
+  transition-duration: 0.3s;
+}
+.actors-list img:hover {
+  border-radius: 20%;
+}/*# sourceMappingURL=Actorspage.css.map */

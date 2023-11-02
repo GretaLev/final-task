@@ -1,0 +1,16 @@
+.directors-list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.directors-list ul {
+  list-style: none;
+}
+.directors-list img {
+  width: 340px;
+  height: 514px;
+  transition-duration: 0.3s;
+}
+.directors-list img:hover {
+  border-radius: 20%;
+}/*# sourceMappingURL=DirectorsPage.css.map */

@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route } from "react-router-dom";
+import "./App.css";
+import PageHeader from "./Components/PageHeader/PageHeader";
+import Container from "./Components/Container/Container";
+import MoviesPage from "./Pages/MoviesProject/MoviesPage/MoviesPage";
+import GenresPage from "./Pages/MoviesProject/GenresPage/GenresPage";
+import ActorsPage from "./Pages/MoviesProject/ActorsPage/ActorsPage";
+import DirectorsPage from "./Pages/MoviesProject/DirectorsPage/DirectorsPage";
+import MoviesItemPage from "./Pages/MoviesProject/MoviesItemPage/MoviesItemPage";
+import MoviesByGenre from "./Pages/MoviesProject/MoviesByGenrePage/MoviesByGenre";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <PageHeader />
+      <Routes>
+        <Route path="/movies" element={<MoviesPage />} />
+        <Route path="/movie/:id" element={<MoviesItemPage />} />
+        <Route path="/genres" element={<GenresPage />} />
+        <Route path="/movies-by-genre/:id" element={<MoviesByGenre />} />
+        <Route path="/actors" element={<ActorsPage />} />
+        <Route path="/directors" element={<DirectorsPage />} />
+      </Routes>
     </div>
   );
 }

@@ -1,0 +1,26 @@
+.genres-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.genres-list .genres-item {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: 300px;
+  height: 200px;
+  background-image: url("https://m.media-amazon.com/images/I/71mzZmzWgyL._AC_UF894,1000_QL80_.jpg");
+  background-size: cover;
+}
+.genres-list a {
+  text-decoration: none;
+}
+.genres-list ul {
+  list-style: none;
+  padding: 0;
+}
+.genres-list li {
+  color: white;
+  font-size: 40px;
+  text-transform: uppercase;
+}/*# sourceMappingURL=Genrespage.css.map */

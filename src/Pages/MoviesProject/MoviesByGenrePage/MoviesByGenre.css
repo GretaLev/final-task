@@ -1,0 +1,16 @@
+.movies-by-genre {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.movies-by-genre ul {
+  list-style: none;
+}
+.movies-by-genre img {
+  width: 340px;
+  height: 514px;
+  transition-duration: 0.3s;
+}
+.movies-by-genre img:hover {
+  border-radius: 20%;
+}/*# sourceMappingURL=MoviesByGenre.css.map */
