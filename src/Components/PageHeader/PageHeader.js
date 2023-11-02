@@ -1,7 +1,7 @@
 import React from "react";
 import Container from "../Container/Container";
 import { NavLink } from "react-router-dom";
-import "../PageHeader/PageHeader.css";
+import "./PageHeader.scss";
 
 const PageHeader = () => {
   return (

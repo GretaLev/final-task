@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
-import { API_URL } from "../../../config";
+import { API_URL } from "../../config";
 import { Link } from "react-router-dom";
-import Container from "../../../Components/Container/Container";
+import Container from "../../Components/Container/Container";
 import "./GenresPage.scss";
 
 const GenresPage = () => {
@@ -11,6 +11,7 @@ const GenresPage = () => {
   useEffect(() => {
     axios(API_URL + "/genres").then((res) => {
       setGenres(res.data);
+      console.log(res.data);
     });
   }, []);
 

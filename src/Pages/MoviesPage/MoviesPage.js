@@ -1,10 +1,9 @@
 import { useEffect, useState } from "react";
-import Container from "../../../Components/Container/Container";
-import { API_URL } from "../../../config";
+import Container from "../../Components/Container/Container";
+import { API_URL } from "../../config";
 import axios from "axios";
 import "./MoviesPage.scss";
-import MoviesItemPage from "../MoviesItemPage/MoviesItemPage";
-import { Link } from "react-router-dom";
+import MoviesItem from "../../Components/MovieItem/MovieItem";
 
 const MoviesPage = () => {
   const [movies, setMovies] = useState([]);
@@ -18,13 +17,7 @@ const MoviesPage = () => {
   if (movies.length === 0) {
     return <h2>Loading...</h2>;
   }
-  const moviesList = movies.map((movie) => (
-    <div className="movies-item">
-      <Link to={`/movie/${movie.id}`}>
-        <img key={movie.id} src={movie.imageUrl} alt="movie"></img>
-      </Link>
-    </div>
-  ));
+  const moviesList = movies.map((movie) => <MoviesItem data={movie} />);
   return (
     <Container>
       <h2>Movies</h2>

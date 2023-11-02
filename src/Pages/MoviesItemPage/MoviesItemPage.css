@@ -1,0 +1,24 @@
+.single-movie-page {
+  display: flex;
+}
+.single-movie-page .movie-image {
+  margin-top: 20px;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+.single-movie-page .movie-image img {
+  width: 500px;
+  height: 700px;
+}
+.single-movie-page .movie-content {
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+}
+.single-movie-page .movie-content h3 {
+  font-size: 25px;
+  font-family: cursive;
+}/*# sourceMappingURL=MoviesItemPage.css.map */

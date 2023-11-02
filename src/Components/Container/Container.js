@@ -1,4 +1,4 @@
-import "./Container.css";
+import "../../Components/Container/Container.scss";
 
 const Container = (props) => {
   const { children } = props;

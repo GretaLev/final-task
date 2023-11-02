@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
-import { API_URL } from "../../../config";
+import { API_URL } from "../../config";
 import { Link, useParams } from "react-router-dom";
-import Container from "../../../Components/Container/Container";
+import Container from "../../Components/Container/Container";
 import "./MoviesByGenre.scss";
 
 const MoviesByGenre = () => {
@@ -11,11 +11,9 @@ const MoviesByGenre = () => {
   const { id } = useParams();
 
   useEffect(() => {
-    axios(API_URL + `/movies?genresIds_like=${id}&_embed=genres`).then(
-      (res) => {
-        setMoviesByGenre(res.data);
-      }
-    );
+    axios(API_URL + `/movies?genresIds_like=${id}&_embed=genre`).then((res) => {
+      setMoviesByGenre(res.data);
+    });
     console.log(moviesByGenre);
   }, []);
 
