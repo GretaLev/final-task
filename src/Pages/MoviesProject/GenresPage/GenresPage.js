@@ -11,6 +11,7 @@ const GenresPage = () => {
   useEffect(() => {
     axios(API_URL + "/genres").then((res) => {
       setGenres(res.data);
+      console.log(res.data);
     });
   }, []);
 

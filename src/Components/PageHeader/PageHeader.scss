@@ -1,0 +1,29 @@
+.page-header {
+  background-color: black;
+  color: white;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  .nav-list {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px 20px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    a {
+      color: white;
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+
+    a.active {
+      color: red;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+}

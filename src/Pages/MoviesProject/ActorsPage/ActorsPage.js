@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import Container from "../../../Components/Container/Container";
 import { API_URL } from "../../../config";
 import "./ActorsPage.scss";
+import ActorItem from "../../../Components/ActorItem/ActorItem";
 
 const ActorsPage = () => {
   const [actors, setActors] = useState([]);
@@ -18,21 +19,16 @@ const ActorsPage = () => {
     return <h2>Loading...</h2>;
   }
   const actorsList = actors.map((actor) => (
-    <div className="actors-item">
-      <Link to={`/actor/${actor.id}`}>
-        <ul>
-          <li>
-            <img src={actor.imageUrl} alt="actor"></img>
-            {actor.name}
-          </li>
-        </ul>
-      </Link>
-    </div>
+    <li>
+      <ActorItem data={actor} />
+    </li>
   ));
   return (
     <Container>
       <h2>Actors</h2>
-      <div className="actors-list">{actorsList}</div>
+      <div className="actors-list">
+        <ul>{actorsList}</ul>
+      </div>
     </Container>
   );
 };

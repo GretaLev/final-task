@@ -11,11 +11,9 @@ const MoviesByGenre = () => {
   const { id } = useParams();
 
   useEffect(() => {
-    axios(API_URL + `/movies?genresIds_like=${id}&_embed=genres`).then(
-      (res) => {
-        setMoviesByGenre(res.data);
-      }
-    );
+    axios(API_URL + `/movies?genresIds_like=${id}&_embed=genre`).then((res) => {
+      setMoviesByGenre(res.data);
+    });
     console.log(moviesByGenre);
   }, []);
 
