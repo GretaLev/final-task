@@ -7,22 +7,26 @@ import "./ActorsItemPage.scss";
 
 const ActorsItemPage = () => {
   const [actor, setActor] = useState(null);
+  const [movies, setMovies] = useState([]);
 
   const { id } = useParams();
 
   useEffect(() => {
-    axios(API_URL + `/actors?id=${id}`).then((res) => {
-      setActor(res.data[0]);
+    axios(API_URL + `/actors/${id}`).then((res) => {
+      setActor(res.data);
     });
-  }, []);
+
+    axios(API_URL + `/actorRelationships?actorId=${id}&_expand=movie`).then(
+      (res) => {
+        setMovies(res.data);
+        console.log(res.data);
+      }
+    );
+  }, [id]);
 
   if (!actor) {
     return <h2>Something went wrong...</h2>;
   }
-
-  console.log(actor);
-  console.log();
-  console.log(actor.about);
 
   const year = actor.born.year;
   const month = actor.born.month;

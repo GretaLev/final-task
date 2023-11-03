@@ -7,22 +7,33 @@ import "./MoviesItemPage.scss";
 
 const MoviesItemPage = () => {
   const [movie, setMovie] = useState(null);
+  const [actors, setActors] = useState([]);
+  const [directors, setDirectors] = useState([]);
 
   const { id } = useParams();
 
   useEffect(() => {
-    axios(API_URL + `/movies?id=${id}&_embed=genres`).then((res) => {
-      setMovie(res.data[0]);
+    axios(API_URL + `/movies/${id}`).then((res) => {
+      setMovie(res.data);
     });
-  }, []);
+
+    axios(API_URL + `/actorRelationships?movieId=${id}&_expand=actor`).then(
+      (res) => {
+        setActors(res.data);
+        console.log(res.data);
+      }
+    );
+
+    axios(
+      API_URL + `/directorRelationships?movieId=${id}&_expand=director`
+    ).then((res) => {
+      setDirectors(res.data);
+    });
+  }, [id]);
 
   if (!movie) {
     return <h2>Something went wrong...</h2>;
   }
-
-  console.log(movie);
-
-  console.log(movie.rate);
 
   return (
     <Container>
