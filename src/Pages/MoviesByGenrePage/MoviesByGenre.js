@@ -7,19 +7,18 @@ import "./MoviesByGenre.scss";
 
 const MoviesByGenre = () => {
   const [moviesByGenre, setMoviesByGenre] = useState([]);
-
+  console.log(moviesByGenre);
   const { id } = useParams();
 
   useEffect(() => {
     axios(API_URL + `/movies?genresIds_like=${id}&_embed=genre`).then((res) => {
       setMoviesByGenre(res.data);
     });
-    console.log(moviesByGenre);
   }, []);
 
   const moviesByGenreList = moviesByGenre.map((movieByGenre) => (
     <div className="movie-by-genre-item">
-      <Link to={`/movies-by-genre`}>
+      <Link to={`/movie/${movieByGenre.id}`}>
         <ul>
           <li>
             <img src={movieByGenre.imageUrl} alt="movie-by-genre"></img>
