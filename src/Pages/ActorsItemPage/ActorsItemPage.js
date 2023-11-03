@@ -19,11 +19,14 @@ const ActorsItemPage = () => {
     axios(API_URL + `/actorRelationships?actorId=${id}&_expand=movie`).then(
       (res) => {
         setMovies(res.data);
-        console.log(res.data);
+        console.log(movies);
       }
     );
   }, [id]);
 
+  movies.map((movie) => {
+    console.log(movie.movie.imageUrl);
+  });
   if (!actor) {
     return <h2>Something went wrong...</h2>;
   }
