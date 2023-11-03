@@ -17,11 +17,19 @@ const MoviesPage = () => {
   if (movies.length === 0) {
     return <h2>Loading...</h2>;
   }
-  const moviesList = movies.map((movie) => <MoviesItem data={movie} />);
+
+  const moviesList = movies.map((movie) => (
+    <li>
+      <MoviesItem data={movie} />
+    </li>
+  ));
+
   return (
     <Container>
       <h2>Movies</h2>
-      <div className="movies-list">{moviesList}</div>
+      <div className="movies-list">
+        <ul>{moviesList}</ul>
+      </div>
     </Container>
   );
 };

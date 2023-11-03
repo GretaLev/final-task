@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import axios from "axios";
 import { API_URL } from "../../config";
 import Container from "../../Components/Container/Container";
 import "./ActorsItemPage.scss";
+import MovieItem from "../../Components/MovieItem/MovieItem";
 
 const ActorsItemPage = () => {
   const [actor, setActor] = useState(null);
@@ -24,28 +25,34 @@ const ActorsItemPage = () => {
     );
   }, [id]);
 
-  movies.map((movie) => {
-    console.log(movie.movie.imageUrl);
-  });
+  const moviesByActor = movies.map((movie) => (
+    <li>
+      <MovieItem data={movie.movie} />
+    </li>
+  ));
+
   if (!actor) {
     return <h2>Something went wrong...</h2>;
   }
 
-  const year = actor.born.year;
-  const month = actor.born.month;
-  const day = actor.born.day;
-  const country = actor.born.country;
+  const { year, month, day, country } = actor.born;
 
   return (
     <Container>
       <div className="single-actor-page">
-        <div className="actor-image">
-          <img src={actor.imageUrl} alt="actor" />
+        <div className="actor-info-wrapper">
+          <div className="actor-image">
+            <img src={actor.imageUrl} alt="actor" />
+          </div>
+          <div className="actor-content">
+            <h3>{actor.name}</h3>
+            <h4>Born in {`${year} ${month} ${day}`}</h4>
+            <p>{actor.about}</p>
+          </div>
         </div>
-        <div className="actor-content">
-          <h3>{actor.name}</h3>
-          <h4>Born in {`${year} of ${month} ${day}`}</h4>
-          <p>{actor.about}</p>
+        <div className="movies-known-for">
+          <h4>Known for:</h4>
+          <ul>{moviesByActor}</ul>
         </div>
       </div>
     </Container>

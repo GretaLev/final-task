@@ -1,26 +1,39 @@
 .single-movie-page {
-  display: flex;
-
-  .movie-image {
-    margin-top: 20px;
-    width: 50%;
+  .movie-info-wrapper {
     display: flex;
-    justify-content: center;
-    img {
-      width: 500px;
-      height: 700px;
+    gap: 30px;
+
+    .movie-image {
+      margin-top: 20px;
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      img {
+        width: 500px;
+        height: 700px;
+      }
+    }
+
+    .movie-content {
+      width: 50%;
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+      align-items: center;
+      h3 {
+        font-size: 25px;
+        font-family: cursive;
+      }
     }
   }
-
-  .movie-content {
-    width: 50%;
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    align-items: center;
-    h3 {
-      font-size: 25px;
-      font-family: cursive;
+  .main-actors {
+    ul {
+      display: flex;
+      gap: 20px;
+    }
+    img {
+      width: 200px;
+      height: 300px;
     }
   }
 }

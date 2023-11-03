@@ -1,26 +1,39 @@
 .single-director-page {
-  display: flex;
-
-  .director-image {
-    margin-top: 20px;
-    width: 50%;
+  .director-info-wrapper {
     display: flex;
-    justify-content: center;
-    img {
-      width: 500px;
-      height: 700px;
+    gap: 30px;
+
+    .director-image {
+      margin-top: 20px;
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      img {
+        width: 500px;
+        height: 700px;
+      }
+    }
+
+    .director-content {
+      width: 50%;
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+      align-items: center;
+      h3 {
+        font-size: 25px;
+        font-family: cursive;
+      }
     }
   }
-
-  .director-content {
-    width: 50%;
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    align-items: center;
-    h3 {
-      font-size: 25px;
-      font-family: cursive;
+  .movies-known-for {
+    ul {
+      display: flex;
+      gap: 20px;
+    }
+    img {
+      width: 200px;
+      height: 300px;
     }
   }
 }

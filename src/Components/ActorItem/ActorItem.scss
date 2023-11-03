@@ -1,0 +1,18 @@
+.actors-item {
+  a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+  }
+  &:hover {
+    img {
+      border-radius: 20%;
+    }
+  }
+  img {
+    width: 340px;
+    height: 514px;
+    transition-duration: 0.3s;
+  }
+}

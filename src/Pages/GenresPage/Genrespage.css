@@ -15,10 +15,6 @@
 .genres-list a {
   text-decoration: none;
 }
-.genres-list ul {
-  list-style: none;
-  padding: 0;
-}
 .genres-list li {
   color: white;
   font-size: 40px;

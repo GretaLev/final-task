@@ -1,24 +1,33 @@
-.single-director-page {
+.single-director-page .director-info-wrapper {
   display: flex;
+  gap: 30px;
 }
-.single-director-page .director-image {
+.single-director-page .director-info-wrapper .director-image {
   margin-top: 20px;
   width: 50%;
   display: flex;
   justify-content: center;
 }
-.single-director-page .director-image img {
+.single-director-page .director-info-wrapper .director-image img {
   width: 500px;
   height: 700px;
 }
-.single-director-page .director-content {
+.single-director-page .director-info-wrapper .director-content {
   width: 50%;
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
   align-items: center;
 }
-.single-director-page .director-content h3 {
+.single-director-page .director-info-wrapper .director-content h3 {
   font-size: 25px;
   font-family: cursive;
+}
+.single-director-page .movies-known-for ul {
+  display: flex;
+  gap: 20px;
+}
+.single-director-page .movies-known-for img {
+  width: 200px;
+  height: 300px;
 }/*# sourceMappingURL=DirectorsItemPage.css.map */

@@ -17,11 +17,13 @@ const DirectorsPage = () => {
   if (directors.length === 0) {
     return <h2>Loading...</h2>;
   }
+
   const directorsList = directors.map((director) => (
     <li>
       <DirectorItem data={director} />
     </li>
   ));
+
   return (
     <Container>
       <h2>Directors</h2>

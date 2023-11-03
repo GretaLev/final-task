@@ -6,7 +6,7 @@ const DirectorItem = ({ data }) => {
     <div className="directors-item">
       <Link to={`/director/${id}`}>
         <img src={imageUrl} alt="director"></img>
-        {name}
+        <h4>{name}</h4>
       </Link>
     </div>
   );
