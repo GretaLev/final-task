@@ -1,24 +1,33 @@
-.single-actor-page {
+.single-actor-page .actor-info-wrapper {
   display: flex;
+  gap: 30px;
 }
-.single-actor-page .actor-image {
+.single-actor-page .actor-info-wrapper .actor-image {
   margin-top: 20px;
   width: 50%;
   display: flex;
   justify-content: center;
 }
-.single-actor-page .actor-image img {
+.single-actor-page .actor-info-wrapper .actor-image img {
   width: 500px;
   height: 700px;
 }
-.single-actor-page .actor-content {
+.single-actor-page .actor-info-wrapper .actor-content {
   width: 50%;
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
   align-items: center;
 }
-.single-actor-page .actor-content h3 {
+.single-actor-page .actor-info-wrapper .actor-content h3 {
   font-size: 25px;
   font-family: cursive;
+}
+.single-actor-page .movies-known-for ul {
+  display: flex;
+  gap: 20px;
+}
+.single-actor-page .movies-known-for img {
+  width: 200px;
+  height: 300px;
 }/*# sourceMappingURL=ActorsItemPage.css.map */

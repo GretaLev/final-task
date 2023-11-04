@@ -15,12 +15,11 @@
 .genres-list a {
   text-decoration: none;
 }
-.genres-list ul {
-  list-style: none;
-  padding: 0;
-}
 .genres-list li {
-  color: white;
   font-size: 40px;
   text-transform: uppercase;
+}
+.genres-list li h4 {
+  color: white;
+  margin: 10px;
 }/*# sourceMappingURL=GenresPage.css.map */

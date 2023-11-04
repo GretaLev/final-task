@@ -18,7 +18,7 @@
   text-decoration: none;
 }
 .page-header .nav-list a.active {
-  color: red;
+  color: rgb(247, 171, 171);
 }
 .page-header .nav-list a:hover {
   text-decoration: underline;

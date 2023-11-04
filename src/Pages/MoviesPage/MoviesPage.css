@@ -1,8 +1,5 @@
-.movies-list {
+.movies-list ul {
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
-}
-.movies-list ul {
-  list-style: none;
 }/*# sourceMappingURL=MoviesPage.css.map */

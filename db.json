@@ -43,6 +43,17 @@
     "actorsId": [10, 11, 12] ,
     "directorId": 4,
     "imageUrl": "https://m.media-amazon.com/images/M/MV5BMjIxMjgxNTk0MF5BMl5BanBnXkFtZTgwNjIyOTg2MDE@._V1_FMjpg_UX1000_.jpg"
+},
+{
+    "id": 5,
+    "title": "Apollo 13",
+    "description":"This Hollywood drama is based on the events of the Apollo 13 lunar mission, astronauts Jim Lovell, Fred Haise and Jack Swigert find everything going according to plan after leaving Earth's orbit. However, when an oxygen tank explodes, the scheduled moon landing is called off. Subsequent tensions within the crew and numerous technical problems threaten both the astronauts' survival and their safe return to Earth.",
+    "rate": 7.7,
+    "releaseDate": 1995,
+    "genresIds": [1, 6, 7],
+    "actorsId": [7, 13] ,
+    "directorId": 5,
+    "imageUrl": "https://m.media-amazon.com/images/M/MV5BMjc4MzZlNmQtN2ZlOS00OGQzLWI5YjEtNDQ2YmZlN2FjNTIxXkEyXkFqcGdeQXVyMjUzOTY1NTc@._V1_.jpg"
 }
 ], 
 "genres": [
@@ -70,6 +81,16 @@
   
     "id": 5,
     "title": "Comedy"
+    },
+    {
+  
+    "id": 6,
+    "title": "Adventure"
+    },
+    {
+  
+    "id": 7,
+    "title": "History"
     }
     
    
@@ -239,7 +260,21 @@
 
         },
         "about": "Margot Elise Robbie was born on July 2, 1990 in Dalby, Queensland, Australia to Scottish parents. Her mother, Sarie Kessler, is a physiotherapist, and her father, is Doug Robbie. She comes from a family of four children, having two brothers and one sister. She graduated from Somerset College in Mudgeeraba, Queensland, Australia, a suburb in the Gold Coast hinterland of South East Queensland, where she and her siblings were raised by their mother and spent much of her time at the farm belonging to her grandparents. In her late teens, she moved to Melbourne, Victoria, Australia to pursue an acting career.",
-        "imageUrl": "https://www.shefinds.com/files/2023/08/Margot-Robbie-at-The-Asteroid-City-Film-Premiere.jpeg"
+        "imageUrl": "https://www.redcarpet-fashionawards.com/wp-content/uploads/2022/09/CELINE_VIP_220921_MARGOT_ROBBIE_02.jpg"
+    },
+    {
+        
+        "id": 13,
+        "name": "William Broyles Jr.",
+        "born": {
+            "year": 1944,
+            "month": "October",
+            "day": 8,
+            "country": "Houston, Texas, USA"
+
+        },
+        "about": "William Broyles Jr. was born on October 8, 1944 in Houston, Texas, USA. He is a writer and producer, known for Apollo 13 (1995), Cast Away (2000) and Flags of Our Fathers (2006). He is married to Andrea Bettina Berndt. They have three children. He was previously married to Linda Purl and Sybil Ann Newman.",
+        "imageUrl": "https://m.media-amazon.com/images/M/MV5BMjA4MjUzMjA2Ml5BMl5BanBnXkFtZTYwNTkxNTk1._V1_FMjpg_UX1000_.jpg"
     }
 ],
 "directors": [
@@ -294,6 +329,19 @@
     "about": "Martin Charles Scorsese was born on November 17, 1942 in Queens, New York City, to Catherine Scorsese (née Cappa) and Charles Scorsese, who both worked in Manhattan's garment district, and whose families both came from Palermo, Sicily. He was raised in the neighborhood of Little Italy, which later provided the inspiration for several of his films. Scorsese earned a B.S. degree in film communications in 1964, followed by an M.A. in the same field in 1966 at New York University's School of Film. During this time, he made numerous prize-winning short films including The Big Shave (1967), and directed his first feature film, Who's That Knocking at My Door (1967).",
     "imageUrl": "https://m.media-amazon.com/images/M/MV5BMTcyNDA4Nzk3N15BMl5BanBnXkFtZTcwNDYzMjMxMw@@._V1_FMjpg_UX1000_.jpg"
 
+},
+{
+    "id": 5,
+    "name": "Ron Howard",
+    "born": {
+        "year": 1954,
+        "month": "March",
+        "day": 1,
+        "country": "Duncan, Oklahoma, USA"
+        },
+    "about": "Academy Award-winning filmmaker Ron Howard is one of this generation's most popular directors. From the critically acclaimed dramas A Beautiful Mind (2001) and Apollo 13 (1995) to the hit comedies Parenthood (1989) and Splash (1984), he has created some of Hollywood's most memorable films. Howard made his directorial debut in 1978 with the comedy Grand Theft Auto (1977). He began his career in film as an actor. He first appeared in The Journey (1959) and The Music Man (1962), then as Opie on the long-running television series The Andy Griffith Show (1960). Howard later starred in the popular series Happy Days (1974) and drew favorable reviews for his performances in American Graffiti (1973) and The Shootist (1976). Howard and long-time producing partner Brian Grazer first collaborated on the hit comedies „Night Shift“ and „Splash.“ The pair co-founded Imagine Entertainment in 1986 to create independently produced feature films.",
+    "imageUrl": "https://cdn.britannica.com/96/198896-050-42D8197A/Ron-Howard-2009.jpg"
+
 }
 ],
 "movieRelationships": [
@@ -336,6 +384,21 @@
         "id": 8,
         "movieId": 4,
         "genreId": 5
+    },
+    {
+        "id": 9,
+        "movieId": 5,
+        "genreId": 1
+    },
+    {
+        "id": 10,
+        "movieId": 5,
+        "genreId": 6
+    },
+    {
+        "id": 11,
+        "movieId": 5,
+        "genreId": 7
     }
 
 ],
@@ -399,6 +462,16 @@
         "id": 12,
         "movieId": 4,
         "actorId": 12
+    },
+    {
+        "id": 13,
+        "movieId": 5,
+        "actorId": 7
+    },
+    {
+        "id": 14,
+        "movieId": 5,
+        "actorId": 13
     }
     
 
@@ -423,6 +496,11 @@
         "id": 4,
         "movieId": 4,
         "directorId": 4
+    },
+    {
+        "id": 5,
+        "movieId": 5,
+        "directorId": 5
     }
 
 ]

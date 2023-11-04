@@ -1,24 +1,37 @@
-.single-movie-page {
+.single-movie-page .movie-info-wrapper {
   display: flex;
+  gap: 30px;
 }
-.single-movie-page .movie-image {
+.single-movie-page .movie-info-wrapper .movie-image {
   margin-top: 20px;
   width: 50%;
   display: flex;
   justify-content: center;
 }
-.single-movie-page .movie-image img {
+.single-movie-page .movie-info-wrapper .movie-image img {
   width: 500px;
   height: 700px;
 }
-.single-movie-page .movie-content {
+.single-movie-page .movie-info-wrapper .movie-content {
   width: 50%;
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
   align-items: center;
 }
-.single-movie-page .movie-content h3 {
+.single-movie-page .movie-info-wrapper .movie-content h3 {
   font-size: 25px;
   font-family: cursive;
+}
+.single-movie-page .main-actors ul {
+  display: flex;
+  gap: 20px;
+}
+.single-movie-page .main-actors img {
+  width: 200px;
+  height: 300px;
+}
+.single-movie-page .directors-item img {
+  width: 200px;
+  height: 300px;
 }/*# sourceMappingURL=MoviesItemPage.css.map */

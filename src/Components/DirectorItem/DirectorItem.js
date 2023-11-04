@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import "./DirectorItem.scss";
 
 const DirectorItem = ({ data }) => {
   const { id, imageUrl, name } = data;
@@ -6,7 +7,7 @@ const DirectorItem = ({ data }) => {
     <div className="directors-item">
       <Link to={`/director/${id}`}>
         <img src={imageUrl} alt="director"></img>
-        {name}
+        <h4>{name}</h4>
       </Link>
     </div>
   );
