@@ -9,12 +9,14 @@ import ActorsPage from "./Pages/ActorsPage/ActorsPage";
 import ActorsItemPage from "./Pages/ActorsItemPage/ActorsItemPage";
 import DirectorsPage from "./Pages/DirectorsPage/DirectorsPage";
 import DirectorsItemPage from "./Pages/DirectorsItemPage/DirectorsItemPage";
+import HomePage from "./Pages/HomePage/HomePage";
 
 function App() {
   return (
     <div>
       <PageHeader />
       <Routes>
+        <Route path="/home" element={<HomePage />}></Route>
         <Route path="/movies" element={<MoviesPage />} />
         <Route path="/movie/:id" element={<MoviesItemPage />} />
         <Route path="/genres" element={<GenresPage />} />

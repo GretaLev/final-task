@@ -19,7 +19,7 @@ const MoviesPage = () => {
   }
 
   const moviesList = movies.map((movie) => (
-    <li>
+    <li key={movie.id}>
       <MoviesItem data={movie} />
     </li>
   ));

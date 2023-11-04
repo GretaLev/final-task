@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import "./DirectorItem.scss";
 
 const DirectorItem = ({ data }) => {
   const { id, imageUrl, name } = data;

@@ -1,0 +1,121 @@
+.home-page {
+  padding-bottom: 40px;
+  .home-page-genres {
+    ul {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+
+      a {
+        text-decoration: none;
+        background-color: transparent;
+
+        li {
+          transition: 0.3s;
+          padding: 10px;
+          color: black;
+
+          &:hover {
+            background-color: black;
+            border-radius: 20%;
+            font-weight: bold;
+            color: rgb(247, 171, 171);
+          }
+        }
+      }
+    }
+  }
+  .home-page-movies {
+    a {
+      text-decoration: none;
+
+      h4 {
+        color: black;
+        transition: 0.3s;
+        font-weight: 400;
+
+        &:hover {
+          color: white;
+          background-color: black;
+          border-radius: 20%;
+        }
+      }
+    }
+    ul {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      img {
+        width: 240px;
+        height: 350px;
+        transition: 0.3s;
+
+        &:hover {
+          border-radius: 20%;
+        }
+      }
+    }
+  }
+  .home-page-actors {
+    a {
+      text-decoration: none;
+
+      h4 {
+        color: black;
+        transition: 0.3s;
+        font-weight: 400;
+
+        &:hover {
+          color: white;
+          background-color: black;
+          border-radius: 20%;
+        }
+      }
+    }
+    ul {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      img {
+        width: 240px;
+        height: 350px;
+        transition: 0.3s;
+
+        &:hover {
+          border-radius: 20%;
+        }
+      }
+    }
+  }
+  .home-page-directors {
+    a {
+      text-decoration: none;
+
+      h4 {
+        color: black;
+        transition: 0.3s;
+        font-weight: 400;
+
+        &:hover {
+          color: white;
+          background-color: black;
+          border-radius: 20%;
+        }
+      }
+    }
+    ul {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      img {
+        width: 240px;
+        height: 350px;
+        transition: 0.3s;
+
+        &:hover {
+          border-radius: 20%;
+        }
+      }
+    }
+  }
+}

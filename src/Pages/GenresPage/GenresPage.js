@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { API_URL } from "../../config";
-import { Link } from "react-router-dom";
 import Container from "../../Components/Container/Container";
 import "./GenresPage.scss";
+import GenreItem from "../../Components/GenreItem/GenreItem";
 
 const GenresPage = () => {
   const [genres, setGenres] = useState([]);
@@ -19,18 +19,16 @@ const GenresPage = () => {
     return <h2>Loading...</h2>;
   }
   const genresList = genres.map((genre) => (
-    <div className="genres-item">
-      <Link to={`/movies-by-genre/${genre.id}`}>
-        <ul>
-          <li>{genre.title}</li>
-        </ul>
-      </Link>
-    </div>
+    <li>
+      <GenreItem data={genre} />
+    </li>
   ));
   return (
     <Container>
       <h2>Genres</h2>
-      <div className="genres-list">{genresList}</div>
+      <div className="genres-list">
+        <ul>{genresList}</ul>
+      </div>
     </Container>
   );
 };

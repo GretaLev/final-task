@@ -1,0 +1,8 @@
+.genres-list ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.genres-list ul li {
+  transition-duration: 0.3s;
+}/*# sourceMappingURL=GenreItem.css.map */

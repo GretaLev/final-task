@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import "./ActorItem.scss";
+
 const ActorItem = ({ data }) => {
   const { id, imageUrl, name } = data;
   return (

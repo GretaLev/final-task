@@ -17,8 +17,12 @@
   }
 
   li {
-    color: white;
     font-size: 40px;
     text-transform: uppercase;
+
+    h4 {
+      color: white;
+      margin: 10px;
+    }
   }
 }

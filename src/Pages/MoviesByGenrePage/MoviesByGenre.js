@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { API_URL } from "../../config";
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import Container from "../../Components/Container/Container";
 import "./MoviesByGenre.scss";
 import MoviesItem from "../../Components/MovieItem/MovieItem";
@@ -20,7 +20,7 @@ const MoviesByGenre = () => {
     axios(API_URL + `/genres?id=${id}`).then((res) => {
       setGenre(res.data);
     });
-  }, []);
+  }, [id]);
 
   const genretitle = genre ? genre[0].title : "";
 
