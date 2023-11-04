@@ -4,6 +4,7 @@ import Container from "../../Components/Container/Container";
 import { API_URL } from "../../config";
 import "./ActorsPage.scss";
 import ActorItem from "../../Components/ActorItem/ActorItem";
+import { Link } from "react-router-dom";
 
 const ActorsPage = () => {
   const [actors, setActors] = useState([]);
@@ -24,6 +25,7 @@ const ActorsPage = () => {
   ));
   return (
     <Container>
+      <Link to={`/create-actor`}>Create New Actor</Link>
       <h2>Actors</h2>
       <div className="actors-list">
         <ul>{actorsList}</ul>

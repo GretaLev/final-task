@@ -1,508 +1,452 @@
 {
-"movies": [
-{
-    "id": 1,
-    "title": "The Shawshank Redemption",
-    "description":"Chronicles the experiences of a formerly successful banker as a prisoner in the gloomy jailhouse of Shawshank after being found guilty of a crime he did not commit. The film portrays the man's unique way of dealing with his new, torturous life; along the way he befriends a number of fellow prisoners, most notably a wise long-term inmate named Red.",
-    "rate": 9.3,
-    "releaseDate": 1994,
-    "genresIds": [1],
-    "actorsId": [1, 2, 3] ,
-    "directorId": 1,
-    "imageUrl": "https://m.media-amazon.com/images/M/MV5BNDE3ODcxYzMtY2YzZC00NmNlLWJiNDMtZDViZWM2MzIxZDYwXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_.jpg"
-},
-{
-    "id": 2,
-    "title": "The Godfather",
-    "description":"The Godfather „Don“ Vito Corleone is the head of the Corleone mafia family in New York. He is at the event of his daughter's wedding. Michael, Vito's youngest son and a decorated WW II Marine is also present at the wedding. Michael seems to be uninterested in being a part of the family business. Vito is a powerful man, and is kind to all those who give him respect but is ruthless against those who do not. But when a powerful and treacherous rival wants to sell drugs and needs the Don's influence for the same, Vito refuses to do it. What follows is a clash between Vito's fading old values and the new ways which may cause Michael to do the thing he was most reluctant in doing and wage a mob war against all the other mafia families which could tear the Corleone family apart.",
-    "rate": 9.2,
-    "releaseDate": 1972,
-    "genresIds": [1, 2],
-    "actorsId": [4, 5, 6] ,
-    "directorId": 2,
-    "imageUrl": "https://images.entertainment.ie/media/3bhkrj58Vtu7enYsRolD1fZdja1.jpg?w=340&h=514&q=low"
-},
-{
-    "id": 3,
-    "title": "Forrest Gump",
-    "description":"Forrest Gump is a simple man with a low I.Q. but good intentions. He is running through childhood with his best and only friend Jenny. His 'mama' teaches him the ways of life and leaves him to choose his destiny. Forrest joins the army for service in Vietnam, finding new friends called Dan and Bubba, he wins medals, creates a famous shrimp fishing fleet, inspires people to jog, starts a ping-pong craze, creates the smiley, writes bumper stickers and songs, donates to people and meets the president several times. However, this is all irrelevant to Forrest who can only think of his childhood sweetheart Jenny Curran, who has messed up her life. Although in the end all he wants to prove is that anyone can love anyone",
-    "rate": 8.8,
-    "releaseDate": 1994,
-    "genresIds": [1, 3],
-    "actorsId": [7, 8, 9] ,
-    "directorId": 3,
-    "imageUrl": "https://play-lh.googleusercontent.com/ToGy2Cue0epHBdeRkq3dntz8on4ogI1UlKLGqMvgCptTwmpMWVkIxojwVUuvIjrMIFz2UiNjW73xcuofHQ"
-},
-{
-    "id": 4,
-    "title": "The Wolf of Wall Street",
-    "description":"Jordan Belfort (DiCaprio) is Long Island penny stockbroker who serves almost two years in prison for refusing to co-operate in a huge 1990s securities fraud case that involved widespread corruption on Wall Street and in the corporate banking world, including mob infiltration.",
-    "rate": 8.2,
-    "releaseDate": 2013,
-    "genresIds": [2, 4, 5],
-    "actorsId": [10, 11, 12] ,
-    "directorId": 4,
-    "imageUrl": "https://m.media-amazon.com/images/M/MV5BMjIxMjgxNTk0MF5BMl5BanBnXkFtZTgwNjIyOTg2MDE@._V1_FMjpg_UX1000_.jpg"
-},
-{
-    "id": 5,
-    "title": "Apollo 13",
-    "description":"This Hollywood drama is based on the events of the Apollo 13 lunar mission, astronauts Jim Lovell, Fred Haise and Jack Swigert find everything going according to plan after leaving Earth's orbit. However, when an oxygen tank explodes, the scheduled moon landing is called off. Subsequent tensions within the crew and numerous technical problems threaten both the astronauts' survival and their safe return to Earth.",
-    "rate": 7.7,
-    "releaseDate": 1995,
-    "genresIds": [1, 6, 7],
-    "actorsId": [7, 13] ,
-    "directorId": 5,
-    "imageUrl": "https://m.media-amazon.com/images/M/MV5BMjc4MzZlNmQtN2ZlOS00OGQzLWI5YjEtNDQ2YmZlN2FjNTIxXkEyXkFqcGdeQXVyMjUzOTY1NTc@._V1_.jpg"
-}
-], 
-"genres": [
+  "movies": [
     {
+      "id": 1,
+      "title": "The Shawshank Redemption",
+      "description": "Chronicles the experiences of a formerly successful banker as a prisoner in the gloomy jailhouse of Shawshank after being found guilty of a crime he did not commit. The film portrays the man's unique way of dealing with his new, torturous life; along the way he befriends a number of fellow prisoners, most notably a wise long-term inmate named Red.",
+      "rate": 9.3,
+      "releaseDate": 1994,
+      "imageUrl": "https://m.media-amazon.com/images/M/MV5BNDE3ODcxYzMtY2YzZC00NmNlLWJiNDMtZDViZWM2MzIxZDYwXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_.jpg"
+    },
+    {
+      "id": 2,
+      "title": "The Godfather",
+      "description": "The Godfather „Don“ Vito Corleone is the head of the Corleone mafia family in New York. He is at the event of his daughter's wedding. Michael, Vito's youngest son and a decorated WW II Marine is also present at the wedding. Michael seems to be uninterested in being a part of the family business. Vito is a powerful man, and is kind to all those who give him respect but is ruthless against those who do not. But when a powerful and treacherous rival wants to sell drugs and needs the Don's influence for the same, Vito refuses to do it. What follows is a clash between Vito's fading old values and the new ways which may cause Michael to do the thing he was most reluctant in doing and wage a mob war against all the other mafia families which could tear the Corleone family apart.",
+      "rate": 9.2,
+      "releaseDate": 1972,
+      "imageUrl": "https://images.entertainment.ie/media/3bhkrj58Vtu7enYsRolD1fZdja1.jpg?w=340&h=514&q=low"
+    },
+    {
+      "id": 3,
+      "title": "Forrest Gump",
+      "description": "Forrest Gump is a simple man with a low I.Q. but good intentions. He is running through childhood with his best and only friend Jenny. His 'mama' teaches him the ways of life and leaves him to choose his destiny. Forrest joins the army for service in Vietnam, finding new friends called Dan and Bubba, he wins medals, creates a famous shrimp fishing fleet, inspires people to jog, starts a ping-pong craze, creates the smiley, writes bumper stickers and songs, donates to people and meets the president several times. However, this is all irrelevant to Forrest who can only think of his childhood sweetheart Jenny Curran, who has messed up her life. Although in the end all he wants to prove is that anyone can love anyone",
+      "rate": 8.8,
+      "releaseDate": 1994,
+      "imageUrl": "https://play-lh.googleusercontent.com/ToGy2Cue0epHBdeRkq3dntz8on4ogI1UlKLGqMvgCptTwmpMWVkIxojwVUuvIjrMIFz2UiNjW73xcuofHQ"
+    },
+    {
+      "id": 4,
+      "title": "The Wolf of Wall Street",
+      "description": "Jordan Belfort (DiCaprio) is Long Island penny stockbroker who serves almost two years in prison for refusing to co-operate in a huge 1990s securities fraud case that involved widespread corruption on Wall Street and in the corporate banking world, including mob infiltration.",
+      "rate": 8.2,
+      "releaseDate": 2013,
+      "imageUrl": "https://m.media-amazon.com/images/M/MV5BMjIxMjgxNTk0MF5BMl5BanBnXkFtZTgwNjIyOTg2MDE@._V1_FMjpg_UX1000_.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Apollo 13",
+      "description": "This Hollywood drama is based on the events of the Apollo 13 lunar mission, astronauts Jim Lovell, Fred Haise and Jack Swigert find everything going according to plan after leaving Earth's orbit. However, when an oxygen tank explodes, the scheduled moon landing is called off. Subsequent tensions within the crew and numerous technical problems threaten both the astronauts' survival and their safe return to Earth.",
+      "rate": 7.7,
+      "releaseDate": 1995,
+      "imageUrl": "https://m.media-amazon.com/images/M/MV5BMjc4MzZlNmQtN2ZlOS00OGQzLWI5YjEtNDQ2YmZlN2FjNTIxXkEyXkFqcGdeQXVyMjUzOTY1NTc@._V1_.jpg"
+    }
+  ],
+  "genres": [
+    {
+      "id": 1,
+      "title": "Drama"
+    },
+    {
+      "id": 2,
+      "title": "Crime"
+    },
+    {
+      "id": 3,
+      "title": "Romance"
+    },
+    {
+      "id": 4,
+      "title": "Biography"
+    },
+    {
+      "id": 5,
+      "title": "Comedy"
+    },
+    {
+      "id": 6,
+      "title": "Adventure"
+    },
+    {
+      "id": 7,
+      "title": "History"
+    }
    
-    "id": 1,
-    "title": "Drama"
+  ],
+  "actors": [
+    {
+      "id": 1,
+      "name": "Tim Robbins",
+      "born": {
+        "year": 1958,
+        "month": "October",
+        "day": 16,
+        "country": "West Covina, California, USA"
+      },
+      "about": "Born in West Covina, California, but raised in New York City, Tim Robbins is the son of former The Highwaymen singer Gil Robbins and actress Mary Robbins (née Bledsoe). Robbins studied drama at UCLA, where he graduated with honors in 1981. That same year, he formed the Actors' Gang theater group, an experimental ensemble that expressed radical political observations through the European avant-garde form of theater.",
+      "imageUrl": "https://www.themoviedb.org/t/p/w500/A4fHNLX73EQs78f2G6ObfKZnvp4.jpg"
     },
     {
-    
-    "id": 2,
-    "title": "Crime"
+      "id": 2,
+      "name": "Morgan Freeman",
+      "born": {
+        "year": 1937,
+        "month": "June",
+        "day": 1,
+        "country": "Memphis, Tennessee, USA"
+      },
+      "about": "With an authoritative voice and calm demeanor, this ever popular American actor has grown into one of the most respected figures in modern US cinema. Morgan was born on June 1, 1937 in Memphis, Tennessee, to Mayme Edna (Revere), a teacher, and Morgan Porterfield Freeman, a barber.",
+      "imageUrl": "https://m.media-amazon.com/images/M/MV5BMTc0MDMyMzI2OF5BMl5BanBnXkFtZTcwMzM2OTk1MQ@@._V1_FMjpg_UX1000_.jpg"
     },
     {
-    
-    "id": 3,
-    "title": "Romance"
+      "id": 3,
+      "name": "Bob Gunton",
+      "born": {
+        "year": 1945,
+        "month": "November",
+        "day": 15,
+        "country": "Santa Monica, California, USA"
+      },
+      "about": "Bob Gunton is an American actor, primarily known for portraying strict and authoritarian characters in popular films. His better known roles include Chief George Earle in „Demolition Man“ (1993), Prison Warden Samuel Norton in „The Shawshank Redemption“ (1994), medical school dean Dr. Walcott in „Patch Adams“ (1998), and politician Cyrus Vance in „Argo“ (2012).In 1945, Gunton was born Santa Monica, California.",
+      "imageUrl": "https://m.media-amazon.com/images/M/MV5BMTQ2NTU1NzU5Nl5BMl5BanBnXkFtZTcwODU3NjI2NA@@._V1_.jpg"
     },
     {
-   
-    "id": 4,
-    "title": "Biography"
+      "id": 4,
+      "name": "Marlon Brando",
+      "born": {
+        "year": 1924,
+        "month": "April",
+        "day": 3,
+        "country": "Omaha, Nebraska, USA"
+      },
+      "about": "Marlon Brando is widely considered the greatest movie actor of all time, rivaled only by the more theatrically oriented Laurence Olivier in terms of esteem. Unlike Olivier, who preferred the stage to the screen, Brando concentrated his talents on movies after bidding the Broadway stage adieu in 1949, a decision for which he was severely criticized when his star began to dim in the 1960s and he was excoriated for squandering his talents.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Marlon_Brando_publicity_for_One-Eyed_Jacks.png/800px-Marlon_Brando_publicity_for_One-Eyed_Jacks.png"
     },
     {
-  
-    "id": 5,
-    "title": "Comedy"
+      "id": 5,
+      "name": "Al Pacino",
+      "born": {
+        "year": 1940,
+        "month": "April",
+        "day": 25,
+        "country": "Manhattan, New York City, New York, USA"
+      },
+      "about": "Alfredo James „Al“ 'Pacino established himself as a film actor during one of cinema's most vibrant decades, the 1970s, and has become an enduring and iconic figure in the world of American movies.He was born April 25, 1940 in Manhattan, New York City, to Italian-American parents, Rose (nee Gerardi) and Sal Pacino. ",
+      "imageUrl": "https://media.newyorker.com/photos/5e70fef11785a2000935d0eb/master/pass/ra722.jpg"
     },
     {
-  
-    "id": 6,
-    "title": "Adventure"
+      "id": 6,
+      "name": "James Caan",
+      "born": {
+        "year": 1940,
+        "month": "March",
+        "day": 26,
+        "country": "The Bronx, New York, USA"
+      },
+      "about": "A masculine and enigmatic actor whose life and movie career have had more ups and downs than the average rollercoaster and whose selection of roles has arguably derailed him from achieving true superstar status, James Caan is New York-born and bred.He was born in the Bronx, to Sophie (Falkenstein) and Arthur Caan, Jewish immigrants from Germany.",
+      "imageUrl": "https://people.com/thmb/zu7YJCZKMnKPzbzJtn0j8R8F4VA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(747x269:749x271)/james-caan-4-9c2f40a15a8c41f7a61a9fe301141591.jpg"
     },
     {
-  
-    "id": 7,
-    "title": "History"
+      "id": 7,
+      "name": "Tom Hanks",
+      "born": {
+        "year": 1956,
+        "month": "July",
+        "day": 9,
+        "country": "Concord, California, USA"
+      },
+      "about": "Thomas Jeffrey Hanks was born in Concord, California, to Janet Marylyn (Frager), a hospital worker, and Amos Mefford Hanks, an itinerant cook. His mother's family, originally surnamed „Fraga“, was entirely Portuguese, while his father was of mostly English ancestry. Tom grew up in what he has called a „fractured“ family. He moved around a great deal after his parents' divorce, living with a succession of step-families. No problems, no alcoholism - just a confused childhood.",
+      "imageUrl": "https://static.independent.co.uk/s3fs-public/thumbnails/image/2013/09/12/17/118662439.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Robin Wright",
+      "born": {
+        "year": 1966,
+        "month": "April",
+        "day": 8,
+        "country": "Dallas, Texas, USA"
+      },
+      "about": "Robin Gayle Wright was born in Dallas, Texas, to Gayle (Gaston), a national director at Mary Kay, and Freddie Wright, a pharmaceutical executive. She grew up in San Diego, California. She started her professional career as a model in 1980 at age 14, and worked both in Paris and Japan. After finishing high school she decided to become an actress. She got a role on the soap opera Santa Barbara (1984), for which she was nominated three times for a Daytime Emmy.",
+      "imageUrl": "https://cdnph.upi.com/ph/st/th/6831664112285/2022/upi/7d0a83c0d2d9b2e5c5207209dd48189c/v1.2/Robin-Wright-files-for-divorce-from-third-husband-Clment-Giraudet.jpg?lg=5&=1"
+    },
+    {
+      "id": 9,
+      "name": "Gary Sinise",
+      "born": {
+        "year": 1955,
+        "month": "March",
+        "day": 17,
+        "country": "Blue Island, Illinois, USA"
+      },
+      "about": "Gary Alan Sinise was born in Blue Island, Illinois, to Mylles S. (Alsip) and Robert L. Sinise, A.C.E., a film editor. He is of Italian (from his paternal grandfather), English, Scottish, Irish, French, German, and Swedish ancestry. His family moved to Highland Park, where he attended high school. He was something of a rebel, playing in bands but paying little attention to school.",
+      "imageUrl": "https://cdn.britannica.com/59/217459-050-ED0FC3C2/American-actor-Gary-Sinise-2006.jpg"
+    },
+    {
+      "id": 10,
+      "name": "Leonardo DiCaprio",
+      "born": {
+        "year": 1974,
+        "month": "November",
+        "day": 11,
+        "country": "Hollywood, Los Angeles, California, USA"
+      },
+      "about": "Few actors in the world have had a career quite as diverse as Leonardo DiCaprio's. DiCaprio has gone from relatively humble beginnings, as a supporting cast member of the sitcom Growing Pains (1985) and low budget horror movies, such as Critters 3 (1991), to a major teenage heartthrob in the 1990s, as the hunky lead actor in movies such as Romeo + Juliet (1996) and Titanic (1997), to then become a leading man in Hollywood blockbusters, made by internationally renowned directors such as Martin Scorsese and Christopher Nolan.",
+      "imageUrl": "https://cdn.britannica.com/65/227665-050-D74A477E/American-actor-Leonardo-DiCaprio-2016.jpg"
+    },
+    {
+      "id": 11,
+      "name": "Jonah Hill",
+      "born": {
+        "year": 1983,
+        "month": "December",
+        "day": 20,
+        "country": "Los Angeles, California, USA"
+      },
+      "about": "Jonah Hill was born and raised in Los Angeles, the son of Sharon Feldstein (née Chalkin), a fashion designer and costume stylist, and Richard Feldstein, a tour accountant for Guns N' Roses. He is the brother of music manager Jordan Feldstein and actress Beanie Feldstein. He graduated from Crossroads School in Santa Monica and went on to The New School in New York to study drama. He began writing and performing in plays while at college in New York, and managed to get himself introduced to Dustin Hoffman, through whom he got an audition for his first film role in I Heart Huckabees (2004). A succession of increasingly high-profile film and TV parts followed until he eventually landed one of the starring roles in the teen hit, Superbad (2007). Continuing to write and act, more roles followed as well as popular appearances on US TV talk shows.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Jonah_Hill-4939_%28cropped%29_%28cropped%29.jpg/1200px-Jonah_Hill-4939_%28cropped%29_%28cropped%29.jpg"
+    },
+    {
+      "id": 12,
+      "name": "Margot Robbie",
+      "born": {
+        "year": 1990,
+        "month": "July",
+        "day": 2,
+        "country": "Dalby, Queensland, Australia"
+      },
+      "about": "Margot Elise Robbie was born on July 2, 1990 in Dalby, Queensland, Australia to Scottish parents. Her mother, Sarie Kessler, is a physiotherapist, and her father, is Doug Robbie. She comes from a family of four children, having two brothers and one sister. She graduated from Somerset College in Mudgeeraba, Queensland, Australia, a suburb in the Gold Coast hinterland of South East Queensland, where she and her siblings were raised by their mother and spent much of her time at the farm belonging to her grandparents. In her late teens, she moved to Melbourne, Victoria, Australia to pursue an acting career.",
+      "imageUrl": "https://www.redcarpet-fashionawards.com/wp-content/uploads/2022/09/CELINE_VIP_220921_MARGOT_ROBBIE_02.jpg"
+    },
+    {
+      "id": 13,
+      "name": "William Broyles Jr.",
+      "born": {
+        "year": 1944,
+        "month": "October",
+        "day": 8,
+        "country": "Houston, Texas, USA"
+      },
+      "about": "William Broyles Jr. was born on October 8, 1944 in Houston, Texas, USA. He is a writer and producer, known for Apollo 13 (1995), Cast Away (2000) and Flags of Our Fathers (2006). He is married to Andrea Bettina Berndt. They have three children. He was previously married to Linda Purl and Sybil Ann Newman.",
+      "imageUrl": "https://m.media-amazon.com/images/M/MV5BMjA4MjUzMjA2Ml5BMl5BanBnXkFtZTYwNTkxNTk1._V1_FMjpg_UX1000_.jpg"
     }
     
-   
-],
-"actors": [
+  ],
+  "directors": [
     {
-       
-        "id": 1,
-        "name": "Tim Robbins",
-        "born": {
-            "year": 1958,
-            "month": "October",
-            "day": 16,
-            "country": "West Covina, California, USA"
-        },
-        "about": "Born in West Covina, California, but raised in New York City, Tim Robbins is the son of former The Highwaymen singer Gil Robbins and actress Mary Robbins (née Bledsoe). Robbins studied drama at UCLA, where he graduated with honors in 1981. That same year, he formed the Actors' Gang theater group, an experimental ensemble that expressed radical political observations through the European avant-garde form of theater.",
-        "imageUrl": "https://www.themoviedb.org/t/p/w500/A4fHNLX73EQs78f2G6ObfKZnvp4.jpg"
-    },
-    {
-        
-        "id": 2,
-        "name": "Morgan Freeman",
-        "born": {
-            "year": 1937,
-            "month": "June",
-            "day": 1,
-            "country": "Memphis, Tennessee, USA"
-        },
-        "about": "With an authoritative voice and calm demeanor, this ever popular American actor has grown into one of the most respected figures in modern US cinema. Morgan was born on June 1, 1937 in Memphis, Tennessee, to Mayme Edna (Revere), a teacher, and Morgan Porterfield Freeman, a barber.",
-        "imageUrl": "https://m.media-amazon.com/images/M/MV5BMTc0MDMyMzI2OF5BMl5BanBnXkFtZTcwMzM2OTk1MQ@@._V1_FMjpg_UX1000_.jpg"
-    },
-    {
-        
-        "id": 3,
-        "name": "Bob Gunton",
-        "born": {
-            "year": 1945,
-            "month": "November",
-            "day": 15,
-            "country": "Santa Monica, California, USA"
-
-        },
-        "about": "Bob Gunton is an American actor, primarily known for portraying strict and authoritarian characters in popular films. His better known roles include Chief George Earle in „Demolition Man“ (1993), Prison Warden Samuel Norton in „The Shawshank Redemption“ (1994), medical school dean Dr. Walcott in „Patch Adams“ (1998), and politician Cyrus Vance in „Argo“ (2012).In 1945, Gunton was born Santa Monica, California.",
-        "imageUrl": "https://m.media-amazon.com/images/M/MV5BMTQ2NTU1NzU5Nl5BMl5BanBnXkFtZTcwODU3NjI2NA@@._V1_.jpg"
-    },
-    {
-        
-        "id": 4,
-        "name": "Marlon Brando",
-        "born": {
-            "year": 1924,
-            "month": "April",
-            "day": 3,
-            "country": "Omaha, Nebraska, USA"
-
-        },
-        "about": "Marlon Brando is widely considered the greatest movie actor of all time, rivaled only by the more theatrically oriented Laurence Olivier in terms of esteem. Unlike Olivier, who preferred the stage to the screen, Brando concentrated his talents on movies after bidding the Broadway stage adieu in 1949, a decision for which he was severely criticized when his star began to dim in the 1960s and he was excoriated for squandering his talents.",
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Marlon_Brando_publicity_for_One-Eyed_Jacks.png/800px-Marlon_Brando_publicity_for_One-Eyed_Jacks.png"
-    },
-    {
-        
-        "id": 5,
-        "name": "Al Pacino",
-        "born": {
-            "year": 1940,
-            "month": "April",
-            "day": 25,
-            "country": "Manhattan, New York City, New York, USA"
-
-        },
-        "about": "Alfredo James „Al“ 'Pacino established himself as a film actor during one of cinema's most vibrant decades, the 1970s, and has become an enduring and iconic figure in the world of American movies.He was born April 25, 1940 in Manhattan, New York City, to Italian-American parents, Rose (nee Gerardi) and Sal Pacino. ",
-        "imageUrl": "https://media.newyorker.com/photos/5e70fef11785a2000935d0eb/master/pass/ra722.jpg"
-    },
-    {
-        
-        "id": 6,
-        "name": "James Caan",
-        "born": {
-            "year": 1940,
-            "month": "March",
-            "day": 26,
-            "country": "The Bronx, New York, USA"
-
-        },
-        "about": "A masculine and enigmatic actor whose life and movie career have had more ups and downs than the average rollercoaster and whose selection of roles has arguably derailed him from achieving true superstar status, James Caan is New York-born and bred.He was born in the Bronx, to Sophie (Falkenstein) and Arthur Caan, Jewish immigrants from Germany.",
-        "imageUrl": "https://people.com/thmb/zu7YJCZKMnKPzbzJtn0j8R8F4VA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(747x269:749x271)/james-caan-4-9c2f40a15a8c41f7a61a9fe301141591.jpg"
-    },
-    {
-        
-        "id": 7,
-        "name": "Tom Hanks",
-        "born": {
-            "year": 1956,
-            "month": "July",
-            "day": 9,
-            "country": "Concord, California, USA"
-
-        },
-        "about": "Thomas Jeffrey Hanks was born in Concord, California, to Janet Marylyn (Frager), a hospital worker, and Amos Mefford Hanks, an itinerant cook. His mother's family, originally surnamed „Fraga“, was entirely Portuguese, while his father was of mostly English ancestry. Tom grew up in what he has called a „fractured“ family. He moved around a great deal after his parents' divorce, living with a succession of step-families. No problems, no alcoholism - just a confused childhood.",
-        "imageUrl": "https://static.independent.co.uk/s3fs-public/thumbnails/image/2013/09/12/17/118662439.jpg"
-    },
-    {
-        
-        "id": 8,
-        "name": "Robin Wright",
-        "born": {
-            "year": 1966,
-            "month": "April",
-            "day": 8,
-            "country": "Dallas, Texas, USA"
-
-        },
-        "about": "Robin Gayle Wright was born in Dallas, Texas, to Gayle (Gaston), a national director at Mary Kay, and Freddie Wright, a pharmaceutical executive. She grew up in San Diego, California. She started her professional career as a model in 1980 at age 14, and worked both in Paris and Japan. After finishing high school she decided to become an actress. She got a role on the soap opera Santa Barbara (1984), for which she was nominated three times for a Daytime Emmy.",
-        "imageUrl": "https://cdnph.upi.com/ph/st/th/6831664112285/2022/upi/7d0a83c0d2d9b2e5c5207209dd48189c/v1.2/Robin-Wright-files-for-divorce-from-third-husband-Clment-Giraudet.jpg?lg=5&=1"
-    },
-    {
-        
-        "id": 9,
-        "name": "Gary Sinise",
-        "born": {
-            "year": 1955,
-            "month": "March",
-            "day": 17,
-            "country": "Blue Island, Illinois, USA"
-
-        },
-        "about": "Gary Alan Sinise was born in Blue Island, Illinois, to Mylles S. (Alsip) and Robert L. Sinise, A.C.E., a film editor. He is of Italian (from his paternal grandfather), English, Scottish, Irish, French, German, and Swedish ancestry. His family moved to Highland Park, where he attended high school. He was something of a rebel, playing in bands but paying little attention to school.",
-        "imageUrl": "https://cdn.britannica.com/59/217459-050-ED0FC3C2/American-actor-Gary-Sinise-2006.jpg"
-    },
-    {
-        
-        "id": 10,
-        "name": "Leonardo DiCaprio",
-        "born": {
-            "year": 1974,
-            "month": "November",
-            "day": 11,
-            "country": "Hollywood, Los Angeles, California, USA"
-
-        },
-        "about": "Few actors in the world have had a career quite as diverse as Leonardo DiCaprio's. DiCaprio has gone from relatively humble beginnings, as a supporting cast member of the sitcom Growing Pains (1985) and low budget horror movies, such as Critters 3 (1991), to a major teenage heartthrob in the 1990s, as the hunky lead actor in movies such as Romeo + Juliet (1996) and Titanic (1997), to then become a leading man in Hollywood blockbusters, made by internationally renowned directors such as Martin Scorsese and Christopher Nolan.",
-        "imageUrl": "https://cdn.britannica.com/65/227665-050-D74A477E/American-actor-Leonardo-DiCaprio-2016.jpg"
-    },
-    {
-        
-        "id": 11,
-        "name": "Jonah Hill",
-        "born": {
-            "year": 1983,
-            "month": "December",
-            "day": 20,
-            "country": "Los Angeles, California, USA"
-
-        },
-        "about": "Jonah Hill was born and raised in Los Angeles, the son of Sharon Feldstein (née Chalkin), a fashion designer and costume stylist, and Richard Feldstein, a tour accountant for Guns N' Roses. He is the brother of music manager Jordan Feldstein and actress Beanie Feldstein. He graduated from Crossroads School in Santa Monica and went on to The New School in New York to study drama. He began writing and performing in plays while at college in New York, and managed to get himself introduced to Dustin Hoffman, through whom he got an audition for his first film role in I Heart Huckabees (2004). A succession of increasingly high-profile film and TV parts followed until he eventually landed one of the starring roles in the teen hit, Superbad (2007). Continuing to write and act, more roles followed as well as popular appearances on US TV talk shows.",
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Jonah_Hill-4939_%28cropped%29_%28cropped%29.jpg/1200px-Jonah_Hill-4939_%28cropped%29_%28cropped%29.jpg"
-    },
-    {
-        
-        "id": 12,
-        "name": "Margot Robbie",
-        "born": {
-            "year": 1990,
-            "month": "July",
-            "day": 2,
-            "country": "Dalby, Queensland, Australia"
-
-        },
-        "about": "Margot Elise Robbie was born on July 2, 1990 in Dalby, Queensland, Australia to Scottish parents. Her mother, Sarie Kessler, is a physiotherapist, and her father, is Doug Robbie. She comes from a family of four children, having two brothers and one sister. She graduated from Somerset College in Mudgeeraba, Queensland, Australia, a suburb in the Gold Coast hinterland of South East Queensland, where she and her siblings were raised by their mother and spent much of her time at the farm belonging to her grandparents. In her late teens, she moved to Melbourne, Victoria, Australia to pursue an acting career.",
-        "imageUrl": "https://www.redcarpet-fashionawards.com/wp-content/uploads/2022/09/CELINE_VIP_220921_MARGOT_ROBBIE_02.jpg"
-    },
-    {
-        
-        "id": 13,
-        "name": "William Broyles Jr.",
-        "born": {
-            "year": 1944,
-            "month": "October",
-            "day": 8,
-            "country": "Houston, Texas, USA"
-
-        },
-        "about": "William Broyles Jr. was born on October 8, 1944 in Houston, Texas, USA. He is a writer and producer, known for Apollo 13 (1995), Cast Away (2000) and Flags of Our Fathers (2006). He is married to Andrea Bettina Berndt. They have three children. He was previously married to Linda Purl and Sybil Ann Newman.",
-        "imageUrl": "https://m.media-amazon.com/images/M/MV5BMjA4MjUzMjA2Ml5BMl5BanBnXkFtZTYwNTkxNTk1._V1_FMjpg_UX1000_.jpg"
-    }
-],
-"directors": [
-{
-    "id": 1,
-    "name": "Frank Darabont",
-    "born": {
+      "id": 1,
+      "name": "Frank Darabont",
+      "born": {
         "year": 1959,
         "month": "January",
         "day": 28,
         "country": "Montbéliard, Doubs, France"
-        },
-    "about": "Three-time Oscar nominee Frank Darabont was born in a refugee camp in 1959 in Montbeliard, France, the son of Hungarian parents who had fled Budapest during the failed 1956 Hungarian revolution. Brought to America as an infant, he settled with his family in Los Angeles and attended Hollywood High School. His first job in movies was as a production assistant on the 1981 low-budget film, Hell Night (1981), starring Linda Blair. ",
-    "imageUrl": "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-18372-frankdarabont-1800-1387323957.jpg"
-
-},
-{
-    "id": 2,
-    "name": "Francis Ford Coppola",
-    "born": {
+      },
+      "about": "Three-time Oscar nominee Frank Darabont was born in a refugee camp in 1959 in Montbeliard, France, the son of Hungarian parents who had fled Budapest during the failed 1956 Hungarian revolution. Brought to America as an infant, he settled with his family in Los Angeles and attended Hollywood High School. His first job in movies was as a production assistant on the 1981 low-budget film, Hell Night (1981), starring Linda Blair. ",
+      "imageUrl": "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-18372-frankdarabont-1800-1387323957.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Francis Ford Coppola",
+      "born": {
         "year": 1939,
         "month": "April",
         "day": 7,
         "country": "Detroit, Michigan, USA"
-        },
-    "about": "Francis Ford Coppola was born in 1939 in Detroit, Michigan, but grew up in a New York suburb in a creative, supportive Italian-American family. His father, Carmine Coppola, was a composer and musician. His mother, Italia Coppola (née Pennino), had been an actress. Francis Ford Coppola graduated with a degree in drama from Hofstra University, and did graduate work at UCLA in filmmaking.",
-    "imageUrl": "https://ntvb.tmsimg.com/assets/assets/359_v9_ba.jpg"
-
-},
-{
-    "id": 3,
-    "name": "Robert Zemeckis",
-    "born": {
+      },
+      "about": "Francis Ford Coppola was born in 1939 in Detroit, Michigan, but grew up in a New York suburb in a creative, supportive Italian-American family. His father, Carmine Coppola, was a composer and musician. His mother, Italia Coppola (née Pennino), had been an actress. Francis Ford Coppola graduated with a degree in drama from Hofstra University, and did graduate work at UCLA in filmmaking.",
+      "imageUrl": "https://ntvb.tmsimg.com/assets/assets/359_v9_ba.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Robert Zemeckis",
+      "born": {
         "year": 1952,
         "month": "May",
         "day": 14,
         "country": "Chicago, Illinois, USA"
-        },
-    "about": "A whiz-kid with special effects, Robert is from the Spielberg camp of film-making (Steven Spielberg produced many of his films). Usually working with writing partner Bob Gale, Robert's earlier films show he has a talent for zany comedy (Romancing the Stone (1984), 1941 (1979)) and special effect vehicles (Who Framed Roger Rabbit (1988) and Back to the Future (1985)). His later films have become more serious, with the hugely successful Tom Hanks vehicle Forrest Gump (1994) and the Jodie Foster film Contact (1997), both critically acclaimed movies. Again, these films incorporate stunning effects. Robert has proved he can work a serious story around great effects.",
-    "imageUrl": "https://www.themoviedb.org/t/p/w500/lPYDQ5LYNJ12rJZENtyASmVZ1Ql.jpg"
-
-},
-{
-    "id": 4,
-    "name": "Martin Scorsese",
-    "born": {
+      },
+      "about": "A whiz-kid with special effects, Robert is from the Spielberg camp of film-making (Steven Spielberg produced many of his films). Usually working with writing partner Bob Gale, Robert's earlier films show he has a talent for zany comedy (Romancing the Stone (1984), 1941 (1979)) and special effect vehicles (Who Framed Roger Rabbit (1988) and Back to the Future (1985)). His later films have become more serious, with the hugely successful Tom Hanks vehicle Forrest Gump (1994) and the Jodie Foster film Contact (1997), both critically acclaimed movies. Again, these films incorporate stunning effects. Robert has proved he can work a serious story around great effects.",
+      "imageUrl": "https://www.themoviedb.org/t/p/w500/lPYDQ5LYNJ12rJZENtyASmVZ1Ql.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Martin Scorsese",
+      "born": {
         "year": 1942,
         "month": "November",
         "day": 17,
         "country": "Queens, New York City, New York, USA"
-        },
-    "about": "Martin Charles Scorsese was born on November 17, 1942 in Queens, New York City, to Catherine Scorsese (née Cappa) and Charles Scorsese, who both worked in Manhattan's garment district, and whose families both came from Palermo, Sicily. He was raised in the neighborhood of Little Italy, which later provided the inspiration for several of his films. Scorsese earned a B.S. degree in film communications in 1964, followed by an M.A. in the same field in 1966 at New York University's School of Film. During this time, he made numerous prize-winning short films including The Big Shave (1967), and directed his first feature film, Who's That Knocking at My Door (1967).",
-    "imageUrl": "https://m.media-amazon.com/images/M/MV5BMTcyNDA4Nzk3N15BMl5BanBnXkFtZTcwNDYzMjMxMw@@._V1_FMjpg_UX1000_.jpg"
-
-},
-{
-    "id": 5,
-    "name": "Ron Howard",
-    "born": {
+      },
+      "about": "Martin Charles Scorsese was born on November 17, 1942 in Queens, New York City, to Catherine Scorsese (née Cappa) and Charles Scorsese, who both worked in Manhattan's garment district, and whose families both came from Palermo, Sicily. He was raised in the neighborhood of Little Italy, which later provided the inspiration for several of his films. Scorsese earned a B.S. degree in film communications in 1964, followed by an M.A. in the same field in 1966 at New York University's School of Film. During this time, he made numerous prize-winning short films including The Big Shave (1967), and directed his first feature film, Who's That Knocking at My Door (1967).",
+      "imageUrl": "https://m.media-amazon.com/images/M/MV5BMTcyNDA4Nzk3N15BMl5BanBnXkFtZTcwNDYzMjMxMw@@._V1_FMjpg_UX1000_.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Ron Howard",
+      "born": {
         "year": 1954,
         "month": "March",
         "day": 1,
         "country": "Duncan, Oklahoma, USA"
-        },
-    "about": "Academy Award-winning filmmaker Ron Howard is one of this generation's most popular directors. From the critically acclaimed dramas A Beautiful Mind (2001) and Apollo 13 (1995) to the hit comedies Parenthood (1989) and Splash (1984), he has created some of Hollywood's most memorable films. Howard made his directorial debut in 1978 with the comedy Grand Theft Auto (1977). He began his career in film as an actor. He first appeared in The Journey (1959) and The Music Man (1962), then as Opie on the long-running television series The Andy Griffith Show (1960). Howard later starred in the popular series Happy Days (1974) and drew favorable reviews for his performances in American Graffiti (1973) and The Shootist (1976). Howard and long-time producing partner Brian Grazer first collaborated on the hit comedies „Night Shift“ and „Splash.“ The pair co-founded Imagine Entertainment in 1986 to create independently produced feature films.",
-    "imageUrl": "https://cdn.britannica.com/96/198896-050-42D8197A/Ron-Howard-2009.jpg"
-
-}
-],
-"movieRelationships": [
-    {
-        "id": 1,
-        "movieId": 1,
-        "genreId": 1
-    },
-    {
-        "id": 2,
-        "movieId": 2,
-        "genreId": 1
-    },
-    {
-        "id": 3,
-        "movieId": 2,
-        "genreId": 2
-    },
-    {
-        "id": 4,
-        "movieId": 3,
-        "genreId": 1
-    },
-    {
-        "id": 5,
-        "movieId": 3,
-        "genreId": 3
-    },
-    {
-        "id": 6,
-        "movieId": 4,
-        "genreId": 2
-    },
-    {
-        "id": 7,
-        "movieId": 4,
-        "genreId": 4
-    },
-    {
-        "id": 8,
-        "movieId": 4,
-        "genreId": 5
-    },
-    {
-        "id": 9,
-        "movieId": 5,
-        "genreId": 1
-    },
-    {
-        "id": 10,
-        "movieId": 5,
-        "genreId": 6
-    },
-    {
-        "id": 11,
-        "movieId": 5,
-        "genreId": 7
+      },
+      "about": "Academy Award-winning filmmaker Ron Howard is one of this generation's most popular directors. From the critically acclaimed dramas A Beautiful Mind (2001) and Apollo 13 (1995) to the hit comedies Parenthood (1989) and Splash (1984), he has created some of Hollywood's most memorable films. Howard made his directorial debut in 1978 with the comedy Grand Theft Auto (1977). He began his career in film as an actor. He first appeared in The Journey (1959) and The Music Man (1962), then as Opie on the long-running television series The Andy Griffith Show (1960). Howard later starred in the popular series Happy Days (1974) and drew favorable reviews for his performances in American Graffiti (1973) and The Shootist (1976). Howard and long-time producing partner Brian Grazer first collaborated on the hit comedies „Night Shift“ and „Splash.“ The pair co-founded Imagine Entertainment in 1986 to create independently produced feature films.",
+      "imageUrl": "https://cdn.britannica.com/96/198896-050-42D8197A/Ron-Howard-2009.jpg"
     }
-
-],
-"actorRelationships": [
+  ],
+  "movieRelationships": [
     {
-        "id": 1,
-        "movieId": 1,
-        "actorId": 1
+      "id": 1,
+      "movieId": 1,
+      "genreId": 1
     },
     {
-        "id": 2,
-        "movieId": 1,
-        "actorId": 2
+      "id": 2,
+      "movieId": 2,
+      "genreId": 1
     },
     {
-        "id": 3,
-        "movieId": 1,
-        "actorId": 3
+      "id": 3,
+      "movieId": 2,
+      "genreId": 2
     },
     {
-        "id": 4,
-        "movieId": 2,
-        "actorId": 4
+      "id": 4,
+      "movieId": 3,
+      "genreId": 1
     },
     {
-        "id": 5,
-        "movieId": 2,
-        "actorId": 5
+      "id": 5,
+      "movieId": 3,
+      "genreId": 3
     },
     {
-        "id": 6,
-        "movieId": 2,
-        "actorId": 6
+      "id": 6,
+      "movieId": 4,
+      "genreId": 2
     },
     {
-        "id": 7,
-        "movieId": 3,
-        "actorId": 7
+      "id": 7,
+      "movieId": 4,
+      "genreId": 4
     },
     {
-        "id": 8,
-        "movieId": 3,
-        "actorId": 8
+      "id": 8,
+      "movieId": 4,
+      "genreId": 5
     },
     {
-        "id": 9,
-        "movieId": 3,
-        "actorId": 9
+      "id": 9,
+      "movieId": 5,
+      "genreId": 1
     },
     {
-        "id": 10,
-        "movieId": 4,
-        "actorId": 10
+      "id": 10,
+      "movieId": 5,
+      "genreId": 6
     },
     {
-        "id": 11,
-        "movieId": 4,
-        "actorId": 11
-    },
-    {
-        "id": 12,
-        "movieId": 4,
-        "actorId": 12
-    },
-    {
-        "id": 13,
-        "movieId": 5,
-        "actorId": 7
-    },
-    {
-        "id": 14,
-        "movieId": 5,
-        "actorId": 13
+      "id": 11,
+      "movieId": 5,
+      "genreId": 7
     }
-    
-
-],
-"directorRelationships": [
+  ],
+  "actorRelationships": [
     {
-        "id": 1,
-        "movieId": 1,
-        "directorId": 1
+      "id": 1,
+      "movieId": 1,
+      "actorId": 1
     },
     {
-        "id": 2,
-        "movieId": 2,
-        "directorId": 2
+      "id": 2,
+      "movieId": 1,
+      "actorId": 2
     },
     {
-        "id": 3,
-        "movieId": 3,
-        "directorId": 3
+      "id": 3,
+      "movieId": 1,
+      "actorId": 3
     },
     {
-        "id": 4,
-        "movieId": 4,
-        "directorId": 4
+      "id": 4,
+      "movieId": 2,
+      "actorId": 4
     },
     {
-        "id": 5,
-        "movieId": 5,
-        "directorId": 5
+      "id": 5,
+      "movieId": 2,
+      "actorId": 5
+    },
+    {
+      "id": 6,
+      "movieId": 2,
+      "actorId": 6
+    },
+    {
+      "id": 7,
+      "movieId": 3,
+      "actorId": 7
+    },
+    {
+      "id": 8,
+      "movieId": 3,
+      "actorId": 8
+    },
+    {
+      "id": 9,
+      "movieId": 3,
+      "actorId": 9
+    },
+    {
+      "id": 10,
+      "movieId": 4,
+      "actorId": 10
+    },
+    {
+      "id": 11,
+      "movieId": 4,
+      "actorId": 11
+    },
+    {
+      "id": 12,
+      "movieId": 4,
+      "actorId": 12
+    },
+    {
+      "id": 13,
+      "movieId": 5,
+      "actorId": 7
+    },
+    {
+      "id": 14,
+      "movieId": 5,
+      "actorId": 13
     }
-
-]
-
+  ],
+  "directorRelationships": [
+    {
+      "id": 1,
+      "movieId": 1,
+      "directorId": 1
+    },
+    {
+      "id": 2,
+      "movieId": 2,
+      "directorId": 2
+    },
+    {
+      "id": 3,
+      "movieId": 3,
+      "directorId": 3
+    },
+    {
+      "id": 4,
+      "movieId": 4,
+      "directorId": 4
+    },
+    {
+      "id": 5,
+      "movieId": 5,
+      "directorId": 5
+    }
+  ]
 }

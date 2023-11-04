@@ -4,6 +4,7 @@ import { API_URL } from "../../config";
 import Container from "../../Components/Container/Container";
 import "./GenresPage.scss";
 import GenreItem from "../../Components/GenreItem/GenreItem";
+import { Link } from "react-router-dom";
 
 const GenresPage = () => {
   const [genres, setGenres] = useState([]);
@@ -25,6 +26,7 @@ const GenresPage = () => {
   ));
   return (
     <Container>
+      <Link to={`/create-genre`}>Create New Genre</Link>
       <h2>Genres</h2>
       <div className="genres-list">
         <ul>{genresList}</ul>

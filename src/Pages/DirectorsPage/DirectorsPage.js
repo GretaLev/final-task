@@ -4,6 +4,7 @@ import { API_URL } from "../../config";
 import Container from "../../Components/Container/Container";
 import "./DirectorsPage.scss";
 import DirectorItem from "../../Components/DirectorItem/DirectorItem";
+import { Link } from "react-router-dom";
 
 const DirectorsPage = () => {
   const [directors, setDirectors] = useState([]);
@@ -26,6 +27,7 @@ const DirectorsPage = () => {
 
   return (
     <Container>
+      <Link to={`/create-director`}>Create New Director</Link>
       <h2>Directors</h2>
       <div className="directors-list">
         <ul>{directorsList}</ul>
