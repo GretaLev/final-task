@@ -6,9 +6,6 @@
     "description":"Chronicles the experiences of a formerly successful banker as a prisoner in the gloomy jailhouse of Shawshank after being found guilty of a crime he did not commit. The film portrays the man's unique way of dealing with his new, torturous life; along the way he befriends a number of fellow prisoners, most notably a wise long-term inmate named Red.",
     "rate": 9.3,
     "releaseDate": 1994,
-    "genresIds": [1],
-    "actorsId": [1, 2, 3] ,
-    "directorId": 1,
     "imageUrl": "https://m.media-amazon.com/images/M/MV5BNDE3ODcxYzMtY2YzZC00NmNlLWJiNDMtZDViZWM2MzIxZDYwXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_.jpg"
 },
 {
@@ -17,9 +14,6 @@
     "description":"The Godfather „Don“ Vito Corleone is the head of the Corleone mafia family in New York. He is at the event of his daughter's wedding. Michael, Vito's youngest son and a decorated WW II Marine is also present at the wedding. Michael seems to be uninterested in being a part of the family business. Vito is a powerful man, and is kind to all those who give him respect but is ruthless against those who do not. But when a powerful and treacherous rival wants to sell drugs and needs the Don's influence for the same, Vito refuses to do it. What follows is a clash between Vito's fading old values and the new ways which may cause Michael to do the thing he was most reluctant in doing and wage a mob war against all the other mafia families which could tear the Corleone family apart.",
     "rate": 9.2,
     "releaseDate": 1972,
-    "genresIds": [1, 2],
-    "actorsId": [4, 5, 6] ,
-    "directorId": 2,
     "imageUrl": "https://images.entertainment.ie/media/3bhkrj58Vtu7enYsRolD1fZdja1.jpg?w=340&h=514&q=low"
 },
 {
@@ -28,9 +22,6 @@
     "description":"Forrest Gump is a simple man with a low I.Q. but good intentions. He is running through childhood with his best and only friend Jenny. His 'mama' teaches him the ways of life and leaves him to choose his destiny. Forrest joins the army for service in Vietnam, finding new friends called Dan and Bubba, he wins medals, creates a famous shrimp fishing fleet, inspires people to jog, starts a ping-pong craze, creates the smiley, writes bumper stickers and songs, donates to people and meets the president several times. However, this is all irrelevant to Forrest who can only think of his childhood sweetheart Jenny Curran, who has messed up her life. Although in the end all he wants to prove is that anyone can love anyone",
     "rate": 8.8,
     "releaseDate": 1994,
-    "genresIds": [1, 3],
-    "actorsId": [7, 8, 9] ,
-    "directorId": 3,
     "imageUrl": "https://play-lh.googleusercontent.com/ToGy2Cue0epHBdeRkq3dntz8on4ogI1UlKLGqMvgCptTwmpMWVkIxojwVUuvIjrMIFz2UiNjW73xcuofHQ"
 },
 {
@@ -39,9 +30,6 @@
     "description":"Jordan Belfort (DiCaprio) is Long Island penny stockbroker who serves almost two years in prison for refusing to co-operate in a huge 1990s securities fraud case that involved widespread corruption on Wall Street and in the corporate banking world, including mob infiltration.",
     "rate": 8.2,
     "releaseDate": 2013,
-    "genresIds": [2, 4, 5],
-    "actorsId": [10, 11, 12] ,
-    "directorId": 4,
     "imageUrl": "https://m.media-amazon.com/images/M/MV5BMjIxMjgxNTk0MF5BMl5BanBnXkFtZTgwNjIyOTg2MDE@._V1_FMjpg_UX1000_.jpg"
 },
 {
@@ -50,9 +38,6 @@
     "description":"This Hollywood drama is based on the events of the Apollo 13 lunar mission, astronauts Jim Lovell, Fred Haise and Jack Swigert find everything going according to plan after leaving Earth's orbit. However, when an oxygen tank explodes, the scheduled moon landing is called off. Subsequent tensions within the crew and numerous technical problems threaten both the astronauts' survival and their safe return to Earth.",
     "rate": 7.7,
     "releaseDate": 1995,
-    "genresIds": [1, 6, 7],
-    "actorsId": [7, 13] ,
-    "directorId": 5,
     "imageUrl": "https://m.media-amazon.com/images/M/MV5BMjc4MzZlNmQtN2ZlOS00OGQzLWI5YjEtNDQ2YmZlN2FjNTIxXkEyXkFqcGdeQXVyMjUzOTY1NTc@._V1_.jpg"
 }
 ], 
