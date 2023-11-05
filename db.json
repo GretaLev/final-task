@@ -43,22 +43,6 @@
   ],
   "genres": [
     {
-      "id": 1,
-      "title": "Drama"
-    },
-    {
-      "id": 2,
-      "title": "Crime"
-    },
-    {
-      "id": 3,
-      "title": "Romance"
-    },
-    {
-      "id": 4,
-      "title": "Biography"
-    },
-    {
       "id": 5,
       "title": "Comedy"
     },
@@ -70,7 +54,7 @@
       "id": 7,
       "title": "History"
     }
-   
+  
   ],
   "actors": [
     {
@@ -229,7 +213,6 @@
       "about": "William Broyles Jr. was born on October 8, 1944 in Houston, Texas, USA. He is a writer and producer, known for Apollo 13 (1995), Cast Away (2000) and Flags of Our Fathers (2006). He is married to Andrea Bettina Berndt. They have three children. He was previously married to Linda Purl and Sybil Ann Newman.",
       "imageUrl": "https://m.media-amazon.com/images/M/MV5BMjA4MjUzMjA2Ml5BMl5BanBnXkFtZTYwNTkxNTk1._V1_FMjpg_UX1000_.jpg"
     }
-    
   ],
   "directors": [
     {
@@ -295,49 +278,9 @@
   ],
   "movieRelationships": [
     {
-      "id": 1,
-      "movieId": 1,
-      "genreId": 1
-    },
-    {
-      "id": 2,
-      "movieId": 2,
-      "genreId": 1
-    },
-    {
-      "id": 3,
-      "movieId": 2,
-      "genreId": 2
-    },
-    {
-      "id": 4,
-      "movieId": 3,
-      "genreId": 1
-    },
-    {
-      "id": 5,
-      "movieId": 3,
-      "genreId": 3
-    },
-    {
-      "id": 6,
-      "movieId": 4,
-      "genreId": 2
-    },
-    {
-      "id": 7,
-      "movieId": 4,
-      "genreId": 4
-    },
-    {
       "id": 8,
       "movieId": 4,
       "genreId": 5
-    },
-    {
-      "id": 9,
-      "movieId": 5,
-      "genreId": 1
     },
     {
       "id": 10,
