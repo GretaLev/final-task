@@ -12,7 +12,6 @@ const GenresPage = () => {
   const [genres, setGenres] = useState([]);
 
   const deleteHandler = (id) => {
-    console.log(id);
     axios
       .delete(API_URL + `/genres/${id}`)
       .then((response) => {

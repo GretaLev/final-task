@@ -4,6 +4,8 @@ import axios from "axios";
 import { API_URL } from "../../config";
 import { Link, useParams } from "react-router-dom";
 import Container from "../../Components/Container/Container";
+import SearchBar from "../../Components/SearchBar/SearchBar";
+import SearchResultsList from "../../Components/SearchResultsList/SearchResultsList";
 
 const HomePage = () => {
   const [homePageGenres, setHomePageGenres] = useState([]);
@@ -61,11 +63,13 @@ const HomePage = () => {
     </Link>
   ));
 
+  const [results, setResults] = useState([]);
+
   if (
     homePageGenres.length &&
-    homePageMovies &&
-    homePageActors &&
-    homePageDirectors === 0
+    homePageMovies.length &&
+    homePageActors.length &&
+    homePageDirectors.length === 0
   ) {
     return <h2>Loading...</h2>;
   }
@@ -73,6 +77,10 @@ const HomePage = () => {
   return (
     <Container>
       <div className="home-page">
+        <div className="search-bar-container">
+          <SearchBar setResults={setResults} />
+          <SearchResultsList results={results} />
+        </div>
         <div className="home-page-genres">
           <ul>{homePageGenresList}</ul>
         </div>

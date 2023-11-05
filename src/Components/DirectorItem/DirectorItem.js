@@ -3,7 +3,7 @@ import "./DirectorItem.scss";
 import { DeleteIcon, EditIcon } from "@chakra-ui/icons";
 import { IconButton } from "@chakra-ui/react";
 
-const DirectorItem = ({ data, onDelete }) => {
+const DirectorItem = ({ data, showEdit, onDelete }) => {
   const { id, imageUrl, name } = data;
 
   const navigate = useNavigate();
@@ -16,12 +16,16 @@ const DirectorItem = ({ data, onDelete }) => {
           <h4>{name}</h4>
         </Link>
       </div>
-      <IconButton onClick={() => navigate(`/create-director/${id}`)}>
-        <EditIcon />
-      </IconButton>
-      <IconButton onClick={() => onDelete(id)}>
-        <DeleteIcon />
-      </IconButton>
+      {showEdit && (
+        <IconButton onClick={() => navigate(`/create-director/${id}`)}>
+          <EditIcon />
+        </IconButton>
+      )}
+      {onDelete && (
+        <IconButton onClick={() => onDelete(id)}>
+          <DeleteIcon />
+        </IconButton>
+      )}
     </>
   );
 };
