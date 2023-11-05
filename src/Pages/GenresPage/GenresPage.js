@@ -5,9 +5,34 @@ import Container from "../../Components/Container/Container";
 import "./GenresPage.scss";
 import GenreItem from "../../Components/GenreItem/GenreItem";
 import { Link } from "react-router-dom";
+import { useToast } from "@chakra-ui/react";
 
 const GenresPage = () => {
+  const toast = useToast();
   const [genres, setGenres] = useState([]);
+
+  const deleteHandler = (id) => {
+    console.log(id);
+    axios
+      .delete(API_URL + `/genres/${id}`)
+      .then((response) => {
+        setGenres((prevState) => prevState.filter((genre) => genre.id !== id));
+        toast({
+          title: "Genre deleted",
+          status: "success",
+          duration: 2000,
+          isClosable: true,
+        });
+      })
+      .catch((error) => {
+        toast({
+          title: "Something went wrong",
+          status: "error",
+          duration: 2000,
+          isClosable: true,
+        });
+      });
+  };
 
   useEffect(() => {
     axios(API_URL + "/genres").then((res) => {
@@ -21,7 +46,7 @@ const GenresPage = () => {
   }
   const genresList = genres.map((genre) => (
     <li>
-      <GenreItem data={genre} />
+      <GenreItem data={genre} onDelete={deleteHandler} />
     </li>
   ));
   return (

@@ -38,4 +38,8 @@
 ul {
   padding-left: 0;
   list-style: none;
+}
+
+input[aria-invalid=true] {
+  border-color: red;
 }/*# sourceMappingURL=App.css.map */

@@ -1,3 +1,4 @@
+import { ChakraProvider } from "@chakra-ui/react";
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
 import PageHeader from "./Components/PageHeader/PageHeader";
@@ -17,24 +18,29 @@ import CreateDirectorPage from "./Pages/CreateDirectorPage/CreateDirectorPage";
 
 function App() {
   return (
-    <div>
-      <PageHeader />
-      <Routes>
-        <Route path="/home" element={<HomePage />}></Route>
-        <Route path="/movies" element={<MoviesPage />} />
-        <Route path="/movie/:id" element={<MoviesItemPage />} />
-        <Route path="/create-movie" element={<CreateMoviePage />} />
-        <Route path="/genres" element={<GenresPage />} />
-        <Route path="/movies-by-genre/:id" element={<MoviesByGenre />} />
-        <Route path="/create-genre" element={<CreateGenrePage />} />
-        <Route path="/actors" element={<ActorsPage />} />
-        <Route path="/actor/:id" element={<ActorsItemPage />} />
-        <Route path="/create-actor" element={<CreateActorPage />} />
-        <Route path="/directors" element={<DirectorsPage />} />
-        <Route path="/director/:id" element={<DirectorsItemPage />} />
-        <Route path="/create-director" element={<CreateDirectorPage />} />
-      </Routes>
-    </div>
+    <ChakraProvider>
+      <div>
+        <PageHeader />
+        <Routes>
+          <Route path="/home" element={<HomePage />}></Route>
+          <Route path="/movies" element={<MoviesPage />} />
+          <Route path="/movie/:id" element={<MoviesItemPage />} />
+          <Route path="/create-movie/:id?" element={<CreateMoviePage />} />
+          <Route path="/genres" element={<GenresPage />} />
+          <Route path="/movies-by-genre/:id" element={<MoviesByGenre />} />
+          <Route path="/create-genre/:id?" element={<CreateGenrePage />} />
+          <Route path="/actors" element={<ActorsPage />} />
+          <Route path="/actor/:id" element={<ActorsItemPage />} />
+          <Route path="/create-actor/:id?" element={<CreateActorPage />} />
+          <Route path="/directors" element={<DirectorsPage />} />
+          <Route path="/director/:id" element={<DirectorsItemPage />} />
+          <Route
+            path="/create-director/:id?"
+            element={<CreateDirectorPage />}
+          />
+        </Routes>
+      </div>
+    </ChakraProvider>
   );
 }
 

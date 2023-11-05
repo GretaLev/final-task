@@ -1,46 +1,81 @@
-import { useState } from "react";
 import Container from "../../Components/Container/Container";
 import { API_URL } from "../../config";
+import { useForm } from "react-hook-form";
+import Input from "../../Components/Form/Input/Input";
+import { Button, useToast } from "@chakra-ui/react";
+import { useParams } from "react-router-dom";
+import { useEffect } from "react";
+import axios from "axios";
 
 const CreateGenrePage = () => {
-  const [title, setTitle] = useState("");
+  const { id } = useParams();
+  const toast = useToast();
+  const {
+    register,
+    handleSubmit,
+    formState: { errors, isSubmitting },
+    reset,
+  } = useForm({
+    defaultValues: {
+      title: "",
+    },
+  });
 
-  const titleHandler = (event) => setTitle(event.target.value);
+  useEffect(() => {
+    const getGenre = async () => {
+      const response = await axios(API_URL + `/genres/${id}`);
 
-  const newGenreHandler = (event) => {
-    event.preventDefault();
-
-    const newGenre = {
-      title,
+      reset(response.data);
     };
 
-    fetch(API_URL + "/genres", {
-      method: "POST",
-      body: JSON.stringify(newGenre),
-      headers: {
-        "Content-type": "application/json; charset=UTF-8",
-      },
-    })
-      .then((response) => response.json())
-      .then((json) => console.log(json));
+    if (id) {
+      getGenre();
+    }
+  }, []);
+
+  const newGenreHandler = async (values) => {
+    const response = await axios(API_URL + (id ? `/genres/${id}` : "/genres"), {
+      method: id ? "PUT" : "POST",
+      data: values,
+    });
+
+    if (response.statusText === "OK") {
+      toast({
+        title: "Genre updated",
+        status: "success",
+        duration: 2000,
+        isClosable: true,
+      });
+    } else if (response.statusText === "Created") {
+      toast({
+        title: "New Genre created",
+        status: "success",
+        duration: 2000,
+        isClosable: true,
+      });
+    } else {
+      toast({
+        title: "Something went wrong",
+        status: "error",
+        duration: 2000,
+        isClosable: true,
+      });
+    }
   };
+
   return (
     <Container>
-      <h1>Create New Genre</h1>
+      <h1> {id ? "Edit Genre" : "Create New genre"}</h1>
 
-      <form onSubmit={newGenreHandler}>
-        <div className="form-control">
-          <label htmlFor="title">Title:</label>
-          <input
-            type="text"
-            name="title"
-            id="title"
-            value={title}
-            onChange={titleHandler}
-          />
-        </div>
-
-        <button type="submit">Create</button>
+      <form onSubmit={handleSubmit(newGenreHandler)}>
+        <Input
+          label="Title:"
+          register={register("title", { required: "Title is required" })}
+          error={errors?.title?.message}
+        />
+        <Button type="submit" colorScheme="green" isLoading={isSubmitting}>
+          {id ? "Edit" : "Create"}
+        </Button>
       </form>
     </Container>
   );
