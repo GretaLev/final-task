@@ -5,10 +5,33 @@ import axios from "axios";
 import "./MoviesPage.scss";
 import MoviesItem from "../../Components/MovieItem/MovieItem";
 import { Link } from "react-router-dom";
+import { useToast } from "@chakra-ui/react";
 
 const MoviesPage = () => {
+  const toast = useToast();
   const [movies, setMovies] = useState([]);
 
+  const deleteHandler = (id) => {
+    axios
+      .delete(API_URL + `/movies/${id}`)
+      .then((response) => {
+        setMovies((prevState) => prevState.filter((movie) => movie.id !== id));
+        toast({
+          title: "Movie deleted",
+          status: "success",
+          duration: 2000,
+          isClosable: true,
+        });
+      })
+      .catch((error) => {
+        toast({
+          title: "Something went wrong",
+          status: "error",
+          duration: 2000,
+          isClosable: true,
+        });
+      });
+  };
   useEffect(() => {
     axios(API_URL + "/movies").then((res) => {
       setMovies(res.data);
@@ -21,7 +44,7 @@ const MoviesPage = () => {
 
   const moviesList = movies.map((movie) => (
     <li key={movie.id}>
-      <MoviesItem data={movie} />
+      <MoviesItem data={movie} showEdit onDelete={deleteHandler} />
     </li>
   ));
 

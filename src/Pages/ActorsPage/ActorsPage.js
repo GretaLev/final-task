@@ -5,9 +5,33 @@ import { API_URL } from "../../config";
 import "./ActorsPage.scss";
 import ActorItem from "../../Components/ActorItem/ActorItem";
 import { Link } from "react-router-dom";
+import { useToast } from "@chakra-ui/react";
 
 const ActorsPage = () => {
+  const toast = useToast();
   const [actors, setActors] = useState([]);
+
+  const deleteHandler = (id) => {
+    axios
+      .delete(API_URL + `/actors/${id}`)
+      .then((response) => {
+        setActors((prevState) => prevState.filter((actor) => actor.id !== id));
+        toast({
+          title: "Actor deleted",
+          status: "success",
+          duration: 2000,
+          isClosable: true,
+        });
+      })
+      .catch((error) => {
+        toast({
+          title: "Something went wrong",
+          status: "error",
+          duration: 2000,
+          isClosable: true,
+        });
+      });
+  };
 
   useEffect(() => {
     axios(API_URL + "/actors").then((res) => {
@@ -20,7 +44,7 @@ const ActorsPage = () => {
   }
   const actorsList = actors.map((actor) => (
     <li>
-      <ActorItem data={actor} />
+      <ActorItem data={actor} showEdit onDelete={deleteHandler} />
     </li>
   ));
   return (

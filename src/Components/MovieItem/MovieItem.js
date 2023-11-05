@@ -3,7 +3,7 @@ import "./MovieItem.scss";
 import { DeleteIcon, EditIcon } from "@chakra-ui/icons";
 import { IconButton } from "@chakra-ui/react";
 
-const MoviesItem = ({ data, onDelete }) => {
+const MoviesItem = ({ data, onDelete, showEdit = false }) => {
   const { id, imageUrl } = data;
   const navigate = useNavigate();
   return (
@@ -13,12 +13,17 @@ const MoviesItem = ({ data, onDelete }) => {
           <img src={imageUrl} alt="movie"></img>
         </Link>
       </div>
-      <IconButton onClick={() => navigate(`/create-movie/${id}`)}>
-        <EditIcon />
-      </IconButton>
-      <IconButton onClick={() => onDelete(id)}>
-        <DeleteIcon />
-      </IconButton>
+      {showEdit && (
+        <IconButton onClick={() => navigate(`/create-movie/${id}`)}>
+          <EditIcon />
+        </IconButton>
+      )}
+
+      {onDelete && (
+        <IconButton onClick={() => onDelete(id)}>
+          <DeleteIcon />
+        </IconButton>
+      )}
     </>
   );
 };

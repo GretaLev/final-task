@@ -5,9 +5,35 @@ import Container from "../../Components/Container/Container";
 import "./DirectorsPage.scss";
 import DirectorItem from "../../Components/DirectorItem/DirectorItem";
 import { Link } from "react-router-dom";
+import { useToast } from "@chakra-ui/react";
 
 const DirectorsPage = () => {
+  const toast = useToast();
   const [directors, setDirectors] = useState([]);
+
+  const deleteHandler = (id) => {
+    axios
+      .delete(API_URL + `/directors/${id}`)
+      .then((response) => {
+        setDirectors((prevState) =>
+          prevState.filter((director) => director.id !== id)
+        );
+        toast({
+          title: "Director deleted",
+          status: "success",
+          duration: 2000,
+          isClosable: true,
+        });
+      })
+      .catch((error) => {
+        toast({
+          title: "Something went wrong",
+          status: "error",
+          duration: 2000,
+          isClosable: true,
+        });
+      });
+  };
 
   useEffect(() => {
     axios(API_URL + "/directors").then((res) => {
@@ -21,7 +47,7 @@ const DirectorsPage = () => {
 
   const directorsList = directors.map((director) => (
     <li>
-      <DirectorItem data={director} />
+      <DirectorItem data={director} showEdit onDelete={deleteHandler} />
     </li>
   ));
 
