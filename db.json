@@ -4,6 +4,7 @@
       "id": 1,
       "title": "The Shawshank Redemption",
       "description": "Chronicles the experiences of a formerly successful banker as a prisoner in the gloomy jailhouse of Shawshank after being found guilty of a crime he did not commit. The film portrays the man's unique way of dealing with his new, torturous life; along the way he befriends a number of fellow prisoners, most notably a wise long-term inmate named Red.",
+      "genre": "Drama",
       "rate": 9.3,
       "releaseDate": 1994,
       "imageUrl": "https://m.media-amazon.com/images/M/MV5BNDE3ODcxYzMtY2YzZC00NmNlLWJiNDMtZDViZWM2MzIxZDYwXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_.jpg"
@@ -28,6 +29,7 @@
       "id": 4,
       "title": "The Wolf of Wall Street",
       "description": "Jordan Belfort (DiCaprio) is Long Island penny stockbroker who serves almost two years in prison for refusing to co-operate in a huge 1990s securities fraud case that involved widespread corruption on Wall Street and in the corporate banking world, including mob infiltration.",
+      "genre": "Comedy",
       "rate": 8.2,
       "releaseDate": 2013,
       "imageUrl": "https://m.media-amazon.com/images/M/MV5BMjIxMjgxNTk0MF5BMl5BanBnXkFtZTgwNjIyOTg2MDE@._V1_FMjpg_UX1000_.jpg"
@@ -42,6 +44,22 @@
     }
   ],
   "genres": [
+    {
+      "id": 1,
+      "title": "Comedy"
+    },
+    {
+      "id": 2,
+      "title": "Comedy"
+    },
+    {
+      "id": 3,
+      "title": "Comedy"
+    },
+    {
+      "id": 4,
+      "title": "Comedy"
+    },
     {
       "id": 5,
       "title": "Comedy"

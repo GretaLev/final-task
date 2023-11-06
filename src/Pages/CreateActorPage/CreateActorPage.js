@@ -1,6 +1,6 @@
 import { API_URL } from "../../config";
 import Container from "../../Components/Container/Container";
-import { Button, useToast } from "@chakra-ui/react";
+import { Button, VStack, useToast } from "@chakra-ui/react";
 import { useForm } from "react-hook-form";
 
 import Input from "../../Components/Form/Input/Input";
@@ -76,55 +76,62 @@ const CreateActorPage = () => {
 
   return (
     <Container>
-      <h1> {id ? "Edit Actor" : "Create New Actor"}</h1>
+      <h1 className="create-page-title">
+        {" "}
+        {id ? "Edit Actor" : "Create New Actor"}
+      </h1>
 
       <form onSubmit={handleSubmit(newActorHandler)}>
-        <Input
-          label="Name:"
-          register={register("name", { required: "Name is required" })}
-          error={errors?.name?.message}
-        />
-        <Input
-          label="Year:"
-          type="number"
-          register={register("born.year", { required: "Year is required" })}
-          error={errors?.year?.message}
-        />
-        <Select
-          options={monthArray}
-          label="Month:"
-          register={register("born.month", { required: "Month is required" })}
-          error={errors?.month?.message}
-        />
-        <Input
-          label="Day:"
-          type="number"
-          register={register("born.day", { required: "Day is required" })}
-          error={errors?.day?.message}
-        />
-        <Input
-          label="Country:"
-          register={register("born.country", {
-            required: "Country is required",
-          })}
-          error={errors?.country?.message}
-        />
-        <Input
-          label="About:"
-          type="textarea"
-          register={register("about", { required: "Description is required" })}
-          error={errors?.about?.message}
-        />
-        <Input
-          label="Actor picture link:"
-          type="url"
-          register={register("imageUrl", { required: "Link is required" })}
-          error={errors?.about?.message}
-        />
+        <VStack gap={3} alignItems="flex-start">
+          <Input
+            label="Name:"
+            register={register("name", { required: "Name is required" })}
+            error={errors?.name?.message}
+          />
+          <Input
+            label="Year:"
+            type="number"
+            register={register("born.year", { required: "Year is required" })}
+            error={errors?.year?.message}
+          />
+          <Select
+            options={monthArray}
+            label="Month:"
+            register={register("born.month", { required: "Month is required" })}
+            error={errors?.month?.message}
+          />
+          <Input
+            label="Day:"
+            type="number"
+            register={register("born.day", { required: "Day is required" })}
+            error={errors?.day?.message}
+          />
+          <Input
+            label="Country:"
+            register={register("born.country", {
+              required: "Country is required",
+            })}
+            error={errors?.country?.message}
+          />
+          <Input
+            label="About:"
+            type="textarea"
+            register={register("about", {
+              required: "Description is required",
+            })}
+            error={errors?.about?.message}
+          />
+          <Input
+            label="Actor picture link:"
+            type="url"
+            register={register("imageUrl", { required: "Link is required" })}
+            error={errors?.about?.message}
+          />
 
-        <Button type="submit" colorScheme="green" isLoading={isSubmitting}>
-          {id ? "Edit" : "Create"}
-        </Button>
+          <Button type="submit" colorScheme="green" isLoading={isSubmitting}>
+            {id ? "Edit" : "Create"}
+          </Button>
+        </VStack>
       </form>
     </Container>
   );

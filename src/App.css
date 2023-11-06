@@ -1,3 +1,325 @@
+.page-title {
+  font-size: 25px;
+  font-weight: bold;
+  margin: 20px 0;
+  transition: 0.3s;
+}
+
+.create-button {
+  max-width: 200px;
+  padding: 5px 0;
+  text-align: center;
+  font-size: 15px;
+  border-radius: 20px;
+  border: solid 2px;
+  transition: 0.3s;
+}
+.create-button:hover {
+  background-color: #f7abab;
+  font-weight: bold;
+}
+
+.elements a {
+  text-decoration: none;
+}
+.elements ul {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+@media (min-width: 576px) {
+  .elements ul {
+    align-items: center;
+  }
+}
+.elements.genres li {
+  transition: 0.3s;
+  padding: 5px 30px;
+  color: #000000;
+  border-radius: 20px;
+  border: solid 2px;
+}
+.elements.genres li:hover {
+  background-color: #f7abab;
+  font-weight: bold;
+  color: #000000;
+}
+.elements.layout img {
+  width: 240px;
+  height: 350px;
+  transition: 0.3s;
+}
+.elements.layout img:hover {
+  border-radius: 20%;
+}
+
+.create-page-title {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+chakra-button {
+  margin-top: 10px;
+}
+
+.single-page .page-wrapper {
+  display: flex;
+  gap: 30px;
+}
+.single-page .page-wrapper .image {
+  margin-top: 20px;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+.single-page .page-wrapper .image img {
+  width: 400px;
+  height: 600px;
+}
+.single-page .page-wrapper .content {
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.single-page .page-wrapper .content h3 {
+  font-size: 25px;
+  font-family: cursive;
+}
+.single-page .main-features ul {
+  display: flex;
+  gap: 20px;
+}
+.single-page .main-features img {
+  width: 200px;
+  height: 300px;
+}
+.single-page a {
+  gap: 10px;
+}
+
+.movie-genres ul {
+  display: flex;
+  gap: 10px;
+}
+.movie-genres ul li h4 {
+  font-size: 15px;
+}
+
+.actors-item a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+}
+.actors-item:hover img {
+  border-radius: 20%;
+}
+.actors-item img {
+  width: 340px;
+  height: 514px;
+  transition-duration: 0.3s;
+}
+
+.actors-list .actors-item a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+}
+.actors-list .actors-item a h4 {
+  font-size: 20px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #000000;
+}
+.actors-list ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.actors-list img {
+  width: 340px;
+  height: 514px;
+  transition-duration: 0.3s;
+}
+.actors-list img:hover {
+  border-radius: 20%;
+}
+
+.container {
+  max-width: 1230px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 30px;
+  padding-left: 30px;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 450px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+.directors-item a {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  align-items: center;
+}
+.directors-item:hover img {
+  border-radius: 20%;
+}
+.directors-item img {
+  width: 340px;
+  height: 514px;
+  transition-duration: 0.3s;
+}
+
+.directors-list .directors-item a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+}
+.directors-list .directors-item a h4 {
+  font-size: 20px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #000000;
+}
+.directors-list ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.directors-list img {
+  width: 340px;
+  height: 514px;
+  transition-duration: 0.3s;
+}
+.directors-list img:hover {
+  border-radius: 20%;
+}
+
+.genres-list ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.genres-list ul li {
+  transition-duration: 0.3s;
+}
+
+.genres-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.genres-list .genres-item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 300px;
+  height: 200px;
+  background-image: url("https://img.freepik.com/free-vector/realsitic-film-strip-black-background_1017-33462.jpg");
+  background-size: cover;
+}
+.genres-list a {
+  text-decoration: none;
+}
+.genres-list li {
+  font-size: 40px;
+  text-transform: uppercase;
+}
+.genres-list li h4 {
+  color: white;
+  margin: 10px;
+}
+
+.home-page .page-title:hover {
+  color: #f7abab;
+  background-color: #000000;
+  padding-left: 20px;
+}
+.home-page .search-bar-container {
+  display: flex;
+  justify-content: center;
+}
+.home-page .search-bar-container .input-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+.home-page .search-bar-container .input-wrapper input {
+  border-radius: 10px;
+  background-color: rgb(245, 232, 234);
+  padding-left: 10px;
+  transition: 0.2s;
+}
+.home-page .search-bar-container .input-wrapper input:hover {
+  border: solid 2px;
+}
+.home-page .search-bar-container .results-list {
+  border-radius: 10px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+.home-page .search-bar-container .results-list a {
+  transition: 0.3s;
+}
+.home-page .search-bar-container .results-list a:hover {
+  background-color: rgb(245, 232, 234);
+  font-weight: bold;
+  border-radius: 20px;
+  padding: 5px 10px;
+}
+
+.movies-item img {
+  width: 340px;
+  height: 514px;
+  transition-duration: 0.3s;
+}
+.movies-item img:hover {
+  border-radius: 20%;
+}
+
+.movies-list ul {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.page-header .container {
+  background-color: black;
+  color: white;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.page-header .container .nav-list {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px 20px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.page-header .container .nav-list a {
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.page-header .container .nav-list a.active {
+  color: #f7abab;
+}
+.page-header .container .nav-list a:hover {
+  text-decoration: underline;
+}
+
 .App {
   text-align: center;
 }

@@ -3,7 +3,6 @@ import { useParams } from "react-router-dom";
 import axios from "axios";
 import { API_URL } from "../../config";
 import Container from "../../Components/Container/Container";
-import "./DirectorsItemPage.scss";
 import MoviesItem from "../../Components/MovieItem/MovieItem";
 
 const DirectorsItemPage = () => {
@@ -40,19 +39,19 @@ const DirectorsItemPage = () => {
 
   return (
     <Container>
-      <div className="single-director-page">
-        <div className="director-info-wrapper">
-          <div className="director-image">
+      <div className="single-page director">
+        <div className="page-wrapper">
+          <div className="image">
             <img src={director.imageUrl} alt="director" />
           </div>
-          <div className="director-content">
+          <div className="content">
             <h3>{director.name}</h3>
             <h4>Born in {`${year} of ${month} ${day}`}</h4>
             <p>{director.about}</p>
           </div>
         </div>
-        <div className="movies-known-for">
-          <h4>Known for:</h4>
+        <div className="main-features">
+          <h4 className="page-title">Known for:</h4>
           <ul>{moviesByDirector}</ul>
         </div>
       </div>

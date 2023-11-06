@@ -1,10 +1,10 @@
-.page-header {
+.page-header .container {
   background-color: black;
   color: white;
   padding-top: 15px;
   padding-bottom: 15px;
 }
-.page-header .nav-list {
+.page-header .container .nav-list {
   display: flex;
   justify-content: flex-end;
   gap: 10px 20px;
@@ -12,14 +12,14 @@
   margin: 0;
   padding: 0;
 }
-.page-header .nav-list a {
+.page-header .container .nav-list a {
   color: white;
   text-transform: uppercase;
   text-decoration: none;
 }
-.page-header .nav-list a.active {
+.page-header .container .nav-list a.active {
   color: #f7abab;
 }
-.page-header .nav-list a:hover {
+.page-header .container .nav-list a:hover {
   text-decoration: underline;
 }/*# sourceMappingURL=PageHeader.css.map */

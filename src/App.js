@@ -1,6 +1,6 @@
 import { ChakraProvider } from "@chakra-ui/react";
 import { Routes, Route } from "react-router-dom";
-import "./App.css";
+import "./App.scss";
 import PageHeader from "./Components/PageHeader/PageHeader";
 import MoviesPage from "./Pages/MoviesPage/MoviesPage";
 import MoviesItemPage from "./Pages/MoviesItemPage/MoviesItemPage";

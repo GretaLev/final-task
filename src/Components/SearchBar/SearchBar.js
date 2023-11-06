@@ -28,7 +28,7 @@ const SearchBar = ({ setResults }) => {
   };
   return (
     <div className="input-wrapper">
-      <FaSearch id="searc-icon" />
+      <FaSearch id="search-icon" />
       <input
         placeholder="Type to search..."
         value={input}

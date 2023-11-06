@@ -1,0 +1,48 @@
+.home-page {
+  .page-title:hover {
+    color: $primary;
+    background-color: $secondary;
+    padding-left: 20px;
+  }
+
+  .search-bar-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    .input-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 30px;
+
+      input {
+        border-radius: 10px;
+        background-color: rgb(245, 232, 234);
+        padding-left: 10px;
+        transition: 0.2s;
+
+        &:hover {
+          border: solid 2px;
+        }
+      }
+    }
+    .results-list {
+      border-radius: 10px;
+      padding-left: 10px;
+      margin-bottom: 20px;
+
+      a {
+        transition: 0.3s;
+
+        &:hover {
+          background-color: rgb(245, 232, 234);
+          font-weight: bold;
+          border-radius: 20px;
+          padding: 5px 10px;
+        }
+      }
+    }
+  }
+}

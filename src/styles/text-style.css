@@ -1,0 +1,45 @@
+.page-title {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 20px 0;
+  transition: 0.3s;
+}
+
+.create-button {
+  max-width: 200px;
+  padding: 10px 0;
+  text-align: center;
+  font-size: 15px;
+  border-radius: 20px;
+  border: solid 2px;
+}
+
+.elements a {
+  text-decoration: none;
+}
+.elements ul {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.elements.genres li {
+  transition: 0.3s;
+  padding: 10px 20px;
+  color: black;
+  border-radius: 20%;
+  background: transparent;
+}
+.elements.genres li:hover {
+  background-color: black;
+  border-radius: 20%;
+  font-weight: bold;
+  color: rgb(247, 171, 171);
+}
+.elements.layout img {
+  width: 240px;
+  height: 350px;
+  transition: 0.3s;
+}
+.elements.layout img:hover {
+  border-radius: 20%;
+}/*# sourceMappingURL=text-style.css.map */

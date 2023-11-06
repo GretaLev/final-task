@@ -1,3 +1,19 @@
+@import "./styles/breakpoints";
+@import "./styles/mixins";
+@import "./styles/variables";
+@import "./styles/text-style";
+@import "./styles/single-page";
+@import "./styles/ActorItem.scss";
+@import "./styles/ActorsPage.scss";
+@import "./styles/Container.scss";
+@import "./styles/DirectorItem.scss";
+@import "./styles/DirectorsPage.scss";
+@import "./styles/GenreItem.scss";
+@import "./styles/GenresPage.scss";
+@import "./styles/HomePage.scss";
+@import "./styles/MovieItem.scss";
+@import "./styles/MoviesPage.scss";
+@import "./styles/PageHeader.scss";
 .App {
   text-align: center;
 }

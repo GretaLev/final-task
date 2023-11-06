@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import { API_URL } from "../../config";
 import Container from "../../Components/Container/Container";
-import "./DirectorsPage.scss";
+
 import DirectorItem from "../../Components/DirectorItem/DirectorItem";
 import { Link } from "react-router-dom";
 import { useToast } from "@chakra-ui/react";
@@ -53,8 +53,10 @@ const DirectorsPage = () => {
 
   return (
     <Container>
-      <Link to={`/create-director`}>Create New Director</Link>
-      <h2>Directors</h2>
+      <Link to={`/create-director`}>
+        <h3 className="create-button">Create New Director</h3>
+      </Link>
+      <h2 className="page-title">Directors</h2>
       <div className="directors-list">
         <ul>{directorsList}</ul>
       </div>

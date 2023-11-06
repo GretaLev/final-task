@@ -1,0 +1,14 @@
+.directors-item a {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  align-items: center;
+}
+.directors-item:hover img {
+  border-radius: 20%;
+}
+.directors-item img {
+  width: 340px;
+  height: 514px;
+  transition-duration: 0.3s;
+}/*# sourceMappingURL=DirectorItem.css.map */

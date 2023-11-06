@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import "./HomePage.scss";
 import axios from "axios";
 import { API_URL } from "../../config";
 import { Link, useParams } from "react-router-dom";
@@ -34,33 +33,35 @@ const HomePage = () => {
   }, [id]);
 
   const homePageGenresList = homePageGenres.map((homePageGenre) => (
-    <Link to={`/movies-by-genre/${homePageGenre.id}`}>
-      <li key={homePageGenre.id}>{homePageGenre.title}</li>
-    </Link>
+    <li key={homePageGenre.id}>
+      <Link to={`/movies-by-genre/${homePageGenre.id}`}>
+        {homePageGenre.title}{" "}
+      </Link>
+    </li>
   ));
 
   const homePageMoviesList = homePageMovies.map((homePageMovie) => (
-    <Link to={`/movie/${homePageMovie.id}`}>
-      <li key={homePageMovie.id}>
-        <img src={homePageMovie.imageUrl} alt="home-movie"></img>
-      </li>
-    </Link>
+    <li key={homePageMovie.id}>
+      <Link to={`/movie/${homePageMovie.id}`}>
+        <img src={homePageMovie.imageUrl} alt="home-movie"></img>{" "}
+      </Link>
+    </li>
   ));
 
   const homePageActorsList = homePageActors.map((homePageActor) => (
-    <Link to={`/actor/${homePageActor.id}`}>
-      <li key={homePageActor.id}>
-        <img src={homePageActor.imageUrl} alt="home-actor"></img>
-      </li>
-    </Link>
+    <li key={homePageActor.id}>
+      <Link to={`/actor/${homePageActor.id}`}>
+        <img src={homePageActor.imageUrl} alt="home-actor"></img>{" "}
+      </Link>
+    </li>
   ));
 
   const homePageDirectorsList = homePageDirectors.map((homePageDirector) => (
-    <Link to={`/director/${homePageDirector.id}`}>
-      <li key={homePageDirector.id}>
+    <li key={homePageDirector.id}>
+      <Link to={`/director/${homePageDirector.id}`}>
         <img src={homePageDirector.imageUrl} alt="home-director"></img>
-      </li>
-    </Link>
+      </Link>
+    </li>
   ));
 
   const [results, setResults] = useState([]);
@@ -81,29 +82,26 @@ const HomePage = () => {
           <SearchBar setResults={setResults} />
           <SearchResultsList results={results} />
         </div>
-        <div className="home-page-genres">
+        <div className="home-page elements genres">
           <ul>{homePageGenresList}</ul>
         </div>
-        <div className="home-page-movies">
-          <h2>Movies</h2>
-          <ul>{homePageMoviesList}</ul>
+        <div className="home-page elements layout">
           <Link to={`/movies`}>
-            <h4>Go to movies page..</h4>
+            <h2 className="page-title">Movies</h2>
           </Link>
+          <ul>{homePageMoviesList}</ul>
         </div>
-        <div className="home-page-actors">
-          <h2>Actors</h2>
-          <ul>{homePageActorsList}</ul>
+        <div className="home-page elements layout">
           <Link to={`/actors`}>
-            <h4>Go to actors page..</h4>
+            <h2 className="page-title">Actors</h2>
           </Link>
+          <ul>{homePageActorsList}</ul>
         </div>
-        <div className="home-page-directors">
-          <h2>Directors</h2>
-          <ul>{homePageDirectorsList}</ul>
+        <div className="home-page elements layout">
           <Link to={`/directors`}>
-            <h4>Go to directors page..</h4>
+            <h2 className="page-title">Directors</h2>
           </Link>
+          <ul>{homePageDirectorsList}</ul>
         </div>
       </div>
     </Container>

@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import Container from "../../Components/Container/Container";
 import { API_URL } from "../../config";
-import "./ActorsPage.scss";
 import ActorItem from "../../Components/ActorItem/ActorItem";
 import { Link } from "react-router-dom";
 import { useToast } from "@chakra-ui/react";
@@ -49,8 +48,10 @@ const ActorsPage = () => {
   ));
   return (
     <Container>
-      <Link to={`/create-actor`}>Create New Actor</Link>
-      <h2>Actors</h2>
+      <Link to={`/create-actor`}>
+        <h3 className="create-button">Create New Actor</h3>
+      </Link>
+      <h2 className="page-title">Actors</h2>
       <div className="actors-list">
         <ul>{actorsList}</ul>
       </div>

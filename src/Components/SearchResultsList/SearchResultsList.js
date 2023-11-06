@@ -5,7 +5,7 @@ const SearchResultsList = ({ results }) => {
     <div className="results-list">
       {results.map((result, id) => {
         return (
-          <div key={id}>
+          <div className="results-item" key={id}>
             <Link to={`/movie/${result.id}`}>{result.title}</Link>
           </div>
         );

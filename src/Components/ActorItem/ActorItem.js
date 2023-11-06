@@ -1,6 +1,5 @@
 import { Link, useNavigate } from "react-router-dom";
-import "./ActorItem.scss";
-import { IconButton } from "@chakra-ui/react";
+import { HStack, IconButton } from "@chakra-ui/react";
 import { DeleteIcon, EditIcon } from "@chakra-ui/icons";
 
 const ActorItem = ({ data, showEdit, onDelete }) => {
@@ -15,16 +14,18 @@ const ActorItem = ({ data, showEdit, onDelete }) => {
           <h4>{name}</h4>
         </Link>
       </div>
-      {showEdit && (
-        <IconButton onClick={() => navigate(`/create-actor/${id}`)}>
-          <EditIcon />
-        </IconButton>
-      )}
-      {onDelete && (
-        <IconButton onClick={() => onDelete(id)}>
-          <DeleteIcon />
-        </IconButton>
-      )}
+      <HStack gap={2} mt="10px">
+        {showEdit && (
+          <IconButton onClick={() => navigate(`/create-actor/${id}`)}>
+            <EditIcon />
+          </IconButton>
+        )}
+        {onDelete && (
+          <IconButton onClick={() => onDelete(id)}>
+            <DeleteIcon />
+          </IconButton>
+        )}
+      </HStack>
     </>
   );
 };

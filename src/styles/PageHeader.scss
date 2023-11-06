@@ -1,4 +1,6 @@
-.page-header {
+@import "../styles/variables";
+
+.page-header .container {
   background-color: black;
   color: white;
   padding-top: 15px;
@@ -19,7 +21,7 @@
     }
 
     a.active {
-      color: rgb(247, 171, 171);
+      color: $primary;
     }
 
     a:hover {

@@ -1,0 +1,46 @@
+.single-page .page-wrapper {
+  display: flex;
+  gap: 30px;
+}
+.single-page .page-wrapper .image {
+  margin-top: 20px;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+.single-page .page-wrapper .image img {
+  width: 400px;
+  height: 600px;
+}
+.single-page .page-wrapper .content {
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.single-page .page-wrapper .content h3 {
+  font-size: 25px;
+  font-family: cursive;
+}
+.single-page .main-features ul {
+  display: flex;
+  gap: 20px;
+}
+.single-page .main-features img {
+  width: 200px;
+  height: 300px;
+}
+.single-page a {
+  gap: 10px;
+}
+
+.movie-genres ul {
+  display: flex;
+  gap: 10px;
+}
+.movie-genres ul li h4 {
+  font-size: 15px;
+}/*# sourceMappingURL=single-page.css.map */

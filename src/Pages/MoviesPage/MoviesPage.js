@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import Container from "../../Components/Container/Container";
 import { API_URL } from "../../config";
 import axios from "axios";
-import "./MoviesPage.scss";
 import MoviesItem from "../../Components/MovieItem/MovieItem";
 import { Link } from "react-router-dom";
 import { useToast } from "@chakra-ui/react";
@@ -50,8 +49,10 @@ const MoviesPage = () => {
 
   return (
     <Container>
-      <Link to={`/create-movie`}>Create New Movie</Link>
-      <h2>Movies</h2>
+      <Link to={`/create-movie`}>
+        <h3 className="create-button">Create New Movie</h3>
+      </Link>
+      <h2 className="page-title">Movies</h2>
       <div className="movies-list">
         <ul>{moviesList}</ul>
       </div>

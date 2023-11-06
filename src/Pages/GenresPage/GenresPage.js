@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import { API_URL } from "../../config";
 import Container from "../../Components/Container/Container";
-import "./GenresPage.scss";
+
 import GenreItem from "../../Components/GenreItem/GenreItem";
 import { Link } from "react-router-dom";
 import { useToast } from "@chakra-ui/react";
@@ -50,8 +50,10 @@ const GenresPage = () => {
   ));
   return (
     <Container>
-      <Link to={`/create-genre`}>Create New Genre</Link>
-      <h2>Genres</h2>
+      <Link to={`/create-genre`}>
+        <h3 className="create-button">Create New Genre</h3>
+      </Link>
+      <h2 className="page-title">Genres</h2>
       <div className="genres-list">
         <ul>{genresList}</ul>
       </div>

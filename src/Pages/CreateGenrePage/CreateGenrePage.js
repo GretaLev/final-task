@@ -2,7 +2,7 @@ import Container from "../../Components/Container/Container";
 import { API_URL } from "../../config";
 import { useForm } from "react-hook-form";
 import Input from "../../Components/Form/Input/Input";
-import { Button, useToast } from "@chakra-ui/react";
+import { Button, VStack, useToast } from "@chakra-ui/react";
 import { useParams } from "react-router-dom";
 import { useEffect } from "react";
 import axios from "axios";
@@ -65,17 +65,22 @@ const CreateGenrePage = () => {
 
   return (
     <Container>
-      <h1> {id ? "Edit Genre" : "Create New genre"}</h1>
+      <h1 className="create-page-title">
+        {" "}
+        {id ? "Edit Genre" : "Create New genre"}
+      </h1>
 
       <form onSubmit={handleSubmit(newGenreHandler)}>
-        <Input
-          label="Title:"
-          register={register("title", { required: "Title is required" })}
-          error={errors?.title?.message}
-        />
-        <Button type="submit" colorScheme="green" isLoading={isSubmitting}>
-          {id ? "Edit" : "Create"}
-        </Button>
+        <VStack gap={3} alignItems="flex-start">
+          <Input
+            label="Title:"
+            register={register("title", { required: "Title is required" })}
+            error={errors?.title?.message}
+          />
+          <Button type="submit" colorScheme="green" isLoading={isSubmitting}>
+            {id ? "Edit" : "Create"}
+          </Button>
+        </VStack>
       </form>
     </Container>
   );

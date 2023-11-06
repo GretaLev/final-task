@@ -1,0 +1,102 @@
+.page-title {
+  font-size: 25px;
+  font-weight: bold;
+  margin: 20px 0;
+  transition: 0.3s;
+}
+
+.create-button {
+  max-width: 200px;
+  padding: 5px 0;
+  text-align: center;
+  font-size: 15px;
+  border-radius: 20px;
+  border: solid 2px;
+  transition: 0.3s;
+
+  &:hover {
+    background-color: $primary;
+    font-weight: bold;
+  }
+}
+
+.elements {
+  a {
+    text-decoration: none;
+  }
+  ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    @include breakpoint($md) {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+    @include breakpoint($lg) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+  &.genres {
+    li {
+      transition: 0.3s;
+      padding: 5px 30px;
+      color: $secondary;
+      border-radius: 20px;
+      border: solid 2px;
+      text-align: center;
+
+      &:hover {
+        background-color: $primary;
+        font-weight: bold;
+        color: $secondary;
+      }
+    }
+  }
+
+  &.layout {
+    ul {
+      display: grid;
+      grid-template-columns: 1fr;
+      @include breakpoint($sm) {
+        grid-template-columns: 1fr 1fr;
+      }
+      @include breakpoint($md) {
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+      // @include breakpoint($lg) {
+      //   display: flex;
+      //   flex-wrap: wrap;
+      //   gap: 20px;
+      // }
+    }
+    li {
+      display: flex;
+      justify-content: center;
+
+      img {
+        width: 400px;
+        height: 500px;
+
+        @include breakpoint($sm) {
+          width: 240px;
+          height: 350px;
+        }
+        transition: 0.3s;
+
+        &:hover {
+          border-radius: 20%;
+        }
+      }
+    }
+  }
+}
+
+.create-page-title {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+chakra-button {
+  margin-top: 10px;
+}
