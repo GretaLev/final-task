@@ -4,18 +4,18 @@ import {
   IconButton,
   Stack,
   Collapse,
-  useColorModeValue,
   useDisclosure,
   VStack,
 } from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 import { NavLink } from "react-router-dom";
 import Container from "../Container/Container";
+import logo from "../../assets/logo-movies.svg";
 
 const NAV_ITEMS = [
   {
     title: "Home",
-    url: "/home",
+    url: "/",
   },
   {
     title: "Movies",
@@ -41,7 +41,8 @@ export default function Navigation() {
   return (
     <div className="page-header">
       <Container>
-        <Flex bg="black" py={{ base: 2 }} px={{ base: 4 }} align="flex-end">
+        <Flex bg="black" py={{ base: 2 }} align="center">
+          <img src={logo} alt="logo" width="40px" />
           <Flex flex={{ base: 1 }} justify={{ base: "center", md: "end" }}>
             <Flex display={{ base: "none", md: "flex" }} ml={10}>
               <DesktopNav />
@@ -87,7 +88,7 @@ const DesktopNav = () => {
     <nav className="main-navigation">
       <ul className="nav-list">
         {NAV_ITEMS.map((navItem) => (
-          <li className="nav-item">
+          <li className="nav-item" key={navItem.url}>
             <NavLink to={navItem.url}> {navItem.title}</NavLink>
           </li>
         ))}
@@ -101,7 +102,7 @@ const MobileNav = () => {
     <Stack bg="black" p={4} display={{ md: "none" }}>
       <VStack gap={4}>
         {NAV_ITEMS.map((navItem) => (
-          <Box>
+          <Box key={navItem.url}>
             <NavLink to={navItem.url}> {navItem.title}</NavLink>
           </Box>
         ))}

@@ -1,7 +1,6 @@
 import { ChakraProvider } from "@chakra-ui/react";
 import { Routes, Route } from "react-router-dom";
 import "./App.scss";
-import PageHeader from "./Components/PageHeader/PageHeader";
 import MoviesPage from "./Pages/MoviesPage/MoviesPage";
 import MoviesItemPage from "./Pages/MoviesItemPage/MoviesItemPage";
 import GenresPage from "./Pages/GenresPage/GenresPage";
@@ -21,10 +20,9 @@ function App() {
   return (
     <ChakraProvider>
       <div>
-        {/* <PageHeader /> */}
         <Navigation />
         <Routes>
-          <Route path="/home" element={<HomePage />}></Route>
+          <Route path="/" element={<HomePage />}></Route>
           <Route path="/movies" element={<MoviesPage />} />
           <Route path="/movie/:id" element={<MoviesItemPage />} />
           <Route path="/create-movie/:id?" element={<CreateMoviePage />} />

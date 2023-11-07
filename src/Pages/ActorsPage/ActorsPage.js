@@ -42,7 +42,7 @@ const ActorsPage = () => {
     return <h2>Loading...</h2>;
   }
   const actorsList = actors.map((actor) => (
-    <li>
+    <li key={actor.id}>
       <ActorItem data={actor} showEdit onDelete={deleteHandler} />
     </li>
   ));
