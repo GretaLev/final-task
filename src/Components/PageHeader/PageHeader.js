@@ -9,7 +9,7 @@ const PageHeader = () => {
         <nav className="main-navigation">
           <ul className="nav-list">
             <li className="nav-item">
-              <NavLink to="/home">Home</NavLink>
+              <NavLink to="/home"> HOME</NavLink>
             </li>
 
             <li className="nav-item">

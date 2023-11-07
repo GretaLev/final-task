@@ -35,8 +35,6 @@ const DirectorsItemPage = () => {
     return <h2>Something went wrong...</h2>;
   }
 
-  const { year, month, day, country } = director.born;
-
   return (
     <Container>
       <div className="single-page director">
@@ -46,7 +44,7 @@ const DirectorsItemPage = () => {
           </div>
           <div className="content">
             <h3>{director.name}</h3>
-            <h4>Born in {`${year} of ${month} ${day}`}</h4>
+            <h4>Born in {`${director.born}`}</h4>
             <p>{director.about}</p>
           </div>
         </div>

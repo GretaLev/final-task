@@ -3,6 +3,7 @@
   font-weight: bold;
   margin: 20px 0;
   transition: 0.3s;
+  text-align: center;
 }
 
 .create-button {
@@ -37,6 +38,9 @@
     }
   }
   &.genres {
+    ul {
+      justify-content: center;
+    }
     li {
       transition: 0.3s;
       padding: 5px 30px;

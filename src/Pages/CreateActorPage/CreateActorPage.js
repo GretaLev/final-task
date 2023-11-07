@@ -8,7 +8,6 @@ import { useParams } from "react-router-dom";
 import { useEffect } from "react";
 import axios from "axios";
 import Select from "../../Components/Form/Select/Select";
-import { monthArray } from "../../constants";
 
 const CreateActorPage = () => {
   const { id } = useParams();
@@ -21,12 +20,8 @@ const CreateActorPage = () => {
   } = useForm({
     defaultValues: {
       name: "",
-      born: {
-        year: "",
-        month: "",
-        day: "",
-        country: "",
-      },
+      born: "",
+      country: "",
       about: "",
       imageUrl: "",
     },
@@ -89,26 +84,17 @@ const CreateActorPage = () => {
             error={errors?.name?.message}
           />
           <Input
-            label="Year:"
-            type="number"
-            register={register("born.year", { required: "Year is required" })}
-            error={errors?.year?.message}
+            label="Born:"
+            type="date"
+            register={register("born", {
+              required: "Date is required",
+            })}
+            error={errors?.born?.message}
           />
-          <Select
-            options={monthArray}
-            label="Month:"
-            register={register("born.month", { required: "Month is required" })}
-            error={errors?.month?.message}
-          />
-          <Input
-            label="Day:"
-            type="number"
-            register={register("born.day", { required: "Day is required" })}
-            error={errors?.day?.message}
-          />
+
           <Input
             label="Country:"
-            register={register("born.country", {
+            register={register("country", {
               required: "Country is required",
             })}
             error={errors?.country?.message}

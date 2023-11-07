@@ -33,8 +33,6 @@ const ActorsItemPage = () => {
     return <h2>Something went wrong...</h2>;
   }
 
-  const { year, month, day, country } = actor.born;
-
   return (
     <Container>
       <div className="single-page actor">
@@ -44,7 +42,7 @@ const ActorsItemPage = () => {
           </div>
           <div className="content">
             <h3>{actor.name}</h3>
-            <h4>Born in {`${year} ${month} ${day}`}</h4>
+            <h4>Born in {`${actor.born}`}</h4>
             <p>{actor.about}</p>
           </div>
         </div>

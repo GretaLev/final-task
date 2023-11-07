@@ -1,15 +1,22 @@
 import Container from "../../Components/Container/Container";
 import { API_URL } from "../../config";
-import { useForm } from "react-hook-form";
+import { Controller, useForm } from "react-hook-form";
 import { Button, VStack, useToast } from "@chakra-ui/react";
 import Input from "../../Components/Form/Input/Input";
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import axios from "axios";
-import Select from "../../Components/Form/Select/Select";
+// import Select from "../../Components/Form/Select/Select";
+// import Select from "react-select";
+import ReactSelect from "../../Components/Form/Input/ReactSelect/ReactSelect";
 
 const CreateMoviePage = () => {
-  const [genres, setGenres] = useState([]);
+  const [genresData, setGenresData] = useState([]);
+
+  const [actors, setActors] = useState([]);
+
+  const [directors, setDirectors] = useState([]);
+
   const { id } = useParams();
   const toast = useToast();
   const {
@@ -17,14 +24,17 @@ const CreateMoviePage = () => {
     handleSubmit,
     formState: { errors, isSubmitting },
     reset,
+    control,
   } = useForm({
     defaultValues: {
       title: "",
       description: "",
-      genre: "",
       rate: "",
       releaseDate: "",
       imageUrl: "",
+      genresId: "",
+      actorsId: "",
+      directorId: "",
     },
   });
 
@@ -40,17 +50,48 @@ const CreateMoviePage = () => {
     }
 
     axios(API_URL + "/genres").then((res) => {
-      setGenres(res.data);
-      console.log(res.data);
+      setGenresData(res.data);
+    });
+
+    axios(API_URL + "/actors").then((res) => {
+      setActors(res.data);
+    });
+
+    axios(API_URL + "/directors").then((res) => {
+      setDirectors(res.data);
     });
   }, []);
 
-  const genresOptions = genres.map((genre) => genre.title);
+  const genresOptions = genresData.map((genre) => ({
+    value: genre.id,
+    label: genre.title,
+  }));
+
+  const actorsOptions = actors.map((actor) => ({
+    value: actor.id,
+    label: actor.name,
+  }));
+
+  const directorsOptions = directors.map((director) => ({
+    value: director.id,
+    label: director.name,
+  }));
 
   const newMovieHandler = async (values) => {
     const response = await axios(API_URL + (id ? `/movies/${id}` : "/movies"), {
       method: id ? "PUT" : "POST",
-      data: values,
+      data: { ...values, directorId: values.directorId.value },
+    });
+
+    // Update director relationship
+    const { id: movieId, directorId } = response.data;
+
+    await axios(API_URL + `/directorRelationships`, {
+      method: "POST",
+      data: {
+        movieId,
+        directorId,
+      },
     });
 
     if (response.statusText === "OK") {
@@ -90,6 +131,7 @@ const CreateMoviePage = () => {
             register={register("title", { required: "Title is required" })}
             error={errors?.title?.message}
           />
+
           <Input
             label="Description:"
             type="textarea"
@@ -98,20 +140,36 @@ const CreateMoviePage = () => {
             })}
             error={errors?.description?.message}
           />
-          <Select
+
+          <ReactSelect
             options={genresOptions}
-            label="Genre:"
-            register={register("genre", { required: "Genre is required" })}
-            error={errors?.genre?.message}
+            label="Genres:"
+            name="genresId"
+            control={control}
+            error={errors?.genresId?.message}
+            rules={{ required: "Genre is required" }}
+            isMulti
           />
-          <Input
-            label="Description:"
-            type="textarea"
-            register={register("description", {
-              required: "Description is required",
-            })}
-            error={errors?.description?.message}
+
+          <ReactSelect
+            options={actorsOptions}
+            label="Actors:"
+            name="actorsId"
+            rules={{ required: "Actor is required" }}
+            control={control}
+            error={errors?.actorsId?.message}
+            isMulti
           />
+
+          <ReactSelect
+            options={directorsOptions}
+            label="Director:"
+            name="directorId"
+            control={control}
+            rules={{ required: "Director is required" }}
+            error={errors?.directorId?.message}
+          />
+
           <Input
             label="Rating:"
             type="number"
@@ -120,6 +178,7 @@ const CreateMoviePage = () => {
             })}
             error={errors?.rate?.message}
           />
+
           <Input
             label="Released in:"
             type="number"
@@ -128,6 +187,7 @@ const CreateMoviePage = () => {
             })}
             error={errors?.releaseDate?.message}
           />
+
           <Input
             label="Movie picture link:"
             type="url"

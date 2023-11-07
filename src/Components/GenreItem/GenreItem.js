@@ -8,11 +8,12 @@ const GenreItem = ({ data, showEdit, onDelete }) => {
   const navigate = useNavigate();
   return (
     <>
-      <Link to={`/movies-by-genre/${id}`}>
-        <div className="genres-item">
+      <div className="genres-item">
+        <Link to={`/movies-by-genre/${id}`}>
           <h4>{title}</h4>
-        </div>
-      </Link>
+        </Link>
+      </div>
+
       {showEdit ||
         (onDelete && (
           <HStack gap={2} mt="10px">

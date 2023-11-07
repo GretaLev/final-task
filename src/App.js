@@ -15,12 +15,14 @@ import CreateMoviePage from "./Pages/CreateMoviePage/CreateMoviePage";
 import CreateGenrePage from "./Pages/CreateGenrePage/CreateGenrePage";
 import CreateActorPage from "./Pages/CreateActorPage/CreateActorPage";
 import CreateDirectorPage from "./Pages/CreateDirectorPage/CreateDirectorPage";
+import Navigation from "./Components/Navigation/Navigation";
 
 function App() {
   return (
     <ChakraProvider>
       <div>
-        <PageHeader />
+        {/* <PageHeader /> */}
+        <Navigation />
         <Routes>
           <Route path="/home" element={<HomePage />}></Route>
           <Route path="/movies" element={<MoviesPage />} />
