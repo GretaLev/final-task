@@ -35,7 +35,7 @@ const HomePage = () => {
   const homePageGenresList = homePageGenres.map((homePageGenre) => (
     <li key={homePageGenre.id}>
       <Link to={`/movies-by-genre/${homePageGenre.id}`}>
-        {homePageGenre.title}{" "}
+        <div>{homePageGenre.title}</div>
       </Link>
     </li>
   ));
@@ -80,7 +80,7 @@ const HomePage = () => {
       <div className="home-page">
         <div className="search-bar-container">
           <SearchBar setResults={setResults} />
-          <SearchResultsList results={results} />
+          {results.length > 0 && <SearchResultsList results={results} />}
         </div>
         <div className="home-page elements genres">
           <ul>{homePageGenresList}</ul>

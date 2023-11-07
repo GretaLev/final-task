@@ -1,20 +1,16 @@
 import Container from "../../Components/Container/Container";
 import { API_URL } from "../../config";
-import { Controller, useForm } from "react-hook-form";
+import { useForm } from "react-hook-form";
 import { Button, VStack, useToast } from "@chakra-ui/react";
 import Input from "../../Components/Form/Input/Input";
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import axios from "axios";
-// import Select from "../../Components/Form/Select/Select";
-// import Select from "react-select";
-import ReactSelect from "../../Components/Form/Input/ReactSelect/ReactSelect";
+import ReactSelect from "../../Components/Form/ReactSelect/ReactSelect";
 
 const CreateMoviePage = () => {
   const [genresData, setGenresData] = useState([]);
-
   const [actors, setActors] = useState([]);
-
   const [directors, setDirectors] = useState([]);
 
   const { id } = useParams();
@@ -80,19 +76,10 @@ const CreateMoviePage = () => {
   const newMovieHandler = async (values) => {
     const response = await axios(API_URL + (id ? `/movies/${id}` : "/movies"), {
       method: id ? "PUT" : "POST",
-      data: { ...values, directorId: values.directorId.value },
+      data: values,
     });
 
-    // Update director relationship
-    const { id: movieId, directorId } = response.data;
-
-    await axios(API_URL + `/directorRelationships`, {
-      method: "POST",
-      data: {
-        movieId,
-        directorId,
-      },
-    });
+    const { id: movieId, directorId, actorsId, genresId } = response.data;
 
     if (response.statusText === "OK") {
       toast({
@@ -102,6 +89,35 @@ const CreateMoviePage = () => {
         isClosable: true,
       });
     } else if (response.statusText === "Created") {
+      // Create new actors, genres and director relationships
+      await Promise.all([
+        await axios(API_URL + "/directorRelationships", {
+          method: "POST",
+          data: {
+            movieId,
+            directorId,
+          },
+        }),
+        actorsId.map(async (actorId) => {
+          await axios(API_URL + "/actorRelationships", {
+            method: "POST",
+            data: {
+              movieId,
+              actorId,
+            },
+          });
+        }),
+        genresId.map(async (genreId) => {
+          await axios(API_URL + "/movieRelationships", {
+            method: "POST",
+            data: {
+              movieId,
+              genreId,
+            },
+          });
+        }),
+      ]);
+
       toast({
         title: "New Movie created",
         status: "success",
@@ -120,7 +136,6 @@ const CreateMoviePage = () => {
   return (
     <Container>
       <h1 className="create-page-title">
-        {" "}
         {id ? "Edit Movie" : "Create New Movie"}
       </h1>
 
@@ -149,6 +164,7 @@ const CreateMoviePage = () => {
             error={errors?.genresId?.message}
             rules={{ required: "Genre is required" }}
             isMulti
+            isDisabled={!!id}
           />
 
           <ReactSelect
@@ -159,6 +175,7 @@ const CreateMoviePage = () => {
             control={control}
             error={errors?.actorsId?.message}
             isMulti
+            isDisabled={!!id}
           />
 
           <ReactSelect
@@ -168,6 +185,7 @@ const CreateMoviePage = () => {
             control={control}
             rules={{ required: "Director is required" }}
             error={errors?.directorId?.message}
+            isDisabled={!!id}
           />
 
           <Input

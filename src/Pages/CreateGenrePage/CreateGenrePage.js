@@ -3,11 +3,12 @@ import { API_URL } from "../../config";
 import { useForm } from "react-hook-form";
 import Input from "../../Components/Form/Input/Input";
 import { Button, VStack, useToast } from "@chakra-ui/react";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { useEffect } from "react";
 import axios from "axios";
 
 const CreateGenrePage = () => {
+  const navigate = useNavigate();
   const { id } = useParams();
   const toast = useToast();
   const {
@@ -60,6 +61,9 @@ const CreateGenrePage = () => {
         duration: 2000,
         isClosable: true,
       });
+    }
+    if (response.statusText === "OK" || response.statusText === "Created") {
+      navigate("/genres");
     }
   };
 

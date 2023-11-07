@@ -26,7 +26,7 @@ const MoviesByGenre = () => {
   const genretitle = genre ? genre[0].title : "";
 
   const moviesByGenreList = moviesByGenre.map((movieByGenre) => (
-    <li>
+    <li key={movieByGenre.id}>
       <MoviesItem data={movieByGenre.movie} />
     </li>
   ));

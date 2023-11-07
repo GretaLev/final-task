@@ -4,12 +4,13 @@ import { Button, VStack, useToast } from "@chakra-ui/react";
 import { useForm } from "react-hook-form";
 
 import Input from "../../Components/Form/Input/Input";
-import { useParams } from "react-router-dom";
+import { Navigate, useNavigate, useParams } from "react-router-dom";
 import { useEffect } from "react";
 import axios from "axios";
 import Select from "../../Components/Form/Select/Select";
 
 const CreateActorPage = () => {
+  const navigate = useNavigate();
   const { id } = useParams();
   const toast = useToast();
   const {
@@ -66,6 +67,9 @@ const CreateActorPage = () => {
         duration: 2000,
         isClosable: true,
       });
+    }
+    if (response.statusText === "OK" || response.statusText === "Created") {
+      navigate("/actors");
     }
   };
 
