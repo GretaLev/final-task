@@ -25,8 +25,7 @@ const DirectorsItemPage = () => {
   }, []);
 
   const moviesByDirector = movies.map((movie) => (
-    <li>
-      {" "}
+    <li key={movie.id}>
       <MoviesItem data={movie.movie} />
     </li>
   ));

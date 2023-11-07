@@ -46,7 +46,7 @@ const DirectorsPage = () => {
   }
 
   const directorsList = directors.map((director) => (
-    <li>
+    <li key={director.id}>
       <DirectorItem data={director} showEdit onDelete={deleteHandler} />
     </li>
   ));

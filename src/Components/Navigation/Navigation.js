@@ -4,18 +4,18 @@ import {
   IconButton,
   Stack,
   Collapse,
-  useColorModeValue,
   useDisclosure,
   VStack,
 } from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import Container from "../Container/Container";
+import logo from "../../assets/logo-movies.svg";
 
 const NAV_ITEMS = [
   {
     title: "Home",
-    url: "/home",
+    url: "/",
   },
   {
     title: "Movies",
@@ -36,12 +36,20 @@ const NAV_ITEMS = [
 ];
 
 export default function Navigation() {
-  const { isOpen, onToggle } = useDisclosure();
+  const { isOpen, onToggle, onClose } = useDisclosure();
+
+  const handleMenuItemClick = () => {
+    onClose();
+  };
 
   return (
     <div className="page-header">
       <Container>
-        <Flex bg="black" py={{ base: 2 }} px={{ base: 4 }} align="flex-end">
+        <Flex bg="black" py={{ base: 2 }} align="center">
+          <Link to={"/"}>
+            {" "}
+            <img src={logo} alt="logo" width="40px" />
+          </Link>
           <Flex flex={{ base: 1 }} justify={{ base: "center", md: "end" }}>
             <Flex display={{ base: "none", md: "flex" }} ml={10}>
               <DesktopNav />
@@ -75,7 +83,7 @@ export default function Navigation() {
         </Flex>
 
         <Collapse in={isOpen} animateOpacity>
-          <MobileNav />
+          <MobileNav onItemClick={handleMenuItemClick} />
         </Collapse>
       </Container>
     </div>
@@ -87,7 +95,7 @@ const DesktopNav = () => {
     <nav className="main-navigation">
       <ul className="nav-list">
         {NAV_ITEMS.map((navItem) => (
-          <li className="nav-item">
+          <li className="nav-item" key={navItem.url}>
             <NavLink to={navItem.url}> {navItem.title}</NavLink>
           </li>
         ))}
@@ -96,13 +104,15 @@ const DesktopNav = () => {
   );
 };
 
-const MobileNav = () => {
+const MobileNav = ({ onItemClick }) => {
   return (
     <Stack bg="black" p={4} display={{ md: "none" }}>
       <VStack gap={4}>
         {NAV_ITEMS.map((navItem) => (
-          <Box>
-            <NavLink to={navItem.url}> {navItem.title}</NavLink>
+          <Box key={navItem.url}>
+            <NavLink to={navItem.url} onClick={onItemClick}>
+              {navItem.title}
+            </NavLink>
           </Box>
         ))}
       </VStack>

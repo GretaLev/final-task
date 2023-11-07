@@ -3,7 +3,6 @@ import axios from "axios";
 import { API_URL } from "../../config";
 import { useParams } from "react-router-dom";
 import Container from "../../Components/Container/Container";
-import "./MoviesByGenre.scss";
 import MoviesItem from "../../Components/MovieItem/MovieItem";
 
 const MoviesByGenre = () => {
@@ -27,7 +26,7 @@ const MoviesByGenre = () => {
   const genretitle = genre ? genre[0].title : "";
 
   const moviesByGenreList = moviesByGenre.map((movieByGenre) => (
-    <li>
+    <li key={movieByGenre.id}>
       <MoviesItem data={movieByGenre.movie} />
     </li>
   ));

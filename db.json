@@ -44,20 +44,32 @@
   ],
   "genres": [
     {
-      "id": 5,
+      "id": 1,
       "title": "Comedy"
     },
     {
-      "id": 6,
+      "id": 2,
       "title": "Adventure"
     },
     {
-      "id": 7,
+      "id": 3,
       "title": "History"
     },
     {
       "title": "Drama",
-      "id": 8
+      "id": 4
+    },
+    {
+      "title": "Crime",
+      "id": 5
+    },
+    {
+      "title": "Romance",
+      "id": 6
+    },
+    {
+      "title": "Biography",
+      "id": 6
     }
   ],
   "actors": [
@@ -100,14 +112,6 @@
       "country": "USA",
       "about": "Alfredo James „Al“ 'Pacino established himself as a film actor during one of cinema's most vibrant decades, the 1970s, and has become an enduring and iconic figure in the world of American movies.He was born April 25, 1940 in Manhattan, New York City, to Italian-American parents, Rose (nee Gerardi) and Sal Pacino. ",
       "imageUrl": "https://media.newyorker.com/photos/5e70fef11785a2000935d0eb/master/pass/ra722.jpg"
-    },
-    {
-      "name": "Edward Norton",
-      "born": "1969-06-21",
-      "country": "Lithuania",
-      "about": "gdsgsdfsdfsdfsdfsdfsdf",
-      "imageUrl": "https://m.media-amazon.com/images/M/MV5BMjA1MjE2MTQ2MV5BMl5BanBnXkFtZTcwMjE5MDY0Nw@@._V1_FMjpg_UX1000_.jpg",
-      "id": 6
     }
   ],
   "directors": [
@@ -150,31 +154,63 @@
       "country": "USA",
       "about": "Academy Award-winning filmmaker Ron Howard is one of this generation's most popular directors. From the critically acclaimed dramas A Beautiful Mind (2001) and Apollo 13 (1995) to the hit comedies Parenthood (1989) and Splash (1984), he has created some of Hollywood's most memorable films. Howard made his directorial debut in 1978 with the comedy Grand Theft Auto (1977). He began his career in film as an actor. He first appeared in The Journey (1959) and The Music Man (1962), then as Opie on the long-running television series The Andy Griffith Show (1960). Howard later starred in the popular series Happy Days (1974) and drew favorable reviews for his performances in American Graffiti (1973) and The Shootist (1976). Howard and long-time producing partner Brian Grazer first collaborated on the hit comedies „Night Shift“ and „Splash.“ The pair co-founded Imagine Entertainment in 1986 to create independently produced feature films.",
       "imageUrl": "https://cdn.britannica.com/96/198896-050-42D8197A/Ron-Howard-2009.jpg"
-    },
-    {
-      "name": "test",
-      "born": "1994-02-02",
-      "country": "Lithuania",
-      "about": "American actor, filmmaker and activist Edward Harrison Norton was born on August 18, 1969, in Boston, Massachusetts, and was raised in Columbia, Maryland.  His mother, Lydia Robinson \"Robin\" (Rouse), was a foundation executive and teacher of English, and a daughter of famed real estate developer James Rouse, who developed Columbia, MD; she passed away of brain cancer on March 6, 1997. His father, Edward Mower Norton, was an environmental lawyer and conservationist, who works for the National Trust for Historic Preservation.",
-      "imageUrl": "https://m.media-amazon.com/images/I/71YFxhhSRPL._AC_UF894,1000_QL80_.jpg",
-      "id": 6
     }
   ],
   "movieRelationships": [
     {
-      "id": 8,
+      "id": 1,
+      "movieId": 1,
+      "genreId": 4
+    },
+    {
+      "id": 2,
+      "movieId": 2,
+      "genreId": 4
+    },
+    {
+      "id": 3,
+      "movieId": 2,
+      "genreId": 5
+    },
+    {
+      "id": 4,
+      "movieId": 3,
+      "genreId": 4
+    },
+    {
+      "id": 5,
+      "movieId": 3,
+      "genreId": 6
+    },
+    {
+      "id": 6,
+      "movieId": 4,
+      "genreId": 1
+    },
+    {
+      "id": 7,
       "movieId": 4,
       "genreId": 5
     },
     {
+      "id": 8,
+      "movieId": 4,
+      "genreId": 6
+    },
+    {
+      "id": 9,
+      "movieId": 5,
+      "genreId": 2
+    },
+    {
       "id": 10,
       "movieId": 5,
-      "genreId": 6
+      "genreId": 3
     },
     {
       "id": 11,
       "movieId": 5,
-      "genreId": 7
+      "genreId": 4
     }
   ],
   "actorRelationships": [
@@ -182,6 +218,16 @@
       "id": 1,
       "movieId": 1,
       "actorId": 1
+    },
+    {
+      "id": 2,
+      "movieId": 1,
+      "actorId": 2
+    },
+    {
+      "id": 3,
+      "movieId": 1,
+      "actorId": 3
     },
     {
       "id": 2,

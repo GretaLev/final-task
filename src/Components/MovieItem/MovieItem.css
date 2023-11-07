@@ -1,8 +1,0 @@
-.movies-item img {
-  width: 340px;
-  height: 514px;
-  transition-duration: 0.3s;
-}
-.movies-item img:hover {
-  border-radius: 20%;
-}/*# sourceMappingURL=MoviesItem.css.map */

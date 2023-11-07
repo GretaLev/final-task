@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import axios from "axios";
 import { API_URL } from "../../config";
 import Container from "../../Components/Container/Container";
@@ -24,7 +24,7 @@ const ActorsItemPage = () => {
   }, [id]);
 
   const moviesByActor = movies.map((movie) => (
-    <li>
+    <li key={movie.id}>
       <MovieItem data={movie.movie} />
     </li>
   ));

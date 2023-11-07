@@ -44,7 +44,7 @@ const GenresPage = () => {
     return <h2>Loading...</h2>;
   }
   const genresList = genres.map((genre) => (
-    <li>
+    <li key={genre.id}>
       <GenreItem data={genre} onDelete={deleteHandler} />
     </li>
   ));

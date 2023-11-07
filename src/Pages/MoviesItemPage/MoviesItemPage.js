@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { API_URL } from "../../config";
 import axios from "axios";
 import Container from "../../Components/Container/Container";
@@ -40,19 +40,19 @@ const MoviesItemPage = () => {
   }, [id]);
 
   const movieItemGenres = genres.map((genre) => (
-    <li>
+    <li key={genre.id}>
       <GenreItem data={genre.genre} />
     </li>
   ));
 
   const movieActors = actors.map((actor) => (
-    <li>
+    <li key={actor.id}>
       <ActorItem data={actor.actor} />
     </li>
   ));
 
   const movieDirector = directors.map((director) => (
-    <li>
+    <li key={director.id}>
       <DirectorItem data={director.director} />
     </li>
   ));
