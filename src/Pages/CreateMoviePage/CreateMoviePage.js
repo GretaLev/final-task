@@ -3,12 +3,13 @@ import { API_URL } from "../../config";
 import { useForm } from "react-hook-form";
 import { Button, VStack, useToast } from "@chakra-ui/react";
 import Input from "../../Components/Form/Input/Input";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import ReactSelect from "../../Components/Form/ReactSelect/ReactSelect";
 
 const CreateMoviePage = () => {
+  const navigate = useNavigate();
   const [genresData, setGenresData] = useState([]);
   const [actors, setActors] = useState([]);
   const [directors, setDirectors] = useState([]);
@@ -131,6 +132,9 @@ const CreateMoviePage = () => {
         duration: 2000,
         isClosable: true,
       });
+    }
+    if (response.statusText === "OK" || response.statusText === "Created") {
+      navigate("/movies");
     }
   };
   return (
