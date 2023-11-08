@@ -34,6 +34,60 @@
       ],
       "directorId": 2,
       "id": 2
+    },
+    {
+      "title": "Forrest Gump",
+      "description": "Forrest Gump is a simple man with a low I.Q. but good intentions. He is running through childhood with his best and only friend Jenny. His 'mama' teaches him the ways of life and leaves him to choose his destiny. Forrest joins the army for service in Vietnam, finding new friends called Dan and Bubba, he wins medals, creates a famous shrimp fishing fleet, inspires people to jog, starts a ping-pong craze, creates the smiley, writes bumper stickers and songs, donates to people and meets the president several times. However, this is all irrelevant to Forrest who can only think of his childhood sweetheart Jenny Curran, who has messed up her life. Although in the end all he wants to prove is that anyone can love anyone",
+      "rate": "8.8",
+      "releaseDate": "1994",
+      "imageUrl": "https://m.media-amazon.com/images/M/MV5BNWIwODRlZTUtY2U3ZS00Yzg1LWJhNzYtMmZiYmEyNmU1NjMzXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_FMjpg_UX1000_.jpg",
+      "genresId": [
+        4,
+        6
+      ],
+      "actorsId": [
+        7,
+        8,
+        9
+      ],
+      "directorId": 3,
+      "id": 3
+    },
+    {
+      "title": "The Wolf of Wall Street",
+      "description": "Jordan Belfort (DiCaprio) is Long Island penny stockbroker who serves almost two years in prison for refusing to co-operate in a huge 1990s securities fraud case that involved widespread corruption on Wall Street and in the corporate banking world, including mob infiltration.",
+      "rate": "8.2",
+      "releaseDate": "2013",
+      "imageUrl": "https://m.media-amazon.com/images/M/MV5BMjIxMjgxNTk0MF5BMl5BanBnXkFtZTgwNjIyOTg2MDE@._V1_FMjpg_UX1000_.jpg",
+      "genresId": [
+        1,
+        5,
+        6
+      ],
+      "actorsId": [
+        11,
+        12,
+        10
+      ],
+      "directorId": 4,
+      "id": 4
+    },
+    {
+      "title": "Fight Club",
+      "description": "A nameless first person narrator (Edward Norton) attends support groups in attempt to subdue his emotional state and relieve his insomniac state. When he meets Marla (Helena Bonham Carter), another fake attendee of support groups, his life seems to become a little more bearable. However when he associates himself with Tyler (Brad Pitt) he is dragged into an underground fight club and soap making scheme. Together the two men spiral out of control and engage in competitive rivalry for love and power.",
+      "rate": "8.8",
+      "releaseDate": "1999",
+      "imageUrl": "https://m.media-amazon.com/images/M/MV5BODQ0OWJiMzktYjNlYi00MzcwLThlZWMtMzRkYTY4ZDgxNzgxXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg",
+      "genresId": [
+        4
+      ],
+      "actorsId": [
+        13,
+        14,
+        15
+      ],
+      "directorId": 6,
+      "id": 5
     }
   ],
   "genres": [
@@ -114,6 +168,78 @@
       "country": "USA",
       "about": "A masculine and enigmatic actor whose life and movie career have had more ups and downs than the average rollercoaster and whose selection of roles has arguably derailed him from achieving true superstar status, James Caan is New York-born and bred.He was born in the Bronx, to Sophie (Falkenstein) and Arthur Caan, Jewish immigrants from Germany.",
       "imageUrl": "https://people.com/thmb/zu7YJCZKMnKPzbzJtn0j8R8F4VA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(747x269:749x271)/james-caan-4-9c2f40a15a8c41f7a61a9fe301141591.jpg"
+    },
+    {
+      "name": "Tom Hanks",
+      "born": "1956-07-09",
+      "country": "USA",
+      "about": "Thomas Jeffrey Hanks was born in Concord, California, to Janet Marylyn (Frager), a hospital worker, and Amos Mefford Hanks, an itinerant cook. His mother's family, originally surnamed \"Fraga\", was entirely Portuguese, while his father was of mostly English ancestry. Tom grew up in what he has called a \"fractured\" family. He moved around a great deal after his parents' divorce, living with a succession of step-families. No problems, no alcoholism - just a confused childhood. He has no acting experience in college and credits the fact that he could not get cast in a college play with actually starting his career. He went downtown, and auditioned for a community theater play, was invited by the director of that play to go to Cleveland, and there his acting career started.",
+      "imageUrl": "https://www.usatoday.com/gcdn/presto/2020/07/09/USAT/b850c175-4d38-49fe-9bf7-6950c37657ab-tom_hanks_67.JPG",
+      "id": 7
+    },
+    {
+      "name": "Robin Wright",
+      "born": "1966-04-08",
+      "country": "USA",
+      "about": "Robin Gayle Wright was born in Dallas, Texas, to Gayle (Gaston), a national director at Mary Kay, and Freddie Wright, a pharmaceutical executive. She grew up in San Diego, California. She started her professional career as a model in 1980 at age 14, and worked both in Paris and Japan. After finishing high school she decided to become an actress. She got a role on the soap opera Santa Barbara (1984), for which she was nominated three times for a Daytime Emmy. During the first season of the show, she fell in love with fellow cast member Dane Witherspoon, whom she married in 1986. Meanwhile, she starred in The Princess Bride (1987), playing the title role. After leaving the cast of Santa Barbara, she got the starring role in Denial (1990) alongside Jason Patric. In 1990, she was in State of Grace (1990), where she met actor Sean Penn, by whom she had a daughter, Dylan Frances, and a son, Hopper Jack. After taking some time off, Robin was back to Hollywood with one the best roles of her career: She played Tara in The Playboys (1992). She was extremely stunning and brilliant. Then, she acted in Toys (1992) with Robin Williams, and she gave a funny performance. In 1994, Wright was in the blockbuster hit Forrest Gump (1994), with Tom Hanks. For her performance as Jenny, she got a nomination for a Golden Globe Award. She got a small role in The Crossing Guard (1995), which starred Jack Nicholson. After turning down 14 roles, she played the title role of MGM/UA's Moll Flanders (1996), directed by Pen Densham, and co-starring Morgan Freeman and Stockard Channing. She then starred in Erin Dignam's Loved (1997), with William Hurt.",
+      "imageUrl": "https://image.gala.de/22428424/t/_Q/v4/w2048/r0.6667/-/robin-wright.jpg",
+      "id": 8
+    },
+    {
+      "name": "Gary Sinise",
+      "born": "1955-03-17",
+      "country": "USA",
+      "about": "Gary Alan Sinise was born in Blue Island, Illinois, to Mylles S. (Alsip) and Robert L. Sinise, A.C.E., a film editor. He is of Italian (from his paternal grandfather), English, Scottish, Irish, French, German, and Swedish ancestry. His family moved to Highland Park, where he attended high school. He was something of a rebel, playing in bands but paying little attention to school.",
+      "imageUrl": "https://cdn.britannica.com/59/217459-050-ED0FC3C2/American-actor-Gary-Sinise-2006.jpg",
+      "id": 9
+    },
+    {
+      "name": "Leonardo DiCaprio",
+      "born": "1974-11-11",
+      "country": "USA",
+      "about": "Few actors in the world have had a career quite as diverse as Leonardo DiCaprio's. DiCaprio has gone from relatively humble beginnings, as a supporting cast member of the sitcom Growing Pains (1985) and low budget horror movies, such as Critters 3 (1991), to a major teenage heartthrob in the 1990s, as the hunky lead actor in movies such as Romeo + Juliet (1996) and Titanic (1997), to then become a leading man in Hollywood blockbusters, made by internationally renowned directors such as Martin Scorsese and Christopher Nolan.",
+      "imageUrl": "https://m.media-amazon.com/images/M/MV5BMjI0MTg3MzI0M15BMl5BanBnXkFtZTcwMzQyODU2Mw@@._V1_FMjpg_UX1000_.jpg",
+      "id": 10
+    },
+    {
+      "name": "Jonah Hill",
+      "born": "1983-12-20",
+      "country": "USA",
+      "about": "Jonah Hill was born and raised in Los Angeles, the son of Sharon Feldstein (née Chalkin), a fashion designer and costume stylist, and Richard Feldstein, a tour accountant for Guns N' Roses. He is the brother of music manager Jordan Feldstein and actress Beanie Feldstein. He graduated from Crossroads School in Santa Monica and went on to The New School in New York to study drama.  He began writing and performing in plays while at college in New York, and managed to get himself introduced to Dustin Hoffman, through whom he got an audition for his first film role in I Heart Huckabees (2004). A succession of increasingly high-profile film and TV parts followed until he eventually landed one of the starring roles in the teen hit, Superbad (2007). Continuing to write and act, more roles followed as well as popular appearances on US TV talk shows.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Jonah_Hill-4939_%28cropped%29_%28cropped%29.jpg/800px-Jonah_Hill-4939_%28cropped%29_%28cropped%29.jpg",
+      "id": 11
+    },
+    {
+      "name": "Margot Robbie",
+      "born": "1990-07-02",
+      "country": "Australia",
+      "about": "Margot Elise Robbie was born on July 2, 1990 in Dalby, Queensland, Australia to Scottish parents. Her mother, Sarie Kessler, is a physiotherapist, and her father, is Doug Robbie. She comes from a family of four children, having two brothers and one sister. She graduated from Somerset College in Mudgeeraba, Queensland, Australia, a suburb in the Gold Coast hinterland of South East Queensland, where she and her siblings were raised by their mother and spent much of her time at the farm belonging to her grandparents. In her late teens, she moved to Melbourne, Victoria, Australia to pursue an acting career.",
+      "imageUrl": "https://harpersbazaar.com.au/wp-content/uploads/2023/01/Babylon-Australia-Premiere-11-683x1024.png",
+      "id": 12
+    },
+    {
+      "name": "Brad Pitt",
+      "born": "1963-12-18",
+      "country": "USA",
+      "about": "William Bradley \"Brad\" Pitt was born on December 18, 1963 in Shawnee, Oklahoma and raised in Springfield, Missouri to Jane Etta Pitt (née Hillhouse), a school counselor & William Alvin \"Bill\" Pitt, a truck company manager. At Kickapoo High School, Pitt was involved in sports, debating, student government and school musicals. Pitt attended the University of Missouri, where he majored in journalism with a focus on advertising. He occasionally acted in fraternity shows. He left college two credits short of graduating to move to California. Before he became successful at acting, Pitt supported himself by driving strippers in limos, moving refrigerators and dressing as a giant chicken while working for El Pollo Loco.",
+      "imageUrl": "https://m.media-amazon.com/images/M/MV5BMjA1MjE2MTQ2MV5BMl5BanBnXkFtZTcwMjE5MDY0Nw@@._V1_FMjpg_UX1000_.jpg",
+      "id": 13
+    },
+    {
+      "name": "Edward Norton",
+      "born": "1969-08-18",
+      "country": "USA",
+      "about": "American actor, filmmaker and activist Edward Harrison Norton was born on August 18, 1969, in Boston, Massachusetts, and was raised in Columbia, Maryland.  His mother, Lydia Robinson \"Robin\" (Rouse), was a foundation executive and teacher of English, and a daughter of famed real estate developer James Rouse, who developed Columbia, MD; she passed away of brain cancer on March 6, 1997. His father, Edward Mower Norton, was an environmental lawyer and conservationist, who works for the National Trust for Historic Preservation. Edward has two younger siblings, James and Molly.",
+      "imageUrl": "https://m.media-amazon.com/images/M/MV5BMTYwNjQ5MTI1NF5BMl5BanBnXkFtZTcwMzU5MTI2Mw@@._V1_FMjpg_UX1000_.jpg",
+      "id": 14
+    },
+    {
+      "name": "Meat Loaf",
+      "born": "1947-09-27",
+      "country": "USA",
+      "about": "Meat Loaf was born Marvin Lee Aday in Dallas, Texas, to Wilma Artie (Hukel), a teacher and gospel singer, and Orvis Wesley Aday, a police officer. He moved to Los Angeles in 1967 to play in local bands. In 1970, he moved to New York and appeared in the Broadway musicals \"Hair\", \"Rockabye Hamlet\" and \"The Rocky Horror Show,\" and Off Broadway in \"Rainbow\", \"More Than You Deserve\", \"National Lampoon Show\" and the New York Shakespeare Festival's production of \"As You Like it;\" as well as other productions at the famed New York Public Theatre. He made his film debut with a memorable role in the cult film The Rocky Horror Picture Show (1975).",
+      "imageUrl": "https://m.media-amazon.com/images/M/MV5BMTIzNTQ4MjYyOV5BMl5BanBnXkFtZTcwNzgwNTEzMg@@._V1_.jpg",
+      "id": 15
     }
   ],
   "directors": [
@@ -156,6 +282,14 @@
       "country": "USA",
       "about": "Academy Award-winning filmmaker Ron Howard is one of this generation's most popular directors. From the critically acclaimed dramas A Beautiful Mind (2001) and Apollo 13 (1995) to the hit comedies Parenthood (1989) and Splash (1984), he has created some of Hollywood's most memorable films. Howard made his directorial debut in 1978 with the comedy Grand Theft Auto (1977). He began his career in film as an actor. He first appeared in The Journey (1959) and The Music Man (1962), then as Opie on the long-running television series The Andy Griffith Show (1960). Howard later starred in the popular series Happy Days (1974) and drew favorable reviews for his performances in American Graffiti (1973) and The Shootist (1976). Howard and long-time producing partner Brian Grazer first collaborated on the hit comedies „Night Shift“ and „Splash.“ The pair co-founded Imagine Entertainment in 1986 to create independently produced feature films.",
       "imageUrl": "https://cdn.britannica.com/96/198896-050-42D8197A/Ron-Howard-2009.jpg"
+    },
+    {
+      "name": "David Fincher",
+      "born": "1962-08-28",
+      "country": "USA",
+      "about": "David Fincher was born in 1962 in Denver, Colorado, and was raised in Marin County, California. When he was 18 years old he went to work for John Korty at Korty Films in Mill Valley. He subsequently worked at ILM (Industrial Light and Magic) from 1981-1983. Fincher left ILM to direct TV commercials and music videos after signing with N. Lee Lacy in Hollywood. He went on to found Propaganda in 1987 with fellow directors Dominic Sena, Greg Gold and Nigel Dick. Fincher has directed TV commercials for clients that include Nike, Coca-Cola, Budweiser, Heineken, Pepsi, Levi's, Converse, AT&T and Chanel. He has directed music videos for Madonna, Sting, The Rolling Stones, Michael Jackson, Aerosmith, George Michael, Iggy Pop, The Wallflowers, Billy Idol, Steve Winwood, The Motels and, most recently, A Perfect Circle.  As a film director, he has achieved huge success with Se7en (1995), Fight Club (1999) and, Panic Room (2002).",
+      "imageUrl": "https://m.media-amazon.com/images/M/MV5BMTc1NDkwMTQ2MF5BMl5BanBnXkFtZTcwMzY0ODkyMg@@._V1_FMjpg_UX1000_.jpg",
+      "id": 6
     }
   ],
   "movieRelationships": [
@@ -173,6 +307,36 @@
       "movieId": 2,
       "genreId": 4,
       "id": 3
+    },
+    {
+      "movieId": 3,
+      "genreId": 6,
+      "id": 4
+    },
+    {
+      "movieId": 3,
+      "genreId": 4,
+      "id": 5
+    },
+    {
+      "movieId": 4,
+      "genreId": 5,
+      "id": 6
+    },
+    {
+      "movieId": 4,
+      "genreId": 1,
+      "id": 7
+    },
+    {
+      "movieId": 4,
+      "genreId": 6,
+      "id": 8
+    },
+    {
+      "movieId": 5,
+      "genreId": 4,
+      "id": 9
     }
   ],
   "actorRelationships": [
@@ -205,6 +369,51 @@
       "movieId": 2,
       "actorId": 6,
       "id": 6
+    },
+    {
+      "movieId": 3,
+      "actorId": 7,
+      "id": 7
+    },
+    {
+      "movieId": 3,
+      "actorId": 8,
+      "id": 8
+    },
+    {
+      "movieId": 3,
+      "actorId": 9,
+      "id": 9
+    },
+    {
+      "movieId": 4,
+      "actorId": 11,
+      "id": 10
+    },
+    {
+      "movieId": 4,
+      "actorId": 12,
+      "id": 11
+    },
+    {
+      "movieId": 4,
+      "actorId": 10,
+      "id": 12
+    },
+    {
+      "movieId": 5,
+      "actorId": 13,
+      "id": 13
+    },
+    {
+      "movieId": 5,
+      "actorId": 14,
+      "id": 14
+    },
+    {
+      "movieId": 5,
+      "actorId": 15,
+      "id": 15
     }
   ],
   "directorRelationships": [
@@ -217,6 +426,21 @@
       "movieId": 2,
       "directorId": 2,
       "id": 2
+    },
+    {
+      "movieId": 3,
+      "directorId": 3,
+      "id": 3
+    },
+    {
+      "movieId": 4,
+      "directorId": 4,
+      "id": 4
+    },
+    {
+      "movieId": 5,
+      "directorId": 6,
+      "id": 5
     }
   ]
 }
