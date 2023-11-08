@@ -12,6 +12,8 @@ const HomePage = () => {
   const [homePageActors, setHomePageActors] = useState([]);
   const [homePageDirectors, sethomePageDirectors] = useState([]);
 
+  console.log(homePageGenres);
+
   const { id } = useParams();
 
   useEffect(() => {

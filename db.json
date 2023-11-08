@@ -6,10 +6,10 @@
       "rate": "9.3",
       "releaseDate": "1994",
       "imageUrl": "https://m.media-amazon.com/images/M/MV5BNDE3ODcxYzMtY2YzZC00NmNlLWJiNDMtZDViZWM2MzIxZDYwXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_.jpg",
-      "genresId": [
+      "genreIds": [
         4
       ],
-      "actorsId": [
+      "actorIds": [
         1,
         2,
         3
@@ -23,11 +23,11 @@
       "rate": "9.2",
       "releaseDate": "1972",
       "imageUrl": "https://m.media-amazon.com/images/M/MV5BM2MyNjYxNmUtYTAwNi00MTYxLWJmNWYtYzZlODY3ZTk3OTFlXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_FMjpg_UX1000_.jpg",
-      "genresId": [
+      "genreIds": [
         5,
         4
       ],
-      "actorsId": [
+      "actorIds": [
         4,
         5,
         6
@@ -41,11 +41,11 @@
       "rate": "8.8",
       "releaseDate": "1994",
       "imageUrl": "https://m.media-amazon.com/images/M/MV5BNWIwODRlZTUtY2U3ZS00Yzg1LWJhNzYtMmZiYmEyNmU1NjMzXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_FMjpg_UX1000_.jpg",
-      "genresId": [
+      "genreIds": [
         4,
         6
       ],
-      "actorsId": [
+      "actorIds": [
         7,
         8,
         9
@@ -59,12 +59,12 @@
       "rate": "8.2",
       "releaseDate": "2013",
       "imageUrl": "https://m.media-amazon.com/images/M/MV5BMjIxMjgxNTk0MF5BMl5BanBnXkFtZTgwNjIyOTg2MDE@._V1_FMjpg_UX1000_.jpg",
-      "genresId": [
+      "genreIds": [
         1,
         5,
-        6
+        7
       ],
-      "actorsId": [
+      "actorIds": [
         11,
         12,
         10
@@ -78,10 +78,10 @@
       "rate": "8.8",
       "releaseDate": "1999",
       "imageUrl": "https://m.media-amazon.com/images/M/MV5BODQ0OWJiMzktYjNlYi00MzcwLThlZWMtMzRkYTY4ZDgxNzgxXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg",
-      "genresId": [
+      "genreIds": [
         4
       ],
-      "actorsId": [
+      "actorIds": [
         13,
         14,
         15
@@ -117,7 +117,7 @@
     },
     {
       "title": "Biography",
-      "id": 6
+      "id": 7
     }
   ],
   "actors": [
@@ -330,7 +330,7 @@
     },
     {
       "movieId": 4,
-      "genreId": 6,
+      "genreId": 7,
       "id": 8
     },
     {

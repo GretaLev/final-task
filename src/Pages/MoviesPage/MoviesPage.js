@@ -10,10 +10,13 @@ const MoviesPage = () => {
   const toast = useToast();
   const [movies, setMovies] = useState([]);
 
+  console.log(movies);
+
   const deleteHandler = (id) => {
     axios
       .delete(API_URL + `/movies/${id}`)
       .then((response) => {
+        console.log(response);
         setMovies((prevState) => prevState.filter((movie) => movie.id !== id));
         toast({
           title: "Movie deleted",

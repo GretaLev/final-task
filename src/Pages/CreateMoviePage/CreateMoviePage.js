@@ -29,8 +29,8 @@ const CreateMoviePage = () => {
       rate: "",
       releaseDate: "",
       imageUrl: "",
-      genresId: "",
-      actorsId: "",
+      genreIds: "",
+      actorIds: "",
       directorId: "",
     },
   });
@@ -80,7 +80,7 @@ const CreateMoviePage = () => {
       data: values,
     });
 
-    const { id: movieId, directorId, actorsId, genresId } = response.data;
+    const { id: movieId, directorId, actorIds, genreIds } = response.data;
 
     if (response.statusText === "OK") {
       toast({
@@ -99,7 +99,7 @@ const CreateMoviePage = () => {
             directorId,
           },
         }),
-        actorsId.map(async (actorId) => {
+        actorIds.map(async (actorId) => {
           await axios(API_URL + "/actorRelationships", {
             method: "POST",
             data: {
@@ -108,7 +108,7 @@ const CreateMoviePage = () => {
             },
           });
         }),
-        genresId.map(async (genreId) => {
+        genreIds.map(async (genreId) => {
           await axios(API_URL + "/movieRelationships", {
             method: "POST",
             data: {
@@ -163,9 +163,9 @@ const CreateMoviePage = () => {
           <ReactSelect
             options={genresOptions}
             label="Genres:"
-            name="genresId"
+            name="genreIds"
             control={control}
-            error={errors?.genresId?.message}
+            error={errors?.genreIds?.message}
             rules={{ required: "Genre is required" }}
             isMulti
             isDisabled={!!id}
@@ -174,10 +174,10 @@ const CreateMoviePage = () => {
           <ReactSelect
             options={actorsOptions}
             label="Actors:"
-            name="actorsId"
+            name="actorIds"
             rules={{ required: "Actor is required" }}
             control={control}
-            error={errors?.actorsId?.message}
+            error={errors?.actorIds?.message}
             isMulti
             isDisabled={!!id}
           />
