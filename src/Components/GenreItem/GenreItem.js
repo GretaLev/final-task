@@ -8,11 +8,11 @@ const GenreItem = ({ data, showEdit, onDelete }) => {
   const navigate = useNavigate();
   return (
     <>
-      <div className="genres-item">
-        <Link to={`/movies-by-genre/${id}`}>
+      <Link to={`/movies-by-genre/${id}`}>
+        <div className="genres-item">
           <h4>{title}</h4>
-        </Link>
-      </div>
+        </div>
+      </Link>
 
       {showEdit ||
         (onDelete && (

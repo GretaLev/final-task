@@ -1,45 +1,39 @@
 {
   "movies": [
     {
-      "id": 1,
       "title": "The Shawshank Redemption",
       "description": "Chronicles the experiences of a formerly successful banker as a prisoner in the gloomy jailhouse of Shawshank after being found guilty of a crime he did not commit. The film portrays the man's unique way of dealing with his new, torturous life; along the way he befriends a number of fellow prisoners, most notably a wise long-term inmate named Red.",
-      "rate": 9.3,
-      "releaseDate": 1994,
-      "imageUrl": "https://m.media-amazon.com/images/M/MV5BNDE3ODcxYzMtY2YzZC00NmNlLWJiNDMtZDViZWM2MzIxZDYwXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_.jpg"
+      "rate": "9.3",
+      "releaseDate": "1994",
+      "imageUrl": "https://m.media-amazon.com/images/M/MV5BNDE3ODcxYzMtY2YzZC00NmNlLWJiNDMtZDViZWM2MzIxZDYwXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_.jpg",
+      "genresId": [
+        4
+      ],
+      "actorsId": [
+        1,
+        2,
+        3
+      ],
+      "directorId": 1,
+      "id": 1
     },
     {
-      "id": 2,
       "title": "The Godfather",
-      "description": "The Godfather „Don“ Vito Corleone is the head of the Corleone mafia family in New York. He is at the event of his daughter's wedding. Michael, Vito's youngest son and a decorated WW II Marine is also present at the wedding. Michael seems to be uninterested in being a part of the family business. Vito is a powerful man, and is kind to all those who give him respect but is ruthless against those who do not. But when a powerful and treacherous rival wants to sell drugs and needs the Don's influence for the same, Vito refuses to do it. What follows is a clash between Vito's fading old values and the new ways which may cause Michael to do the thing he was most reluctant in doing and wage a mob war against all the other mafia families which could tear the Corleone family apart.",
-      "rate": 9.2,
-      "releaseDate": 1972,
-      "imageUrl": "https://images.entertainment.ie/media/3bhkrj58Vtu7enYsRolD1fZdja1.jpg?w=340&h=514&q=low"
-    },
-    {
-      "id": 3,
-      "title": "Forrest Gump",
-      "description": "Forrest Gump is a simple man with a low I.Q. but good intentions. He is running through childhood with his best and only friend Jenny. His 'mama' teaches him the ways of life and leaves him to choose his destiny. Forrest joins the army for service in Vietnam, finding new friends called Dan and Bubba, he wins medals, creates a famous shrimp fishing fleet, inspires people to jog, starts a ping-pong craze, creates the smiley, writes bumper stickers and songs, donates to people and meets the president several times. However, this is all irrelevant to Forrest who can only think of his childhood sweetheart Jenny Curran, who has messed up her life. Although in the end all he wants to prove is that anyone can love anyone",
-      "rate": 8.8,
-      "releaseDate": 1994,
-      "imageUrl": "https://play-lh.googleusercontent.com/ToGy2Cue0epHBdeRkq3dntz8on4ogI1UlKLGqMvgCptTwmpMWVkIxojwVUuvIjrMIFz2UiNjW73xcuofHQ"
-    },
-    {
-      "id": 4,
-      "title": "The Wolf of Wall Street",
-      "description": "Jordan Belfort (DiCaprio) is Long Island penny stockbroker who serves almost two years in prison for refusing to co-operate in a huge 1990s securities fraud case that involved widespread corruption on Wall Street and in the corporate banking world, including mob infiltration.",
-      "genre": "Comedy",
-      "rate": 8.2,
-      "releaseDate": 2013,
-      "imageUrl": "https://m.media-amazon.com/images/M/MV5BMjIxMjgxNTk0MF5BMl5BanBnXkFtZTgwNjIyOTg2MDE@._V1_FMjpg_UX1000_.jpg"
-    },
-    {
-      "id": 5,
-      "title": "Apollo 13",
-      "description": "This Hollywood drama is based on the events of the Apollo 13 lunar mission, astronauts Jim Lovell, Fred Haise and Jack Swigert find everything going according to plan after leaving Earth's orbit. However, when an oxygen tank explodes, the scheduled moon landing is called off. Subsequent tensions within the crew and numerous technical problems threaten both the astronauts' survival and their safe return to Earth.",
-      "rate": 7.7,
-      "releaseDate": 1995,
-      "imageUrl": "https://m.media-amazon.com/images/M/MV5BMjc4MzZlNmQtN2ZlOS00OGQzLWI5YjEtNDQ2YmZlN2FjNTIxXkEyXkFqcGdeQXVyMjUzOTY1NTc@._V1_.jpg"
+      "description": "The Godfather \"Don\" Vito Corleone is the head of the Corleone mafia family in New York. He is at the event of his daughter's wedding. Michael, Vito's youngest son and a decorated WW II Marine is also present at the wedding. Michael seems to be uninterested in being a part of the family business. Vito is a powerful man, and is kind to all those who give him respect but is ruthless against those who do not. But when a powerful and treacherous rival wants to sell drugs and needs the Don's influence for the same, Vito refuses to do it. What follows is a clash between Vito's fading old values and the new ways which may cause Michael to do the thing he was most reluctant in doing and wage a mob war against all the other mafia families which could tear the Corleone family apart.",
+      "rate": "9.2",
+      "releaseDate": "1972",
+      "imageUrl": "https://m.media-amazon.com/images/M/MV5BM2MyNjYxNmUtYTAwNi00MTYxLWJmNWYtYzZlODY3ZTk3OTFlXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_FMjpg_UX1000_.jpg",
+      "genresId": [
+        5,
+        4
+      ],
+      "actorsId": [
+        4,
+        5,
+        6
+      ],
+      "directorId": 2,
+      "id": 2
     }
   ],
   "genres": [
@@ -112,6 +106,14 @@
       "country": "USA",
       "about": "Alfredo James „Al“ 'Pacino established himself as a film actor during one of cinema's most vibrant decades, the 1970s, and has become an enduring and iconic figure in the world of American movies.He was born April 25, 1940 in Manhattan, New York City, to Italian-American parents, Rose (nee Gerardi) and Sal Pacino. ",
       "imageUrl": "https://media.newyorker.com/photos/5e70fef11785a2000935d0eb/master/pass/ra722.jpg"
+    },
+    {
+      "id": 6,
+      "name": "James Caan",
+      "born": "1940-03-26",
+      "country": "USA",
+      "about": "A masculine and enigmatic actor whose life and movie career have had more ups and downs than the average rollercoaster and whose selection of roles has arguably derailed him from achieving true superstar status, James Caan is New York-born and bred.He was born in the Bronx, to Sophie (Falkenstein) and Arthur Caan, Jewish immigrants from Germany.",
+      "imageUrl": "https://people.com/thmb/zu7YJCZKMnKPzbzJtn0j8R8F4VA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(747x269:749x271)/james-caan-4-9c2f40a15a8c41f7a61a9fe301141591.jpg"
     }
   ],
   "directors": [
@@ -158,123 +160,63 @@
   ],
   "movieRelationships": [
     {
-      "id": 1,
       "movieId": 1,
-      "genreId": 4
+      "genreId": 4,
+      "id": 1
     },
     {
-      "id": 2,
       "movieId": 2,
-      "genreId": 4
+      "genreId": 5,
+      "id": 2
     },
     {
-      "id": 3,
       "movieId": 2,
-      "genreId": 5
-    },
-    {
-      "id": 4,
-      "movieId": 3,
-      "genreId": 4
-    },
-    {
-      "id": 5,
-      "movieId": 3,
-      "genreId": 6
-    },
-    {
-      "id": 6,
-      "movieId": 4,
-      "genreId": 1
-    },
-    {
-      "id": 7,
-      "movieId": 4,
-      "genreId": 5
-    },
-    {
-      "id": 8,
-      "movieId": 4,
-      "genreId": 6
-    },
-    {
-      "id": 9,
-      "movieId": 5,
-      "genreId": 2
-    },
-    {
-      "id": 10,
-      "movieId": 5,
-      "genreId": 3
-    },
-    {
-      "id": 11,
-      "movieId": 5,
-      "genreId": 4
+      "genreId": 4,
+      "id": 3
     }
   ],
   "actorRelationships": [
     {
-      "id": 1,
       "movieId": 1,
-      "actorId": 1
+      "actorId": 1,
+      "id": 1
     },
     {
-      "id": 2,
       "movieId": 1,
-      "actorId": 2
+      "actorId": 2,
+      "id": 2
     },
     {
-      "id": 3,
       "movieId": 1,
-      "actorId": 3
+      "actorId": 3,
+      "id": 3
     },
     {
-      "id": 2,
-      "movieId": 1,
-      "actorId": 2
-    },
-    {
-      "id": 3,
-      "movieId": 1,
-      "actorId": 3
-    },
-    {
-      "id": 4,
       "movieId": 2,
-      "actorId": 4
+      "actorId": 4,
+      "id": 4
     },
     {
-      "id": 5,
       "movieId": 2,
-      "actorId": 5
+      "actorId": 5,
+      "id": 5
+    },
+    {
+      "movieId": 2,
+      "actorId": 6,
+      "id": 6
     }
   ],
   "directorRelationships": [
     {
-      "id": 1,
       "movieId": 1,
-      "directorId": 1
+      "directorId": 1,
+      "id": 1
     },
     {
-      "id": 2,
       "movieId": 2,
-      "directorId": 2
-    },
-    {
-      "id": 3,
-      "movieId": 3,
-      "directorId": 3
-    },
-    {
-      "id": 4,
-      "movieId": 4,
-      "directorId": 4
-    },
-    {
-      "id": 5,
-      "movieId": 5,
-      "directorId": 5
+      "directorId": 2,
+      "id": 2
     }
   ]
 }
