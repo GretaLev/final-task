@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import { API_URL } from "../../config";
 import Container from "../../Components/Container/Container";
-
 import GenreItem from "../../Components/GenreItem/GenreItem";
 import { Link } from "react-router-dom";
 import { useToast } from "@chakra-ui/react";

@@ -20,7 +20,6 @@ const DirectorsItemPage = () => {
       API_URL + `/directorRelationships?directorId=${id}&_expand=movie`
     ).then((res) => {
       setMovies(res.data);
-      console.log(movies);
     });
   }, []);
 

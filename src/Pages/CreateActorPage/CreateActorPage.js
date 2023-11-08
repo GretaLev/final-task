@@ -4,10 +4,9 @@ import { Button, VStack, useToast } from "@chakra-ui/react";
 import { useForm } from "react-hook-form";
 
 import Input from "../../Components/Form/Input/Input";
-import { Navigate, useNavigate, useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { useEffect } from "react";
 import axios from "axios";
-import Select from "../../Components/Form/Select/Select";
 
 const CreateActorPage = () => {
   const navigate = useNavigate();

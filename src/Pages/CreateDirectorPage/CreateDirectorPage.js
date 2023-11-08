@@ -6,7 +6,6 @@ import Input from "../../Components/Form/Input/Input";
 import { useNavigate, useParams } from "react-router-dom";
 import { useEffect } from "react";
 import axios from "axios";
-import Select from "../../Components/Form/Select/Select";
 
 const CreateDirectorPage = () => {
   const navigate = useNavigate();
