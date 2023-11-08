@@ -191,6 +191,8 @@ const CreateMoviePage = () => {
           <Input
             label="Rating:"
             type="number"
+            step="any"
+            max="10"
             register={register("rate", {
               required: "Rating is required",
             })}
